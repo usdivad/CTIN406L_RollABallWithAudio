@@ -5,7 +5,7 @@ Roll-A-Ball, now with sound! For USC course CTIN 406L: Sound Design for Games.
 Based on Unity's [Roll-A-Ball tutorial](https://learn.unity.com/project/roll-a-ball), adapting the [completed project files](https://assetstore.unity.com/packages/essentials/tutorial-projects/unity-learn-roll-a-ball-completed-project-files-urp-77198) and adding newly implemented audio.
 
 ## Your Assignment
-1. [Download this project](https://github.com/usdivad/CTIN406L_RollABallWithAudio/archive/refs/heads/main.zip)
+1. [Download this project](https://github.com/usdivad/CTIN406L_RollABallWithAudio/archive/refs/heads/week4-implementation.zip)
 2. **Replace all existing audio** with new sound assets that you create
 3. (Optional) **Implement new audio** where there previously was none
 	- Some ideas:
