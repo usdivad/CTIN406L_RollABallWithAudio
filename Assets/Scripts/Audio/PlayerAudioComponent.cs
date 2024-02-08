@@ -36,7 +36,7 @@ public class PlayerAudioComponent : MonoBehaviour
         float volume = Mathf.Clamp(velocity / maxRollingVelocity, 0f, 1f);
         rollingAudioSource.volume = volume;
 
-        Debug.LogFormat("Rolling: Velocity={0}, Volume={1}", velocity, volume);
+        //Debug.LogFormat("Rolling: Velocity={0}, Volume={1}", velocity, volume);
     }
 
     // Play pickup SFX. Called within PlayerController.OnTriggerEnter()

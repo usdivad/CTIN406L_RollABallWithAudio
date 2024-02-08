@@ -9,13 +9,13 @@ using UnityEngine.Audio;
 [RequireComponent(typeof(BoxCollider))]
 public class DistanceBasedAmbienceZone : MonoBehaviour
 {
-    // Player for whom we track distance
-    [SerializeField]
-    GameObject player;
-
     // Audio emitter
     [SerializeField]
     AudioSource emitter;
+
+    // Player for whom we track distance
+    [SerializeField]
+    GameObject player;
 
     // Max distance to player (above which volume is 0)
     [SerializeField]
