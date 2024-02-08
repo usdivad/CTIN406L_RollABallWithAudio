@@ -4,18 +4,24 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
 
+/** Ambience zone that adjusts emitter position based on player distance **/
+
 [RequireComponent(typeof(BoxCollider))]
 public class DistanceBasedAmbienceZone : MonoBehaviour
 {
+    // Player for whom we track distance
     [SerializeField]
     GameObject player;
 
+    // Audio emitter
     [SerializeField]
     AudioSource emitter;
 
+    // Max distance to player (above which volume is 0)
     [SerializeField]
     float maxDistanceToPlayer = 10f;
 
+    // Collider that determines the zone bounds
     Collider zoneCollider;
 
     // Start is called before the first frame update
@@ -37,6 +43,5 @@ public class DistanceBasedAmbienceZone : MonoBehaviour
         float distanceScaled = distanceToPlayer / maxDistanceToPlayer;
         float emitterVolume = Mathf.Clamp01(1f - distanceScaled);
         emitter.volume = emitterVolume;
-
     }
 }
