@@ -27,7 +27,11 @@ public class DistanceBasedAmbienceZone : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        // Find our zone collider
         zoneCollider = GetComponent<Collider>();
+        
+        // Play our audio emitter
+        emitter.Play();
     }
 
     // Update is called once per frame
