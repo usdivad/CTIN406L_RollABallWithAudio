@@ -6,6 +6,7 @@
 				<GameParameter Name="RTPC_BallSpeed" ID="{98D759C6-3845-4E92-8D73-E23F247A06E8}">
 					<PropertyList>
 						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="10"/>
 						<Property Name="RTPCRamping" Type="int16" Value="1"/>
 					</PropertyList>
 				</GameParameter>

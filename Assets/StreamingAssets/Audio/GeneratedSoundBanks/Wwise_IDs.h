@@ -14,11 +14,12 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID PLAY_AMB_CITY_LP = 584628495U;
+        static const AkUniqueID PLAY_AMB_DOGBARKS = 791217870U;
         static const AkUniqueID PLAY_AMB_FOREST_LP = 149137005U;
         static const AkUniqueID PLAY_AMB_INTERIOR_LP = 93749488U;
         static const AkUniqueID PLAY_IMP_PICKUP = 3369882767U;
         static const AkUniqueID PLAY_IMP_WALL = 2242885151U;
-        static const AkUniqueID PLAY_MUS_MAIN_LP = 4171924292U;
+        static const AkUniqueID PLAY_MUS_MAIN = 4165304245U;
         static const AkUniqueID PLAY_MVT_BALLROLLING_LP = 4193143717U;
         static const AkUniqueID PLAY_UI_WIN = 2823495579U;
     } // namespace EVENTS

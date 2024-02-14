@@ -5,49 +5,43 @@ using UnityEngine;
 
 /** Component that handles player audio **/
 
-[RequireComponent(typeof(AudioSource))]
 public class PlayerAudioComponent : MonoBehaviour
 {
     [SerializeField]
-    AudioSource pickupAudioSource; // Audio source for playing pickup SFX
+    AK.Wwise.Event pickupAudioEvent; // Audio event for playing pickup SFX
 
     [SerializeField]
-    AudioSource rollingAudioSource; // Audio source for playing rolling SFX
+    AK.Wwise.Event rollingAudioEvent; // Audio event for playing rolling SFX
 
     [SerializeField]
-    AudioClip winAudioClip; // Audio clip for win SFX. Played on pickup source
+    AK.Wwise.Event winAudioEvent; // Audio event for win SFX
 
     [SerializeField]
-    float maxRollingVelocity = 10f; // Max velocity for rolling
+    AK.Wwise.RTPC ballSpeedRtpc; // RTPC for the ball speed
 
     // Start is called before the first frame update
     void Start()
     {
         // Begin playing rolling audio loop
-        rollingAudioSource.loop = true;
-        rollingAudioSource.volume = 0f;
-        rollingAudioSource.Play();
+        rollingAudioEvent.Post(this.gameObject);
     }
 
     // Update audio for ball rolling. This is called within PlayerController.FixedUpdate()
     public void UpdateRollingAudio(float velocity)
     {
-        // Scale rolling volume based on ball velocity
-        float volume = Mathf.Clamp(velocity / maxRollingVelocity, 0f, 1f);
-        rollingAudioSource.volume = volume;
-
-        //Debug.LogFormat("Rolling: Velocity={0}, Volume={1}", velocity, volume);
+        // Set ball speed RTPC (volume scaling etc. happens in Wwise)
+        ballSpeedRtpc.SetGlobalValue(velocity);
     }
 
     // Play pickup SFX. Called within PlayerController.OnTriggerEnter()
     public void PlayPickupAudio()
     {
-        pickupAudioSource.Play();
+        pickupAudioEvent.Post(this.gameObject);
     }
 
     // Play win SFX. Called within PlayerController.SetCountText()
     public void PlayWinAudio()
     {
-        pickupAudioSource.PlayOneShot(winAudioClip, 1f);
+        winAudioEvent.Post(this.gameObject);
     }
 }

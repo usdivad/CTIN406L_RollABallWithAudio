@@ -80,12 +80,23 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_MUS_Main_LP" ID="{66B65DF7-6A9E-499F-8D49-8296FDF580F0}">
+				<Event Name="Play_MUS_Main" ID="{66B65DF7-6A9E-499F-8D49-8296FDF580F0}">
 					<ChildrenList>
 						<Action Name="" ID="{4096C1B2-FEDB-45DD-8B64-59CD139954BA}" ShortID="1040105115">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="MUS_Main_LP" ID="{8E2E0463-EA67-4A63-B164-D19ADA66E1E7}" WorkUnitID="{749D61E4-F82D-4EEF-B729-5F9971B28A87}"/>
+									<ObjectRef Name="MUS_Main" ID="{4002AAD4-91BE-4DAC-9651-F4FA4AC74752}" WorkUnitID="{749D61E4-F82D-4EEF-B729-5F9971B28A87}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_AMB_DogBarks" ID="{04550D2D-C6A4-44C4-9062-911DDBD700FD}">
+					<ChildrenList>
+						<Action Name="" ID="{7CAC0598-5949-48B3-9B8E-948B4E410D7A}" ShortID="827655491">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="AMB_DogBarks" ID="{8FEC3A10-BF9D-436D-8F5F-FD6ACE91A920}" WorkUnitID="{8B8FB572-AE0C-4A3C-9B99-BB3729166F0F}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

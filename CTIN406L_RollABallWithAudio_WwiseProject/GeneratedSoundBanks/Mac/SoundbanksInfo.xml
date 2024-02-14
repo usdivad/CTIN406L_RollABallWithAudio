@@ -9,10 +9,14 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="534561221" Type="User" Language="SFX" Hash="{98B1949C-2291-26BB-DD0F-76308B979D55}">
+		<SoundBank Id="534561221" Type="User" Language="SFX" Hash="{7E385B46-FDD5-AF0F-89FC-A431EFA9CFFD}">
 			<ShortName>MainSoundBank</ShortName>
 			<Path>MainSoundBank.bnk</Path>
 			<Media>
+				<File Id="14961769" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>AMB_DogBark_03.wav</ShortName>
+					<CachePath>SFX/AMB_DogBark_03_818F3B66.wem</CachePath>
+				</File>
 				<File Id="45852958" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>IMP_Pickup.wav</ShortName>
 					<CachePath>SFX/IMP_Pickup_818F3B66.wem</CachePath>
@@ -33,6 +37,14 @@
 					<ShortName>MUS_Main_LP.wav</ShortName>
 					<CachePath>SFX/MUS_Main_LP_FBC78EF0.wem</CachePath>
 				</File>
+				<File Id="480614661" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>AMB_DogBark_02.wav</ShortName>
+					<CachePath>SFX/AMB_DogBark_02_818F3B66.wem</CachePath>
+				</File>
+				<File Id="529320610" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>AMB_DogBark_04.wav</ShortName>
+					<CachePath>SFX/AMB_DogBark_04_818F3B66.wem</CachePath>
+				</File>
 				<File Id="567523311" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>AMB_Interior_LP.wav</ShortName>
 					<CachePath>SFX/AMB_Interior_LP_FBC78EF0.wem</CachePath>
@@ -43,13 +55,25 @@
 				</File>
 				<File Id="852571445" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MVT_BallRolling_LP.wav</ShortName>
-					<CachePath>SFX/MVT_BallRolling_LP_818F3B66.wem</CachePath>
+					<CachePath>SFX/MVT_BallRolling_LP_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="901060277" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>AMB_DogBark_01.wav</ShortName>
+					<CachePath>SFX/AMB_DogBark_01_818F3B66.wem</CachePath>
 				</File>
 			</Media>
 			<Events>
 				<Event Id="584628495" Name="Play_AMB_City_LP" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="173716311"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="791217870" Name="Play_AMB_DogBarks" DurationType="OneShot" DurationMin="8" DurationMax="8">
+					<MediaRefs>
+						<MediaRef Id="14961769"/>
+						<MediaRef Id="480614661"/>
+						<MediaRef Id="529320610"/>
+						<MediaRef Id="901060277"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="149137005" Name="Play_AMB_Forest_LP" DurationType="Infinite">
@@ -72,12 +96,12 @@
 						<MediaRef Id="223782888"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="4171924292" Name="Play_MUS_Main_LP" DurationType="OneShot" DurationMin="48" DurationMax="48">
+				<Event Id="4165304245" Name="Play_MUS_Main" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="472038755"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="4193143717" Name="Play_MVT_BallRolling_LP" DurationType="OneShot" DurationMin="4.25" DurationMax="4.25">
+				<Event Id="4193143717" Name="Play_MVT_BallRolling_LP" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="852571445"/>
 					</MediaRefs>
@@ -88,6 +112,9 @@
 					</MediaRefs>
 				</Event>
 			</Events>
+			<GameParameters>
+				<GameParameter Id="3709966389" Name="RTPC_BallSpeed"/>
+			</GameParameters>
 		</SoundBank>
 		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{FCFB2881-757A-5D15-BD94-49C1825A47D7}">
 			<ShortName>Init</ShortName>
@@ -126,5 +153,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{0E3A6B4C-D96F-9C86-B9FB-55A7D8B5B4C8}</FileHash>
+	<FileHash>{CD5A8959-C922-F11D-E817-2D087477AD8B}</FileHash>
 </SoundBanksInfo>

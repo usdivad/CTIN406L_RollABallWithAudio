@@ -88,6 +88,106 @@
 								<ActiveSource Name="AMB_Interior_LP" ID="{4EBA02BA-7A22-493D-B662-84CC25616CB1}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+						<RandomSequenceContainer Name="AMB_DogBarks" ID="{8FEC3A10-BF9D-436D-8F5F-FD6ACE91A920}" ShortID="548193214">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F31277D4-DD00-4059-A6A3-67EE41BC19BA}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC1FDB7B-AB4A-403B-9ED1-5C49551A2787}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="AMB_DogBark_01" ID="{3942B093-044C-477B-A33F-4551C25A8C93}" ShortID="1004527140">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F31277D4-DD00-4059-A6A3-67EE41BC19BA}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC1FDB7B-AB4A-403B-9ED1-5C49551A2787}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="AMB_DogBark_01" ID="{CAAAE73C-AEE6-4FAE-9681-2F3CE47F0D00}">
+											<Language>SFX</Language>
+											<AudioFile>AMB_DogBark_01.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="901060277"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="AMB_DogBark_01" ID="{CAAAE73C-AEE6-4FAE-9681-2F3CE47F0D00}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="AMB_DogBark_02" ID="{E3254D70-A133-41ED-9B68-8259699CAAEB}" ShortID="822575153">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F31277D4-DD00-4059-A6A3-67EE41BC19BA}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC1FDB7B-AB4A-403B-9ED1-5C49551A2787}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="AMB_DogBark_02" ID="{96F66583-502C-4F34-B0D5-A0CF333EA6B1}">
+											<Language>SFX</Language>
+											<AudioFile>AMB_DogBark_02.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="480614661"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="AMB_DogBark_02" ID="{96F66583-502C-4F34-B0D5-A0CF333EA6B1}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="AMB_DogBark_03" ID="{82A4D687-04EC-436D-AB75-56C8AE0F726C}" ShortID="147275947">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F31277D4-DD00-4059-A6A3-67EE41BC19BA}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC1FDB7B-AB4A-403B-9ED1-5C49551A2787}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="AMB_DogBark_03" ID="{24849C96-D114-4EB8-8B08-2D5F00EE3104}">
+											<Language>SFX</Language>
+											<AudioFile>AMB_DogBark_03.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="14961769"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="AMB_DogBark_03" ID="{24849C96-D114-4EB8-8B08-2D5F00EE3104}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="AMB_DogBark_04" ID="{A9CEFB4E-E2C5-43D8-9319-8B97096D6711}" ShortID="434684882">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F31277D4-DD00-4059-A6A3-67EE41BC19BA}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC1FDB7B-AB4A-403B-9ED1-5C49551A2787}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="AMB_DogBark_04" ID="{5C28D727-8FDA-41D8-83B8-7A979165FD8F}">
+											<Language>SFX</Language>
+											<AudioFile>AMB_DogBark_04.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="529320610"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="AMB_DogBark_04" ID="{5C28D727-8FDA-41D8-83B8-7A979165FD8F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
 					</ChildrenList>
 				</ActorMixer>
 				<ActorMixer Name="SFX" ID="{5549D629-E352-488C-9FAD-C7135B5ADBB7}" ShortID="634266837">
@@ -145,6 +245,9 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="MVT_BallRolling_LP" ID="{CC5B131F-232E-48EF-885D-95C89480299A}" ShortID="201711583">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F31277D4-DD00-4059-A6A3-67EE41BC19BA}"/>
@@ -162,6 +265,123 @@
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{33142648-5A4F-4550-9331-9E5798440BFC}" ShortID="692397259">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="Volume"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="RTPC_BallSpeed" ID="{98D759C6-3845-4E92-8D73-E23F247A06E8}" WorkUnitID="{D6D3403D-3D26-45E3-8F8E-D39F34A69414}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{DEB0E919-9451-47F4-91ED-6984E10E4D2D}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>5</Flags>
+																		<SegmentShape>Exp1</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>10</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{34453F74-06CA-4763-8D7E-F4933F840045}" ShortID="336205730">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="Lowpass"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="RTPC_BallSpeed" ID="{98D759C6-3845-4E92-8D73-E23F247A06E8}" WorkUnitID="{D6D3403D-3D26-45E3-8F8E-D39F34A69414}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{06792C71-6EBB-4EA7-BB82-F7DCCACD82A4}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="65537"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>63</YPos>
+																		<Flags>5</Flags>
+																		<SegmentShape>Exp1</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>5.50321</XPos>
+																		<YPos>10</YPos>
+																		<Flags>0</Flags>
+																		<SegmentShape>Exp1</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>10</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{49AF4298-AEB1-41E8-825E-9C7227B4C992}" ShortID="483541976">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="Pitch"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="RTPC_BallSpeed" ID="{98D759C6-3845-4E92-8D73-E23F247A06E8}" WorkUnitID="{D6D3403D-3D26-45E3-8F8E-D39F34A69414}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{BFB4BAF7-9C26-4BCC-97D3-0C74BE509F77}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="65537"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-300</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>10</XPos>
+																		<YPos>300</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
 							<ActiveSourceList>
 								<ActiveSource Name="MVT_BallRolling_LP" ID="{DCB275F2-3901-472D-B786-098169F33D54}" Platform="Linked"/>
 							</ActiveSourceList>
