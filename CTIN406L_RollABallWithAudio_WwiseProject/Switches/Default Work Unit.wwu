@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{5E5140DA-1F96-44EB-A892-D9C9C8DFF3B1}" SchemaVersion="119">
 	<Switches>
-		<WorkUnit Name="Default Work Unit" ID="{5E5140DA-1F96-44EB-A892-D9C9C8DFF3B1}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{5E5140DA-1F96-44EB-A892-D9C9C8DFF3B1}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchGroup Name="SWI_CrateType" ID="{C950407E-376F-440E-BBDB-586FFCD99833}">
+					<ChildrenList>
+						<Switch Name="SWI_CrateType_Common" ID="{076FC767-DEC7-4F9E-82F7-A7E3B57A0835}"/>
+						<Switch Name="SWI_CrateType_Rare" ID="{FCACDEAA-8DF1-4C8A-8D6F-76D4663EF6E1}"/>
+						<Switch Name="SWI_CrateType_Uncommon" ID="{9AACB9D3-B6D0-427A-973F-A392514E01D3}"/>
+					</ChildrenList>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
 	</Switches>
 </WwiseDocument>

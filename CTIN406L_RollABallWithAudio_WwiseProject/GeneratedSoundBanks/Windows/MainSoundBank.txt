@@ -1,0 +1,20 @@
+Event	ID	Name			Wwise Object Path	Notes
+	93749488	Play_AMB_Interior_LP			\Default Work Unit\Play_AMB_Interior_LP	
+	149137005	Play_AMB_Forest_LP			\Default Work Unit\Play_AMB_Forest_LP	
+	584628495	Play_AMB_City_LP			\Default Work Unit\Play_AMB_City_LP	
+	2242885151	Play_IMP_Wall			\Default Work Unit\Play_IMP_Wall	
+	2823495579	Play_UI_Win			\Default Work Unit\Play_UI_Win	
+	3369882767	Play_IMP_Pickup			\Default Work Unit\Play_IMP_Pickup	
+	4171924292	Play_MUS_Main_LP			\Default Work Unit\Play_MUS_Main_LP	
+	4193143717	Play_MVT_BallRolling_LP			\Default Work Unit\Play_MVT_BallRolling_LP	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	45852958	IMP_Pickup	C:\Users\david\Documents\projects\CTIN406L\projects\CTIN406L_RollABallWithAudio\CTIN406L_RollABallWithAudio_WwiseProject\.cache\Windows\SFX\IMP_Pickup_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\IMP_Pickup		288096
+	103947080	AMB_Forest_LP	C:\Users\david\Documents\projects\CTIN406L\projects\CTIN406L_RollABallWithAudio\CTIN406L_RollABallWithAudio_WwiseProject\.cache\Windows\SFX\AMB_Forest_LP_FBC78EF0.wem		\Actor-Mixer Hierarchy\Default Work Unit\AMB\AMB_Forest_LP		4032096
+	173716311	AMB_City_LP	C:\Users\david\Documents\projects\CTIN406L\projects\CTIN406L_RollABallWithAudio\CTIN406L_RollABallWithAudio_WwiseProject\.cache\Windows\SFX\AMB_City_LP_FBC78EF0.wem		\Actor-Mixer Hierarchy\Default Work Unit\AMB\AMB_City_LP		3072096
+	223782888	IMP_Wall	C:\Users\david\Documents\projects\CTIN406L\projects\CTIN406L_RollABallWithAudio\CTIN406L_RollABallWithAudio_WwiseProject\.cache\Windows\SFX\IMP_Wall_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\IMP_Wall		192096
+	472038755	MUS_Main_LP	C:\Users\david\Documents\projects\CTIN406L\projects\CTIN406L_RollABallWithAudio\CTIN406L_RollABallWithAudio_WwiseProject\.cache\Windows\SFX\MUS_Main_LP_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MUS_Main_LP\MUS_Main_LP		9216096
+	567523311	AMB_Interior_LP	C:\Users\david\Documents\projects\CTIN406L\projects\CTIN406L_RollABallWithAudio\CTIN406L_RollABallWithAudio_WwiseProject\.cache\Windows\SFX\AMB_Interior_LP_FBC78EF0.wem		\Actor-Mixer Hierarchy\Default Work Unit\AMB\AMB_Interior_LP		4992096
+	599393677	UI_Win	C:\Users\david\Documents\projects\CTIN406L\projects\CTIN406L_RollABallWithAudio\CTIN406L_RollABallWithAudio_WwiseProject\.cache\Windows\SFX\UI_Win_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\UI_Win		480096
+	852571445	MVT_BallRolling_LP	C:\Users\david\Documents\projects\CTIN406L\projects\CTIN406L_RollABallWithAudio\CTIN406L_RollABallWithAudio_WwiseProject\.cache\Windows\SFX\MVT_BallRolling_LP_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\MVT_BallRolling_LP		408096
+

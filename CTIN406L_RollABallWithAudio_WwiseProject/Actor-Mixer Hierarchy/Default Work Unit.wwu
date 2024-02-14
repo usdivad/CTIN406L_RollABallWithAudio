@@ -1,6 +1,196 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{8B8FB572-AE0C-4A3C-9B99-BB3729166F0F}" SchemaVersion="119">
 	<AudioObjects>
-		<WorkUnit Name="Default Work Unit" ID="{8B8FB572-AE0C-4A3C-9B99-BB3729166F0F}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{8B8FB572-AE0C-4A3C-9B99-BB3729166F0F}" PersistMode="Standalone">
+			<ChildrenList>
+				<ActorMixer Name="AMB" ID="{942FE9C5-12D0-414E-A94A-52D1AAB14B9A}" ShortID="694250123">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F31277D4-DD00-4059-A6A3-67EE41BC19BA}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC1FDB7B-AB4A-403B-9ED1-5C49551A2787}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="AMB_City_LP" ID="{54BD6CB1-DDA1-483C-B9C4-669DC5E7F0DE}" ShortID="724843242">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F31277D4-DD00-4059-A6A3-67EE41BC19BA}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC1FDB7B-AB4A-403B-9ED1-5C49551A2787}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="AMB_City_LP" ID="{3596DA0A-2A77-4145-BC23-C08489B2E558}">
+									<Language>SFX</Language>
+									<AudioFile>AMB_City_LP.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="173716311"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="AMB_City_LP" ID="{3596DA0A-2A77-4145-BC23-C08489B2E558}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="AMB_Forest_LP" ID="{C69C3CAA-4FA5-48D4-8C14-A264777459EC}" ShortID="352940353">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F31277D4-DD00-4059-A6A3-67EE41BC19BA}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC1FDB7B-AB4A-403B-9ED1-5C49551A2787}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="AMB_Forest_LP" ID="{EBEF443B-A97A-4DE9-B45E-67DBFBDFB661}">
+									<Language>SFX</Language>
+									<AudioFile>AMB_Forest_LP.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="103947080"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="AMB_Forest_LP" ID="{EBEF443B-A97A-4DE9-B45E-67DBFBDFB661}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="AMB_Interior_LP" ID="{7746E3F8-F108-4EDA-A270-1CB7AB72263F}" ShortID="56565724">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F31277D4-DD00-4059-A6A3-67EE41BC19BA}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC1FDB7B-AB4A-403B-9ED1-5C49551A2787}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="AMB_Interior_LP" ID="{4EBA02BA-7A22-493D-B662-84CC25616CB1}">
+									<Language>SFX</Language>
+									<AudioFile>AMB_Interior_LP.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="567523311"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="AMB_Interior_LP" ID="{4EBA02BA-7A22-493D-B662-84CC25616CB1}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</ActorMixer>
+				<ActorMixer Name="SFX" ID="{5549D629-E352-488C-9FAD-C7135B5ADBB7}" ShortID="634266837">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F31277D4-DD00-4059-A6A3-67EE41BC19BA}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC1FDB7B-AB4A-403B-9ED1-5C49551A2787}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="IMP_Pickup" ID="{3DA5F12B-D63F-4296-AF08-C77FDC81D881}" ShortID="369318998">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F31277D4-DD00-4059-A6A3-67EE41BC19BA}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC1FDB7B-AB4A-403B-9ED1-5C49551A2787}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="IMP_Pickup" ID="{02C0B4A6-457C-4B00-A508-6AFD8F52D186}">
+									<Language>SFX</Language>
+									<AudioFile>IMP_Pickup.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="45852958"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="IMP_Pickup" ID="{02C0B4A6-457C-4B00-A508-6AFD8F52D186}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="IMP_Wall" ID="{DB7425EE-1E87-4266-B2A5-C1CCE9BAFACD}" ShortID="511416907">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F31277D4-DD00-4059-A6A3-67EE41BC19BA}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC1FDB7B-AB4A-403B-9ED1-5C49551A2787}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="IMP_Wall" ID="{C67F2DE1-2C4C-4C5B-9677-87B7F272F8E3}">
+									<Language>SFX</Language>
+									<AudioFile>IMP_Wall.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="223782888"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="IMP_Wall" ID="{C67F2DE1-2C4C-4C5B-9677-87B7F272F8E3}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="MVT_BallRolling_LP" ID="{CC5B131F-232E-48EF-885D-95C89480299A}" ShortID="201711583">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F31277D4-DD00-4059-A6A3-67EE41BC19BA}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC1FDB7B-AB4A-403B-9ED1-5C49551A2787}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="MVT_BallRolling_LP" ID="{DCB275F2-3901-472D-B786-098169F33D54}">
+									<Language>SFX</Language>
+									<AudioFile>MVT_BallRolling_LP.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="852571445"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="MVT_BallRolling_LP" ID="{DCB275F2-3901-472D-B786-098169F33D54}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="UI_Win" ID="{8288B9C2-6C46-467F-95C8-0EF505612C06}" ShortID="320604929">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F31277D4-DD00-4059-A6A3-67EE41BC19BA}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC1FDB7B-AB4A-403B-9ED1-5C49551A2787}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="UI_Win" ID="{E29C8E83-7574-4CF8-961B-ACC1B9A56D59}">
+									<Language>SFX</Language>
+									<AudioFile>UI_Win.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="599393677"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="UI_Win" ID="{E29C8E83-7574-4CF8-961B-ACC1B9A56D59}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</ActorMixer>
+			</ChildrenList>
+		</WorkUnit>
 	</AudioObjects>
 </WwiseDocument>

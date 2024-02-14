@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="150">
+	<RootPaths>
+		<ProjectRoot>../..</ProjectRoot>
+		<SourceFilesRoot>../../.cache/Windows</SourceFilesRoot>
+		<SoundBanksRoot>.</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>.</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<SoundBanks>
+		<SoundBank Id="534561221" Type="User" Language="SFX" Hash="{98B1949C-2291-26BB-DD0F-76308B979D55}">
+			<ShortName>MainSoundBank</ShortName>
+			<Path>MainSoundBank.bnk</Path>
+			<Media>
+				<File Id="45852958" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>IMP_Pickup.wav</ShortName>
+					<CachePath>SFX/IMP_Pickup_818F3B66.wem</CachePath>
+				</File>
+				<File Id="103947080" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>AMB_Forest_LP.wav</ShortName>
+					<CachePath>SFX/AMB_Forest_LP_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="173716311" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>AMB_City_LP.wav</ShortName>
+					<CachePath>SFX/AMB_City_LP_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="223782888" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>IMP_Wall.wav</ShortName>
+					<CachePath>SFX/IMP_Wall_818F3B66.wem</CachePath>
+				</File>
+				<File Id="472038755" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MUS_Main_LP.wav</ShortName>
+					<CachePath>SFX/MUS_Main_LP_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="567523311" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>AMB_Interior_LP.wav</ShortName>
+					<CachePath>SFX/AMB_Interior_LP_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="599393677" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>UI_Win.wav</ShortName>
+					<CachePath>SFX/UI_Win_818F3B66.wem</CachePath>
+				</File>
+				<File Id="852571445" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MVT_BallRolling_LP.wav</ShortName>
+					<CachePath>SFX/MVT_BallRolling_LP_818F3B66.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="584628495" Name="Play_AMB_City_LP" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="173716311"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="149137005" Name="Play_AMB_Forest_LP" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="103947080"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="93749488" Name="Play_AMB_Interior_LP" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="567523311"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3369882767" Name="Play_IMP_Pickup" DurationType="OneShot" DurationMin="3" DurationMax="3">
+					<MediaRefs>
+						<MediaRef Id="45852958"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2242885151" Name="Play_IMP_Wall" DurationType="OneShot" DurationMin="2" DurationMax="2">
+					<MediaRefs>
+						<MediaRef Id="223782888"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="4171924292" Name="Play_MUS_Main_LP" DurationType="OneShot" DurationMin="48" DurationMax="48">
+					<MediaRefs>
+						<MediaRef Id="472038755"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="4193143717" Name="Play_MVT_BallRolling_LP" DurationType="OneShot" DurationMin="4.25" DurationMax="4.25">
+					<MediaRefs>
+						<MediaRef Id="852571445"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2823495579" Name="Play_UI_Win" DurationType="OneShot" DurationMin="5" DurationMax="5">
+					<MediaRefs>
+						<MediaRef Id="599393677"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{7048937E-608F-6F32-863B-BF4448899022}">
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+			<Plugins>
+				<AudioDevices>
+					<Plugin Id="2317455096" Name="No_Output" LibName="No Output" LibId="11862023"/>
+					<Plugin Id="3859886410" Name="System" LibName="System" LibId="11403271"/>
+				</AudioDevices>
+			</Plugins>
+			<Busses>
+				<Bus Id="393239870" Name="SFX"/>
+				<Bus Id="1117531639" Name="AMB"/>
+				<Bus Id="3803692087" Name="Master Audio Bus"/>
+			</Busses>
+			<GameParameters>
+				<GameParameter Id="3709966389" Name="RTPC_BallSpeed"/>
+			</GameParameters>
+			<StateGroups>
+				<StateGroup Id="530992273" Name="STA_GameState">
+					<States>
+						<State Id="748895195" Name="None"/>
+						<State Id="1888728998" Name="STA_GameState_Playing"/>
+						<State Id="2087516798" Name="STA_GameState_Win"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
+			<SwitchGroups>
+				<SwitchGroup Id="236169936" Name="SWI_CrateType">
+					<Switches>
+						<Switch Id="1167673431" Name="SWI_CrateType_Rare"/>
+						<Switch Id="2649394644" Name="SWI_CrateType_Common"/>
+						<Switch Id="2693566681" Name="SWI_CrateType_Uncommon"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{510FF26A-F5B3-43F0-5CB7-0EAD3E228C64}</FileHash>
+</SoundBanksInfo>

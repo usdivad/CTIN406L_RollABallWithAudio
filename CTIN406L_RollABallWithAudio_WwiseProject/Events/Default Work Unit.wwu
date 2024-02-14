@@ -1,6 +1,97 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{9F8D5F08-4BE1-4DD9-88B1-A5691CDAB078}" SchemaVersion="119">
 	<Events>
-		<WorkUnit Name="Default Work Unit" ID="{9F8D5F08-4BE1-4DD9-88B1-A5691CDAB078}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{9F8D5F08-4BE1-4DD9-88B1-A5691CDAB078}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Play_AMB_City_LP" ID="{106FF6AD-B8E2-423C-965B-CF0DB95339FC}">
+					<ChildrenList>
+						<Action Name="" ID="{58245E4C-162D-4CB0-9EA9-1B9F077D7ACA}" ShortID="981704375">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="AMB_City_LP" ID="{54BD6CB1-DDA1-483C-B9C4-669DC5E7F0DE}" WorkUnitID="{8B8FB572-AE0C-4A3C-9B99-BB3729166F0F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_AMB_Forest_LP" ID="{85F6745E-AE05-49E6-AC04-BDE4F97BEDC9}">
+					<ChildrenList>
+						<Action Name="" ID="{ECFDFD53-56E9-444A-BF93-557AF2A4340A}" ShortID="247133158">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="AMB_Forest_LP" ID="{C69C3CAA-4FA5-48D4-8C14-A264777459EC}" WorkUnitID="{8B8FB572-AE0C-4A3C-9B99-BB3729166F0F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_AMB_Interior_LP" ID="{281BCDD0-3A9A-447D-9119-C646AFDBA00F}">
+					<ChildrenList>
+						<Action Name="" ID="{D1C46700-683B-44F6-A988-2AEB171CBD1F}" ShortID="504253944">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="AMB_Interior_LP" ID="{7746E3F8-F108-4EDA-A270-1CB7AB72263F}" WorkUnitID="{8B8FB572-AE0C-4A3C-9B99-BB3729166F0F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_IMP_Pickup" ID="{58755869-F4E2-4AF1-9F00-74E0DDFAA0A7}">
+					<ChildrenList>
+						<Action Name="" ID="{23B8F5E2-0816-4168-A123-DFB07EAA1A0C}" ShortID="870747072">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="IMP_Pickup" ID="{3DA5F12B-D63F-4296-AF08-C77FDC81D881}" WorkUnitID="{8B8FB572-AE0C-4A3C-9B99-BB3729166F0F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_IMP_Wall" ID="{537BAECB-3E05-44BE-8399-5B4F7806E052}">
+					<ChildrenList>
+						<Action Name="" ID="{E8FB3797-6B7D-4E3D-8677-16077F79B761}" ShortID="705267690">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="IMP_Wall" ID="{DB7425EE-1E87-4266-B2A5-C1CCE9BAFACD}" WorkUnitID="{8B8FB572-AE0C-4A3C-9B99-BB3729166F0F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_MVT_BallRolling_LP" ID="{AA918BFE-12EE-4055-9E11-ACC3F4731CC4}">
+					<ChildrenList>
+						<Action Name="" ID="{876604C5-78F7-4E98-A08A-B4E1C9674543}" ShortID="857777709">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MVT_BallRolling_LP" ID="{CC5B131F-232E-48EF-885D-95C89480299A}" WorkUnitID="{8B8FB572-AE0C-4A3C-9B99-BB3729166F0F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_UI_Win" ID="{4E3F2B1E-7913-4650-84CF-A320D5FF72AA}">
+					<ChildrenList>
+						<Action Name="" ID="{0A208299-7D53-4863-A998-40F631D77DB3}" ShortID="299428274">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="UI_Win" ID="{8288B9C2-6C46-467F-95C8-0EF505612C06}" WorkUnitID="{8B8FB572-AE0C-4A3C-9B99-BB3729166F0F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_MUS_Main_LP" ID="{66B65DF7-6A9E-499F-8D49-8296FDF580F0}">
+					<ChildrenList>
+						<Action Name="" ID="{4096C1B2-FEDB-45DD-8B64-59CD139954BA}" ShortID="1040105115">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MUS_Main_LP" ID="{8E2E0463-EA67-4A63-B164-D19ADA66E1E7}" WorkUnitID="{749D61E4-F82D-4EEF-B729-5F9971B28A87}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>
