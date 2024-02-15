@@ -71,6 +71,7 @@ namespace AK
     {
         static const AkUniqueID AMB = 1117531639U;
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
+        static const AkUniqueID MUS = 712897226U;
         static const AkUniqueID SFX = 393239870U;
     } // namespace BUSSES
 

@@ -12,6 +12,7 @@
 					<ChildrenList>
 						<Bus Name="AMB" ID="{44DCE63A-FC20-4E7F-AF1F-5E341C8284D4}"/>
 						<Bus Name="SFX" ID="{EA73DD58-4FDE-4F8B-9086-8FF6F2EBF89E}"/>
+						<Bus Name="MUS" ID="{437D3256-4AEC-47B0-91CA-64D0516E1916}"/>
 					</ChildrenList>
 				</Bus>
 			</ChildrenList>

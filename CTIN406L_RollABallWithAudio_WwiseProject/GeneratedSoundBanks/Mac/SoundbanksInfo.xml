@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="534561221" Type="User" Language="SFX" Hash="{7E385B46-FDD5-AF0F-89FC-A431EFA9CFFD}">
+		<SoundBank Id="534561221" Type="User" Language="SFX" Hash="{400CF232-3131-553B-5C4C-57317E59D42D}">
 			<ShortName>MainSoundBank</ShortName>
 			<Path>MainSoundBank.bnk</Path>
 			<Media>
@@ -116,7 +116,7 @@
 				<GameParameter Id="3709966389" Name="RTPC_BallSpeed"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{FCFB2881-757A-5D15-BD94-49C1825A47D7}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{E75D24C8-69F5-BAAA-CF77-4E91C2E0D25C}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -127,6 +127,7 @@
 			</Plugins>
 			<Busses>
 				<Bus Id="393239870" Name="SFX"/>
+				<Bus Id="712897226" Name="MUS"/>
 				<Bus Id="1117531639" Name="AMB"/>
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
@@ -153,5 +154,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{CD5A8959-C922-F11D-E817-2D087477AD8B}</FileHash>
+	<FileHash>{F0B475DE-BB8C-D163-1089-2AD9E8B2BBEE}</FileHash>
 </SoundBanksInfo>
