@@ -4,6 +4,11 @@ Roll-A-Ball, now with sound! For USC course CTIN 406L: Sound Design for Games.
 
 Based on Unity's [Roll-A-Ball tutorial](https://learn.unity.com/project/roll-a-ball), adapting the [completed project files](https://assetstore.unity.com/packages/essentials/tutorial-projects/unity-learn-roll-a-ball-completed-project-files-urp-77198) and adding newly implemented audio.
 
+##  Week 6 Reference: Ambience Cont.
+1. [Download the `week6-ambiences-cont` version of the project](https://github.com/usdivad/CTIN406L_RollABallWithAudio/archive/refs/heads/week6-ambiences-cont.zip) and open Assets/Scenes/Week6_AmbienceCont.unity
+2. These scripts in Assets/Scripts/Audio may be helpful for **Project 1**:
+	- RandomEmitter.cs
+
 ##  Week 5 Reference: Ambience
 1. [Download the `week5-ambiences` version of the project](https://github.com/usdivad/CTIN406L_RollABallWithAudio/archive/refs/heads/week5-ambiences.zip) and open Assets/Scenes/Week5_Ambience.unity
 2. These scripts in Assets/Scripts/Audio may be particularly helpful for **Project 1**:
