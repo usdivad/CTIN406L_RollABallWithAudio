@@ -19,6 +19,9 @@ public class PlayerAudioComponent : MonoBehaviour
     [SerializeField]
     AK.Wwise.RTPC ballSpeedRtpc; // RTPC for the ball speed
 
+    [SerializeField]
+    AK.Wwise.Event footstepAudioEvent; // Audio event for footsteps
+
     // Start is called before the first frame update
     void Start()
     {
@@ -43,5 +46,11 @@ public class PlayerAudioComponent : MonoBehaviour
     public void PlayWinAudio()
     {
         winAudioEvent.Post(this.gameObject);
+    }
+
+    // Handle footsteps
+    public void OnFootstep()
+    {
+        footstepAudioEvent.Post(this.gameObject);
     }
 }
