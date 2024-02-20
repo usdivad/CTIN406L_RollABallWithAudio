@@ -9,16 +9,13 @@ using UnityEngine;
 public class CollisionAudioEmitter : MonoBehaviour
 {
     [SerializeField]
+    AK.Wwise.Event collisionEvent;
+
+    [SerializeField]
+    AK.Wwise.RTPC collisionVelocityScaledRtpc;
+
+    [SerializeField]
     float maxCollisionVelocity = 15f; // Max velocity to use for collisions
-
-    AudioSource audioSource; // Audio source to use for playing SFX
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        // Set the audio source
-        audioSource = GetComponent<AudioSource>();
-    }
 
     // Called when another object collides with this game object
     void OnCollisionEnter(Collision collision)
@@ -31,15 +28,14 @@ public class CollisionAudioEmitter : MonoBehaviour
     // Play audio for collision
     void PlayAudio(float velocity)
     {
-        if (audioSource != null)
-        {
-            // Scale audio source's volume based on collision velocity...
-            audioSource.volume = Mathf.Clamp01(velocity / maxCollisionVelocity);
+        // Scale the volume based on collision velocity...
+        // (we can still do the scaling on the game-engine-side if we'd like)
+        float velocityScaled = Mathf.Clamp01(velocity / maxCollisionVelocity);
+        collisionVelocityScaledRtpc.SetValue(this.gameObject, velocityScaled);
 
-            // ... then play the audio source
-            audioSource.Play();
+        // ... then post the event
+        collisionEvent.Post(this.gameObject);
 
-            Debug.LogFormat("Collision: Velocity={0}, Volume={1}", velocity, audioSource.volume);
-        }
+        Debug.LogFormat("Collision: Velocity={0}, Volume={1}", velocity, velocityScaled);
     }
 }

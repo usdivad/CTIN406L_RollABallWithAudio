@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="534561221" Type="User" Language="SFX" Hash="{DD6594CD-B6BC-D810-A6F4-0B4BC1DE63D3}">
+		<SoundBank Id="534561221" Type="User" Language="SFX" Hash="{F76CE106-1EDD-2289-E465-DC103999445E}">
 			<ShortName>MainSoundBank</ShortName>
 			<Path>MainSoundBank.bnk</Path>
 			<Media>
@@ -122,7 +122,7 @@
 						<MediaRef Id="567523311"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="958544762" Name="Play_FLY_Footstep" DurationType="OneShot" DurationMin="0.49170834" DurationMax="2">
+				<Event Id="958544762" Name="Play_FLY_Footstep" DurationType="OneShot" DurationMin="0.4380623" DurationMax="2.244924">
 					<SwitchContainers>
 						<SwitchContainer>
 							<SwitchValue GroupType="Switch" GroupId="3045844422" Id="841620460" Default="true"/>
@@ -246,5 +246,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{6D510D01-1EC6-FC0E-43D9-877686AD468A}</FileHash>
+	<FileHash>{D0971B98-941B-53D4-6F5B-BE4045721F58}</FileHash>
 </SoundBanksInfo>

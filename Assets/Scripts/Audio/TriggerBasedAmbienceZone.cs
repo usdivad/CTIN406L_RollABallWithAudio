@@ -51,7 +51,7 @@ public class TriggerBasedAmbienceZone : MonoBehaviour
         float volume = Mathf.Lerp(fadeStartVolume, fadeTargetVolume, fadePercentage);
         emitter.volume = volume;
 
-        Debug.LogFormat("TriggerBasedAmbienceZone: Volume={0}", volume);
+        //Debug.LogFormat("TriggerBasedAmbienceZone: Volume={0}", volume);
 
         // Update elapsed time
         fadeTimeElapsed += Time.deltaTime;
