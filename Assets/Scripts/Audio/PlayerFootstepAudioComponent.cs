@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 using UnityEngine;
 
-/** Component that handles player audio **/
+/** Component that handles player footstep audio **/
 
 public class PlayerFootstepAudioComponent : MonoBehaviour
 {
@@ -11,19 +11,19 @@ public class PlayerFootstepAudioComponent : MonoBehaviour
     AK.Wwise.Event footstepAudioEvent; // Audio event for footsteps
 
     [SerializeField]
-    AK.Wwise.Switch footstepMaterialSwitch_Concrete;
+    AK.Wwise.Switch footstepMaterialSwitch_Concrete; // Switcch for concrete
 
     [SerializeField]
-    AK.Wwise.Switch footstepMaterialSwitch_Grass;
+    AK.Wwise.Switch footstepMaterialSwitch_Grass; // Switch for grass
 
-    float footstepRaycastStartPositionOffset = 0.05f;
-    float footstepRaycastDistance = 100f;
+    Vector3 footstepRaycastStartPositionOffset = Vector3.up * 0.05f; // Footstep ray position offset
+    float footstepRaycastDistance = 100f; // How far to cast the footstep ray for
 
-    // Handle footsteps
+    // Handle footsteps (called by animation events)
     public void OnFootstep()
     {
-        // Cast a ray from the player position (with offset) directly downwards
-        Vector3 startPosition = transform.position + (Vector3.up * footstepRaycastStartPositionOffset);
+        // Cast a ray from the player position (with upwards offset) directly downwards
+        Vector3 startPosition = transform.position + footstepRaycastStartPositionOffset;
         RaycastHit[] hits = Physics.RaycastAll(startPosition, Vector3.down, footstepRaycastDistance);
 
         // Iterate through the raycast hits to see if we find any objects that match our surface tags
@@ -33,14 +33,14 @@ public class PlayerFootstepAudioComponent : MonoBehaviour
             Collider hitCollider = hit.collider;
 
             // If we find a valid surface, we set the appropriate Wwise switch and break out of the loop
-            if (hitCollider.CompareTag("Concrete"))
+            if (hitCollider.CompareTag("Concrete")) // Concrete
             {
                 footstepMaterialSwitch_Concrete.SetValue(this.gameObject);
                 Debug.Log("OnFootstep(): Concrete");
 
                 break;
             }
-            else if (hitCollider.CompareTag("Grass"))
+            else if (hitCollider.CompareTag("Grass")) // Grass
             {
                 footstepMaterialSwitch_Grass.SetValue(this.gameObject);
                 Debug.Log("OnFootstep(): Grass");
@@ -51,9 +51,5 @@ public class PlayerFootstepAudioComponent : MonoBehaviour
 
         // Finally, we post the footstep event to actually play a footstep sound
         footstepAudioEvent.Post(this.gameObject);
-
-        // Additional debug logging (commented out)
-        //Debug.LogFormat("OnFootstep(): {0}, {1}", transform.position, hits.Length);
-        //Debug.DrawRay(startPosition, Vector3.down);
     }
 }
