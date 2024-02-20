@@ -71,6 +71,7 @@ namespace AK
     namespace GAME_PARAMETERS
     {
         static const AkUniqueID RTPC_BALLSPEED = 3709966389U;
+        static const AkUniqueID RTPC_COLLISIONVELOCITYNORMALIZED = 1573010119U;
     } // namespace GAME_PARAMETERS
 
     namespace BANKS

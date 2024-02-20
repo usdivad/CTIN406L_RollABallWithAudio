@@ -71,6 +71,11 @@
 							</ActiveSourceList>
 						</Sound>
 						<RandomSequenceContainer Name="AMB_DogBarks" ID="{8FEC3A10-BF9D-436D-8F5F-FD6ACE91A920}" ShortID="548193214">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+								<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="75"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F31277D4-DD00-4059-A6A3-67EE41BC19BA}"/>
@@ -293,6 +298,9 @@
 					</ChildrenList>
 				</ActorMixer>
 				<ActorMixer Name="SFX" ID="{5549D629-E352-488C-9FAD-C7135B5ADBB7}" ShortID="634266837">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F31277D4-DD00-4059-A6A3-67EE41BC19BA}"/>
@@ -303,6 +311,26 @@
 					</ReferenceList>
 					<ChildrenList>
 						<Sound Name="IMP_Pickup" ID="{3DA5F12B-D63F-4296-AF08-C77FDC81D881}" ShortID="369318998">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{8FB2311B-58D2-482B-B898-17DAA1D2CACB}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="100"/>
+													<Property Name="Min" Type="Real64" Value="-100"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-5</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F31277D4-DD00-4059-A6A3-67EE41BC19BA}"/>
@@ -325,6 +353,26 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="IMP_Wall" ID="{DB7425EE-1E87-4266-B2A5-C1CCE9BAFACD}" ShortID="511416907">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{A5FF5F76-DAB7-4298-AF64-36F1388E43F5}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="100"/>
+													<Property Name="Min" Type="Real64" Value="-100"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-3</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F31277D4-DD00-4059-A6A3-67EE41BC19BA}"/>
@@ -342,6 +390,45 @@
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{625E5B82-770D-4A23-8760-DB726DCBA805}" ShortID="281088805">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="Volume"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="RTPC_CollisionVelocityNormalized" ID="{231FEC6B-681E-4B11-9DE8-972D24C7D67F}" WorkUnitID="{D6D3403D-3D26-45E3-8F8E-D39F34A69414}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{724509FB-C4BE-4B64-B680-54A49C219A09}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
 							<ActiveSourceList>
 								<ActiveSource Name="IMP_Wall" ID="{C67F2DE1-2C4C-4C5B-9677-87B7F272F8E3}" Platform="Linked"/>
 							</ActiveSourceList>
@@ -390,7 +477,13 @@
 																		<XPos>0</XPos>
 																		<YPos>-200</YPos>
 																		<Flags>5</Flags>
-																		<SegmentShape>Exp1</SegmentShape>
+																		<SegmentShape>Log1</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>5</XPos>
+																		<YPos>-2</YPos>
+																		<Flags>0</Flags>
+																		<SegmentShape>Log1</SegmentShape>
 																	</Point>
 																	<Point>
 																		<XPos>10</XPos>
@@ -466,12 +559,12 @@
 																<PointList>
 																	<Point>
 																		<XPos>0</XPos>
-																		<YPos>-300</YPos>
+																		<YPos>-780</YPos>
 																		<Flags>5</Flags>
 																	</Point>
 																	<Point>
 																		<XPos>10</XPos>
-																		<YPos>300</YPos>
+																		<YPos>868</YPos>
 																		<Flags>37</Flags>
 																	</Point>
 																</PointList>
@@ -486,28 +579,6 @@
 							</ObjectLists>
 							<ActiveSourceList>
 								<ActiveSource Name="MVT_BallRolling_LP" ID="{DCB275F2-3901-472D-B786-098169F33D54}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="UI_Win" ID="{8288B9C2-6C46-467F-95C8-0EF505612C06}" ShortID="320604929">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F31277D4-DD00-4059-A6A3-67EE41BC19BA}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC1FDB7B-AB4A-403B-9ED1-5C49551A2787}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="UI_Win" ID="{E29C8E83-7574-4CF8-961B-ACC1B9A56D59}">
-									<Language>SFX</Language>
-									<AudioFile>UI_Win.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="599393677"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="UI_Win" ID="{E29C8E83-7574-4CF8-961B-ACC1B9A56D59}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>
@@ -833,6 +904,43 @@
 								</GroupingList>
 							</GroupingInfo>
 						</SwitchContainer>
+					</ChildrenList>
+				</ActorMixer>
+				<ActorMixer Name="UI" ID="{2C3909B8-9531-48B5-BE09-065E2F350C9D}" ShortID="988363422">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F31277D4-DD00-4059-A6A3-67EE41BC19BA}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC1FDB7B-AB4A-403B-9ED1-5C49551A2787}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="UI_Win" ID="{8288B9C2-6C46-467F-95C8-0EF505612C06}" ShortID="320604929">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F31277D4-DD00-4059-A6A3-67EE41BC19BA}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="SFX" ID="{EA73DD58-4FDE-4F8B-9086-8FF6F2EBF89E}" WorkUnitID="{DC1FDB7B-AB4A-403B-9ED1-5C49551A2787}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="UI_Win" ID="{E29C8E83-7574-4CF8-961B-ACC1B9A56D59}">
+									<Language>SFX</Language>
+									<AudioFile>UI_Win.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="599393677"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="UI_Win" ID="{E29C8E83-7574-4CF8-961B-ACC1B9A56D59}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</ActorMixer>
 			</ChildrenList>

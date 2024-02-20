@@ -18,6 +18,7 @@ Switch	ID	Name	Switch Group			Notes
 	4248645337	Grass	SWI_FootstepMaterial			
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
+	1573010119	RTPC_CollisionVelocityNormalized			\Default Work Unit\RTPC_CollisionVelocityNormalized	
 	3709966389	RTPC_BallSpeed			\Default Work Unit\RTPC_BallSpeed	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
@@ -37,7 +38,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	529320610	AMB_DogBark_04	C:\Users\david\Documents\projects\CTIN406L\projects\CTIN406L_RollABallWithAudio\CTIN406L_RollABallWithAudio_WwiseProject\.cache\Windows\SFX\AMB_DogBark_04_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\AMB\AMB_DogBarks\AMB_DogBark_04		1536096
 	557880412	FLY_Footstep_Grass_01	C:\Users\david\Documents\projects\CTIN406L\projects\CTIN406L_RollABallWithAudio\CTIN406L_RollABallWithAudio_WwiseProject\.cache\Windows\SFX\FLY_Footstep_Grass_01_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\FLY\FLY_Footstep\FLY_Footstep_Grass\FLY_Footstep_Grass_01		47300
 	567523311	AMB_Interior_LP	C:\Users\david\Documents\projects\CTIN406L\projects\CTIN406L_RollABallWithAudio\CTIN406L_RollABallWithAudio_WwiseProject\.cache\Windows\SFX\AMB_Interior_LP_FBC78EF0.wem		\Actor-Mixer Hierarchy\Default Work Unit\AMB\AMB_Interior_LP		4992096
-	599393677	UI_Win	C:\Users\david\Documents\projects\CTIN406L\projects\CTIN406L_RollABallWithAudio\CTIN406L_RollABallWithAudio_WwiseProject\.cache\Windows\SFX\UI_Win_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\UI_Win		480096
+	599393677	UI_Win	C:\Users\david\Documents\projects\CTIN406L\projects\CTIN406L_RollABallWithAudio\CTIN406L_RollABallWithAudio_WwiseProject\.cache\Windows\SFX\UI_Win_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\UI_Win		480096
 	766349313	FLY_Footstep_Concrete_03	C:\Users\david\Documents\projects\CTIN406L\projects\CTIN406L_RollABallWithAudio\CTIN406L_RollABallWithAudio_WwiseProject\.cache\Windows\SFX\FLY_Footstep_Concrete_03_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\FLY\FLY_Footstep\FLY_Footstep_Concrete\FLY_Footstep_Concrete_03		384096
 	852571445	MVT_BallRolling_LP	C:\Users\david\Documents\projects\CTIN406L\projects\CTIN406L_RollABallWithAudio\CTIN406L_RollABallWithAudio_WwiseProject\.cache\Windows\SFX\MVT_BallRolling_LP_FBC78EF0.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\MVT_BallRolling_LP		408096
 	901060277	AMB_DogBark_01	C:\Users\david\Documents\projects\CTIN406L\projects\CTIN406L_RollABallWithAudio\CTIN406L_RollABallWithAudio_WwiseProject\.cache\Windows\SFX\AMB_DogBark_01_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\AMB\AMB_DogBarks\AMB_DogBark_01		1536096

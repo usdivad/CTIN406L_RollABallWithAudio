@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="534561221" Type="User" Language="SFX" Hash="{F76CE106-1EDD-2289-E465-DC103999445E}">
+		<SoundBank Id="534561221" Type="User" Language="SFX" Hash="{6EFA92AD-2DAE-AE45-0B25-5EC8477316A4}">
 			<ShortName>MainSoundBank</ShortName>
 			<Path>MainSoundBank.bnk</Path>
 			<Media>
@@ -164,12 +164,12 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
-				<Event Id="3369882767" Name="Play_IMP_Pickup" DurationType="OneShot" DurationMin="3" DurationMax="3">
+				<Event Id="3369882767" Name="Play_IMP_Pickup" DurationType="OneShot" DurationMin="2.8316226" DurationMax="3.1783895">
 					<MediaRefs>
 						<MediaRef Id="45852958"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="2242885151" Name="Play_IMP_Wall" DurationType="OneShot" DurationMin="2" DurationMax="2">
+				<Event Id="2242885151" Name="Play_IMP_Wall" DurationType="OneShot" DurationMin="1.8877485" DurationMax="2.1189263">
 					<MediaRefs>
 						<MediaRef Id="223782888"/>
 					</MediaRefs>
@@ -191,6 +191,7 @@
 				</Event>
 			</Events>
 			<GameParameters>
+				<GameParameter Id="1573010119" Name="RTPC_CollisionVelocityNormalized"/>
 				<GameParameter Id="3709966389" Name="RTPC_BallSpeed"/>
 			</GameParameters>
 			<SwitchGroups>
@@ -202,7 +203,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{E75D24C8-69F5-BAAA-CF77-4E91C2E0D25C}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{D4930D4F-DD49-1D79-B755-281D7F1A9A97}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -218,6 +219,7 @@
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
 			<GameParameters>
+				<GameParameter Id="1573010119" Name="RTPC_CollisionVelocityNormalized"/>
 				<GameParameter Id="3709966389" Name="RTPC_BallSpeed"/>
 			</GameParameters>
 			<StateGroups>
@@ -246,5 +248,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{52032BB3-C63C-496E-8B17-0B908F94EEE1}</FileHash>
+	<FileHash>{BCDB5FFC-08AC-1E02-C03F-0A8C6A3EB23C}</FileHash>
 </SoundBanksInfo>
