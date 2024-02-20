@@ -10,6 +10,12 @@
 						<Switch Name="SWI_CrateType_Uncommon" ID="{9AACB9D3-B6D0-427A-973F-A392514E01D3}"/>
 					</ChildrenList>
 				</SwitchGroup>
+				<SwitchGroup Name="SWI_FootstepMaterial" ID="{847EB802-FA58-4464-ADE6-B044AEE9C224}">
+					<ChildrenList>
+						<Switch Name="Concrete" ID="{EE906A0B-AB02-45EB-A0FF-C3346048BF7F}"/>
+						<Switch Name="Grass" ID="{75B7E011-9690-4D77-A25A-0A3AD4F46EDC}"/>
+					</ChildrenList>
+				</SwitchGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</Switches>

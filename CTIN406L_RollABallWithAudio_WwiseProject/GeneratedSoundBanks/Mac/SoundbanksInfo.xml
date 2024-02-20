@@ -9,10 +9,14 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="534561221" Type="User" Language="SFX" Hash="{400CF232-3131-553B-5C4C-57317E59D42D}">
+		<SoundBank Id="534561221" Type="User" Language="SFX" Hash="{DD6594CD-B6BC-D810-A6F4-0B4BC1DE63D3}">
 			<ShortName>MainSoundBank</ShortName>
 			<Path>MainSoundBank.bnk</Path>
 			<Media>
+				<File Id="1293407" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>FLY_Footstep_Grass_04.wav</ShortName>
+					<CachePath>SFX/FLY_Footstep_Grass_04_818F3B66.wem</CachePath>
+				</File>
 				<File Id="14961769" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>AMB_DogBark_03.wav</ShortName>
 					<CachePath>SFX/AMB_DogBark_03_818F3B66.wem</CachePath>
@@ -25,13 +29,29 @@
 					<ShortName>AMB_Forest_LP.wav</ShortName>
 					<CachePath>SFX/AMB_Forest_LP_FBC78EF0.wem</CachePath>
 				</File>
+				<File Id="115148276" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>FLY_Footstep_Grass_03.wav</ShortName>
+					<CachePath>SFX/FLY_Footstep_Grass_03_818F3B66.wem</CachePath>
+				</File>
 				<File Id="173716311" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>AMB_City_LP.wav</ShortName>
 					<CachePath>SFX/AMB_City_LP_FBC78EF0.wem</CachePath>
 				</File>
+				<File Id="215105259" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>FLY_Footstep_Concrete_02.wav</ShortName>
+					<CachePath>SFX/FLY_Footstep_Concrete_02_818F3B66.wem</CachePath>
+				</File>
 				<File Id="223782888" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>IMP_Wall.wav</ShortName>
 					<CachePath>SFX/IMP_Wall_818F3B66.wem</CachePath>
+				</File>
+				<File Id="361768503" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>FLY_Footstep_Concrete_01.wav</ShortName>
+					<CachePath>SFX/FLY_Footstep_Concrete_01_818F3B66.wem</CachePath>
+				</File>
+				<File Id="376193323" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>FLY_Footstep_Concrete_04.wav</ShortName>
+					<CachePath>SFX/FLY_Footstep_Concrete_04_818F3B66.wem</CachePath>
 				</File>
 				<File Id="472038755" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MUS_Main_LP.wav</ShortName>
@@ -41,9 +61,17 @@
 					<ShortName>AMB_DogBark_02.wav</ShortName>
 					<CachePath>SFX/AMB_DogBark_02_818F3B66.wem</CachePath>
 				</File>
+				<File Id="505432651" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>FLY_Footstep_Grass_02.wav</ShortName>
+					<CachePath>SFX/FLY_Footstep_Grass_02_818F3B66.wem</CachePath>
+				</File>
 				<File Id="529320610" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>AMB_DogBark_04.wav</ShortName>
 					<CachePath>SFX/AMB_DogBark_04_818F3B66.wem</CachePath>
+				</File>
+				<File Id="557880412" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>FLY_Footstep_Grass_01.wav</ShortName>
+					<CachePath>SFX/FLY_Footstep_Grass_01_818F3B66.wem</CachePath>
 				</File>
 				<File Id="567523311" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>AMB_Interior_LP.wav</ShortName>
@@ -53,6 +81,10 @@
 					<ShortName>UI_Win.wav</ShortName>
 					<CachePath>SFX/UI_Win_818F3B66.wem</CachePath>
 				</File>
+				<File Id="766349313" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>FLY_Footstep_Concrete_03.wav</ShortName>
+					<CachePath>SFX/FLY_Footstep_Concrete_03_818F3B66.wem</CachePath>
+				</File>
 				<File Id="852571445" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MVT_BallRolling_LP.wav</ShortName>
 					<CachePath>SFX/MVT_BallRolling_LP_FBC78EF0.wem</CachePath>
@@ -60,6 +92,10 @@
 				<File Id="901060277" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>AMB_DogBark_01.wav</ShortName>
 					<CachePath>SFX/AMB_DogBark_01_818F3B66.wem</CachePath>
+				</File>
+				<File Id="1039002410" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>FLY_Footstep_Concrete_05.wav</ShortName>
+					<CachePath>SFX/FLY_Footstep_Concrete_05_818F3B66.wem</CachePath>
 				</File>
 			</Media>
 			<Events>
@@ -85,6 +121,48 @@
 					<MediaRefs>
 						<MediaRef Id="567523311"/>
 					</MediaRefs>
+				</Event>
+				<Event Id="958544762" Name="Play_FLY_Footstep" DurationType="OneShot" DurationMin="0.49170834" DurationMax="2">
+					<SwitchContainers>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="3045844422" Id="841620460" Default="true"/>
+							<MediaRefs>
+								<MediaRef Id="215105259"/>
+								<MediaRef Id="361768503"/>
+								<MediaRef Id="376193323"/>
+								<MediaRef Id="766349313"/>
+								<MediaRef Id="1039002410"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="3045844422" Id="4248645337"/>
+							<MediaRefs>
+								<MediaRef Id="1293407"/>
+								<MediaRef Id="115148276"/>
+								<MediaRef Id="505432651"/>
+								<MediaRef Id="557880412"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="3045844422" Id="841620460" Default="true"/>
+							<MediaRefs>
+								<MediaRef Id="215105259"/>
+								<MediaRef Id="361768503"/>
+								<MediaRef Id="376193323"/>
+								<MediaRef Id="766349313"/>
+								<MediaRef Id="1039002410"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="3045844422" Id="4248645337"/>
+							<MediaRefs>
+								<MediaRef Id="1293407"/>
+								<MediaRef Id="115148276"/>
+								<MediaRef Id="505432651"/>
+								<MediaRef Id="557880412"/>
+							</MediaRefs>
+						</SwitchContainer>
+					</SwitchContainers>
 				</Event>
 				<Event Id="3369882767" Name="Play_IMP_Pickup" DurationType="OneShot" DurationMin="3" DurationMax="3">
 					<MediaRefs>
@@ -115,6 +193,14 @@
 			<GameParameters>
 				<GameParameter Id="3709966389" Name="RTPC_BallSpeed"/>
 			</GameParameters>
+			<SwitchGroups>
+				<SwitchGroup Id="3045844422" Name="SWI_FootstepMaterial">
+					<Switches>
+						<Switch Id="841620460" Name="Concrete"/>
+						<Switch Id="4248645337" Name="Grass"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
 		</SoundBank>
 		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{E75D24C8-69F5-BAAA-CF77-4E91C2E0D25C}">
 			<ShortName>Init</ShortName>
@@ -151,8 +237,14 @@
 						<Switch Id="2693566681" Name="SWI_CrateType_Uncommon"/>
 					</Switches>
 				</SwitchGroup>
+				<SwitchGroup Id="3045844422" Name="SWI_FootstepMaterial">
+					<Switches>
+						<Switch Id="841620460" Name="Concrete"/>
+						<Switch Id="4248645337" Name="Grass"/>
+					</Switches>
+				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{F0B475DE-BB8C-D163-1089-2AD9E8B2BBEE}</FileHash>
+	<FileHash>{E92CA1CC-8A10-37A4-158B-175785DBC832}</FileHash>
 </SoundBanksInfo>

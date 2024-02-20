@@ -17,6 +17,7 @@ namespace AK
         static const AkUniqueID PLAY_AMB_DOGBARKS = 791217870U;
         static const AkUniqueID PLAY_AMB_FOREST_LP = 149137005U;
         static const AkUniqueID PLAY_AMB_INTERIOR_LP = 93749488U;
+        static const AkUniqueID PLAY_FLY_FOOTSTEP = 958544762U;
         static const AkUniqueID PLAY_IMP_PICKUP = 3369882767U;
         static const AkUniqueID PLAY_IMP_WALL = 2242885151U;
         static const AkUniqueID PLAY_MUS_MAIN = 4165304245U;
@@ -53,6 +54,17 @@ namespace AK
                 static const AkUniqueID SWI_CRATETYPE_UNCOMMON = 2693566681U;
             } // namespace SWITCH
         } // namespace SWI_CRATETYPE
+
+        namespace SWI_FOOTSTEPMATERIAL
+        {
+            static const AkUniqueID GROUP = 3045844422U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID CONCRETE = 841620460U;
+                static const AkUniqueID GRASS = 4248645337U;
+            } // namespace SWITCH
+        } // namespace SWI_FOOTSTEPMATERIAL
 
     } // namespace SWITCHES
 
