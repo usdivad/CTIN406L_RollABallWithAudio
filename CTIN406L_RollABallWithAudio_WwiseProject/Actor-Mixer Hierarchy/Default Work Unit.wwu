@@ -16,6 +16,7 @@
 						<Sound Name="AMB_City_LP" ID="{54BD6CB1-DDA1-483C-B9C4-669DC5E7F0DE}" ShortID="724843242">
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+								<Property Name="EnableAttenuation" Type="bool" Value="False"/>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 								<Property Name="OverridePositioning" Type="bool" Value="True"/>
 								<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
@@ -66,13 +67,54 @@
 																		<SegmentShape>Log2</SegmentShape>
 																	</Point>
 																	<Point>
-																		<XPos>10</XPos>
+																		<XPos>6</XPos>
 																		<YPos>60</YPos>
 																		<Flags>0</Flags>
 																	</Point>
 																	<Point>
 																		<XPos>100</XPos>
 																		<YPos>60</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{5F5CAE9E-DA1F-4C48-8D5D-01CB6C870D71}" ShortID="384695426">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="Volume"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="RTPC_PlayerDistance" ID="{24A6C1A6-0C64-427E-8BF4-2A8EA5BCDB1E}" WorkUnitID="{D6D3403D-3D26-45E3-8F8E-D39F34A69414}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{A51C9DC8-0512-4A2E-A2CC-7C6A1B0F45FA}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																		<SegmentShape>Exp2</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>6</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>100</XPos>
+																		<YPos>-200</YPos>
 																		<Flags>37</Flags>
 																	</Point>
 																</PointList>
@@ -327,6 +369,7 @@
 						<Sound Name="AMB_Forest_LP" ID="{49744F21-2A39-4D23-BEC6-3C59CFEE219C}" ShortID="420259126">
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+								<Property Name="EnableAttenuation" Type="bool" Value="False"/>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 								<Property Name="OverridePositioning" Type="bool" Value="True"/>
 								<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
@@ -355,7 +398,48 @@
 								<ObjectList Name="RTPC">
 									<Reference>
 										<Local>
-											<RTPC Name="" ID="{686421CD-4899-4CC3-965F-EB04191ABC47}" ShortID="884356519">
+											<RTPC Name="" ID="{4D8FB0F8-584F-464E-B90C-5124737B35E0}" ShortID="1056139942">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="Volume"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="RTPC_PlayerDistance" ID="{24A6C1A6-0C64-427E-8BF4-2A8EA5BCDB1E}" WorkUnitID="{D6D3403D-3D26-45E3-8F8E-D39F34A69414}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{7BCA64A4-B318-4C34-9DC5-5767CA49A3F3}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																		<SegmentShape>Exp2</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>6</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>100</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{53BBE791-9368-48B5-8588-AC1CF2DE8360}" ShortID="326448589">
 												<PropertyList>
 													<Property Name="PropertyName" Type="string" Value="SpeakerPanning3DSpatializationMix"/>
 												</PropertyList>
@@ -365,7 +449,7 @@
 													</Reference>
 													<Reference Name="Curve">
 														<Custom>
-															<Curve Name="" ID="{86644413-AD0E-48B9-84D6-0F1324ED4D24}">
+															<Curve Name="" ID="{BEA1AABA-0E79-4EDD-95C8-18730DFC6158}">
 																<PropertyList>
 																	<Property Name="Flags" Type="int32" Value="65537"/>
 																</PropertyList>
@@ -377,7 +461,7 @@
 																		<SegmentShape>Log2</SegmentShape>
 																	</Point>
 																	<Point>
-																		<XPos>10</XPos>
+																		<XPos>6</XPos>
 																		<YPos>60</YPos>
 																		<Flags>0</Flags>
 																	</Point>

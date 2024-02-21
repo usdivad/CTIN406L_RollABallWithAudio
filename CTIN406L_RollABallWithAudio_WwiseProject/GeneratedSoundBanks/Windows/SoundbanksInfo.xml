@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="534561221" Type="User" Language="SFX" Hash="{3289AA72-A2EB-1BFF-B38F-C3834E84523A}">
+		<SoundBank Id="534561221" Type="User" Language="SFX" Hash="{5D9F8E3F-AC2E-8C5E-72F8-818719063D7E}">
 			<ShortName>MainSoundBank</ShortName>
 			<Path>MainSoundBank.bnk</Path>
 			<Media>
@@ -99,7 +99,7 @@
 				</File>
 			</Media>
 			<Events>
-				<Event Id="584628495" Name="Play_AMB_City_LP" MaxAttenuation="100" DurationType="Infinite">
+				<Event Id="584628495" Name="Play_AMB_City_LP" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="173716311"/>
 					</MediaRefs>
@@ -118,7 +118,7 @@
 						<MediaRef Id="901060277"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="149137005" Name="Play_AMB_Forest_LP" MaxAttenuation="100" DurationType="Infinite">
+				<Event Id="149137005" Name="Play_AMB_Forest_LP" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="103947080"/>
 					</MediaRefs>
@@ -226,7 +226,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{2903477B-9895-F3ED-9B6B-52841A3F7683}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{45D26294-853C-3367-F627-0D1EE2FBF1DD}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -272,5 +272,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{19C0B6CB-6978-6D65-AA15-3C1B5D8A8978}</FileHash>
+	<FileHash>{35B51591-56A3-4518-FA74-C6E94CC84DF0}</FileHash>
 </SoundBanksInfo>

@@ -12,6 +12,10 @@ public class DistanceBasedAmbienceZone : MonoBehaviour
     [SerializeField]
     AK.Wwise.Event audioEvent;
 
+    // Player distance RTPC
+    [SerializeField]
+    AK.Wwise.RTPC playerDistanceRtpc;
+
     // Audio emitter
     [SerializeField]
     GameObject emitter;
@@ -40,5 +44,9 @@ public class DistanceBasedAmbienceZone : MonoBehaviour
         Vector3 playerPosition = player.transform.position;
         Vector3 closestPointToPlayer = zoneCollider.ClosestPoint(playerPosition);
         emitter.transform.position = closestPointToPlayer;
+
+        // Set emitter volume (via RTPC) based on distance to player
+        float distanceToPlayer = Vector3.Distance(playerPosition, closestPointToPlayer);
+        playerDistanceRtpc.SetValue(emitter, distanceToPlayer);
     }
 }
