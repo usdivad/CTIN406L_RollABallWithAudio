@@ -13,6 +13,27 @@
 						<Bus Name="AMB" ID="{44DCE63A-FC20-4E7F-AF1F-5E341C8284D4}"/>
 						<Bus Name="SFX" ID="{EA73DD58-4FDE-4F8B-9086-8FF6F2EBF89E}"/>
 						<Bus Name="MUS" ID="{437D3256-4AEC-47B0-91CA-64D0516E1916}"/>
+						<Bus Name="RVB" ID="{AE32020D-01F5-4EF2-ABEB-20A40CE517B6}">
+							<ChildrenList>
+								<AuxBus Name="RVB_LargeHall" ID="{C563E3A1-97C7-424A-BE11-9F1A7E9EC5DE}">
+									<ObjectLists>
+										<ObjectList Name="Effects">
+											<Reference>
+												<Local>
+													<EffectSlot Name="" ID="{7694622C-EA05-4576-AB3B-8DFE5BD55A70}" ShortID="287212655">
+														<ReferenceList>
+															<Reference Name="Effect" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+																<ObjectRef Name="Hall_Large" ID="{6D154498-FF6D-4823-96FC-56841B70E079}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+															</Reference>
+														</ReferenceList>
+													</EffectSlot>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</AuxBus>
+							</ChildrenList>
+						</Bus>
 					</ChildrenList>
 				</Bus>
 			</ChildrenList>

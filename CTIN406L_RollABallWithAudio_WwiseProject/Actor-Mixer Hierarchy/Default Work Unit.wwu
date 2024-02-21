@@ -4,6 +4,9 @@
 		<WorkUnit Name="Default Work Unit" ID="{8B8FB572-AE0C-4A3C-9B99-BB3729166F0F}" PersistMode="Standalone">
 			<ChildrenList>
 				<ActorMixer Name="AMB" ID="{942FE9C5-12D0-414E-A94A-52D1AAB14B9A}" ShortID="694250123">
+					<PropertyList>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F31277D4-DD00-4059-A6A3-67EE41BC19BA}"/>
@@ -599,6 +602,12 @@
 				<ActorMixer Name="SFX" ID="{5549D629-E352-488C-9FAD-C7135B5ADBB7}" ShortID="634266837">
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="GameAuxSendVolume" Type="Real64">
+							<ValueList>
+								<Value>6</Value>
+							</ValueList>
+						</Property>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">

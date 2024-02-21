@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="534561221" Type="User" Language="SFX" Hash="{E0663527-41FC-2208-6882-E5DCA3A2C071}">
+		<SoundBank Id="534561221" Type="User" Language="SFX" Hash="{9542AD26-08C7-D632-BDAB-CAA77ACCDD1E}">
 			<ShortName>MainSoundBank</ShortName>
 			<Path>MainSoundBank.bnk</Path>
 			<Media>
@@ -98,6 +98,11 @@
 					<CachePath>SFX/FLY_Footstep_Concrete_05_818F3B66.wem</CachePath>
 				</File>
 			</Media>
+			<Plugins>
+				<ShareSets>
+					<Plugin Id="2513915904" Name="Hall_Large" LibName="Wwise RoomVerb" LibId="7733251"/>
+				</ShareSets>
+			</Plugins>
 			<Events>
 				<Event Id="584628495" Name="Play_AMB_City_LP" DurationType="Infinite">
 					<MediaRefs>
@@ -208,10 +213,20 @@
 			</Events>
 			<Busses>
 				<Bus Id="393239870" Name="SFX"/>
+				<Bus Id="695384145" Name="RVB"/>
 				<Bus Id="712897226" Name="MUS"/>
 				<Bus Id="1117531639" Name="AMB"/>
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
+			<AuxBusses>
+				<AuxBus Id="1985046648" Name="RVB_LargeHall">
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="2513915904"/>
+						</ShareSets>
+					</PluginRefs>
+				</AuxBus>
+			</AuxBusses>
 			<GameParameters>
 				<GameParameter Id="1573010119" Name="RTPC_CollisionVelocityNormalized"/>
 				<GameParameter Id="3045223865" Name="RTPC_PlayerDistance"/>
@@ -226,10 +241,13 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{1612D977-0E99-17BB-FD0D-A8060567702A}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{FA658CF7-5A82-5DE0-5104-0101CF995632}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
+				<ShareSets>
+					<Plugin Id="2513915904" Name="Hall_Large" LibName="Wwise RoomVerb" LibId="7733251"/>
+				</ShareSets>
 				<AudioDevices>
 					<Plugin Id="2317455096" Name="No_Output" LibName="No Output" LibId="11862023"/>
 					<Plugin Id="3859886410" Name="System" LibName="System" LibId="11403271"/>
@@ -237,10 +255,20 @@
 			</Plugins>
 			<Busses>
 				<Bus Id="393239870" Name="SFX"/>
+				<Bus Id="695384145" Name="RVB"/>
 				<Bus Id="712897226" Name="MUS"/>
 				<Bus Id="1117531639" Name="AMB"/>
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
+			<AuxBusses>
+				<AuxBus Id="1985046648" Name="RVB_LargeHall">
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="2513915904"/>
+						</ShareSets>
+					</PluginRefs>
+				</AuxBus>
+			</AuxBusses>
 			<GameParameters>
 				<GameParameter Id="1573010119" Name="RTPC_CollisionVelocityNormalized"/>
 				<GameParameter Id="3045223865" Name="RTPC_PlayerDistance"/>
@@ -272,5 +300,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{2BDCF6E7-1CA2-96A2-66F3-BF9B40F4EE9B}</FileHash>
+	<FileHash>{4ACEE52C-CB35-F698-6728-93DFFE5E225E}</FileHash>
 </SoundBanksInfo>
