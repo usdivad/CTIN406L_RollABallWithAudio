@@ -17,9 +17,13 @@
 				<Event Name="Play_AMB_Forest_LP" ID="{85F6745E-AE05-49E6-AC04-BDE4F97BEDC9}">
 					<ChildrenList>
 						<Action Name="" ID="{ECFDFD53-56E9-444A-BF93-557AF2A4340A}" ShortID="247133158">
+							<PropertyList>
+								<Property Name="FadeInCurve" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="AMB_Forest_LP" ID="{C69C3CAA-4FA5-48D4-8C14-A264777459EC}" WorkUnitID="{8B8FB572-AE0C-4A3C-9B99-BB3729166F0F}"/>
+									<ObjectRef Name="AMB_Forest_LP" ID="{49744F21-2A39-4D23-BEC6-3C59CFEE219C}" WorkUnitID="{8B8FB572-AE0C-4A3C-9B99-BB3729166F0F}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -28,6 +32,10 @@
 				<Event Name="Play_AMB_Interior_LP" ID="{281BCDD0-3A9A-447D-9119-C646AFDBA00F}">
 					<ChildrenList>
 						<Action Name="" ID="{D1C46700-683B-44F6-A988-2AEB171CBD1F}" ShortID="504253944">
+							<PropertyList>
+								<Property Name="FadeInCurve" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="AMB_Interior_LP" ID="{7746E3F8-F108-4EDA-A270-1CB7AB72263F}" WorkUnitID="{8B8FB572-AE0C-4A3C-9B99-BB3729166F0F}"/>
@@ -47,12 +55,12 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_IMP_Wall" ID="{537BAECB-3E05-44BE-8399-5B4F7806E052}">
+				<Event Name="Play_IMP_Wall_2D" ID="{537BAECB-3E05-44BE-8399-5B4F7806E052}">
 					<ChildrenList>
 						<Action Name="" ID="{E8FB3797-6B7D-4E3D-8677-16077F79B761}" ShortID="705267690">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="IMP_Wall" ID="{DB7425EE-1E87-4266-B2A5-C1CCE9BAFACD}" WorkUnitID="{8B8FB572-AE0C-4A3C-9B99-BB3729166F0F}"/>
+									<ObjectRef Name="IMP_Wall_2D" ID="{DB7425EE-1E87-4266-B2A5-C1CCE9BAFACD}" WorkUnitID="{8B8FB572-AE0C-4A3C-9B99-BB3729166F0F}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -108,6 +116,48 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="FLY_Footstep" ID="{A08655B3-ACE4-4FEA-81F5-DB7E0E715A31}" WorkUnitID="{8B8FB572-AE0C-4A3C-9B99-BB3729166F0F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_AMB_Interior_LP" ID="{5B93A9B5-B4AF-45DF-9CB8-B8D6D44C449A}">
+					<ChildrenList>
+						<Action Name="" ID="{374FEC06-0ED4-44CC-AAC1-912A1C8A47E1}" ShortID="419165262">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeOutCurve" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="AMB_Interior_LP" ID="{7746E3F8-F108-4EDA-A270-1CB7AB72263F}" WorkUnitID="{8B8FB572-AE0C-4A3C-9B99-BB3729166F0F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_AMB_CityForestBlend" ID="{0E1BAA1E-5F11-4FFF-AD40-9DC8F06F567C}">
+					<ChildrenList>
+						<Action Name="" ID="{ED2ADAB3-C7FC-4890-A775-84813AC243C4}" ShortID="240326846">
+							<PropertyList>
+								<Property Name="FadeInCurve" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="AMB_CityForestBlend" ID="{30391B5F-9720-41B9-9F21-9DFF7E281D6B}" WorkUnitID="{8B8FB572-AE0C-4A3C-9B99-BB3729166F0F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_IMP_Wall_3D" ID="{C693F907-2D28-4C86-823D-C0D9B69C9101}">
+					<ChildrenList>
+						<Action Name="" ID="{8070131E-E364-45F4-8562-7E351F2F529B}" ShortID="158756819">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="IMP_Wall_3D" ID="{D87BCABC-CB4E-4556-9F5A-CC2179CC14EF}" WorkUnitID="{8B8FB572-AE0C-4A3C-9B99-BB3729166F0F}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

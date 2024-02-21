@@ -16,6 +16,12 @@
 						<Property Name="Max" Type="Real64" Value="1"/>
 					</PropertyList>
 				</GameParameter>
+				<GameParameter Name="RTPC_PlayerDistance" ID="{24A6C1A6-0C64-427E-8BF4-2A8EA5BCDB1E}">
+					<PropertyList>
+						<Property Name="BindToBuiltInParam" Type="int16" Value="1"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+					</PropertyList>
+				</GameParameter>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>

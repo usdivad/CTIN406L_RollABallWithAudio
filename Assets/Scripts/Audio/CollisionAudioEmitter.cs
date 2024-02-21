@@ -5,7 +5,6 @@ using UnityEngine;
 
 /** Emitter that plays audio when collided with **/
 
-[RequireComponent(typeof(AudioSource))]
 public class CollisionAudioEmitter : MonoBehaviour
 {
     [SerializeField]

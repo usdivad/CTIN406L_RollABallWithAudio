@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="534561221" Type="User" Language="SFX" Hash="{6EFA92AD-2DAE-AE45-0B25-5EC8477316A4}">
+		<SoundBank Id="534561221" Type="User" Language="SFX" Hash="{3289AA72-A2EB-1BFF-B38F-C3834E84523A}">
 			<ShortName>MainSoundBank</ShortName>
 			<Path>MainSoundBank.bnk</Path>
 			<Media>
@@ -99,8 +99,14 @@
 				</File>
 			</Media>
 			<Events>
-				<Event Id="584628495" Name="Play_AMB_City_LP" DurationType="Infinite">
+				<Event Id="584628495" Name="Play_AMB_City_LP" MaxAttenuation="100" DurationType="Infinite">
 					<MediaRefs>
+						<MediaRef Id="173716311"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2948244008" Name="Play_AMB_CityForestBlend" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="103947080"/>
 						<MediaRef Id="173716311"/>
 					</MediaRefs>
 				</Event>
@@ -112,7 +118,7 @@
 						<MediaRef Id="901060277"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="149137005" Name="Play_AMB_Forest_LP" DurationType="Infinite">
+				<Event Id="149137005" Name="Play_AMB_Forest_LP" MaxAttenuation="100" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="103947080"/>
 					</MediaRefs>
@@ -169,7 +175,12 @@
 						<MediaRef Id="45852958"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="2242885151" Name="Play_IMP_Wall" DurationType="OneShot" DurationMin="1.8877485" DurationMax="2.1189263">
+				<Event Id="1947854728" Name="Play_IMP_Wall_2D" DurationType="OneShot" DurationMin="1.8877485" DurationMax="2.1189263">
+					<MediaRefs>
+						<MediaRef Id="223782888"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1964632347" Name="Play_IMP_Wall_3D" DurationType="OneShot" DurationMin="1.8877485" DurationMax="2.1189263">
 					<MediaRefs>
 						<MediaRef Id="223782888"/>
 					</MediaRefs>
@@ -189,9 +200,21 @@
 						<MediaRef Id="599393677"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="2159561926" Name="Stop_AMB_Interior_LP" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
+					<MediaRefs>
+						<MediaRef Id="567523311"/>
+					</MediaRefs>
+				</Event>
 			</Events>
+			<Busses>
+				<Bus Id="393239870" Name="SFX"/>
+				<Bus Id="712897226" Name="MUS"/>
+				<Bus Id="1117531639" Name="AMB"/>
+				<Bus Id="3803692087" Name="Master Audio Bus"/>
+			</Busses>
 			<GameParameters>
 				<GameParameter Id="1573010119" Name="RTPC_CollisionVelocityNormalized"/>
+				<GameParameter Id="3045223865" Name="RTPC_PlayerDistance"/>
 				<GameParameter Id="3709966389" Name="RTPC_BallSpeed"/>
 			</GameParameters>
 			<SwitchGroups>
@@ -203,7 +226,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{D4930D4F-DD49-1D79-B755-281D7F1A9A97}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{AE1827FE-5BFB-3E9C-EA20-3FA074FDC040}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -220,6 +243,7 @@
 			</Busses>
 			<GameParameters>
 				<GameParameter Id="1573010119" Name="RTPC_CollisionVelocityNormalized"/>
+				<GameParameter Id="3045223865" Name="RTPC_PlayerDistance"/>
 				<GameParameter Id="3709966389" Name="RTPC_BallSpeed"/>
 			</GameParameters>
 			<StateGroups>
@@ -248,5 +272,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{BCDB5FFC-08AC-1E02-C03F-0A8C6A3EB23C}</FileHash>
+	<FileHash>{B2D3615F-8BE7-0F76-B1B9-1CFFFCC0B29A}</FileHash>
 </SoundBanksInfo>

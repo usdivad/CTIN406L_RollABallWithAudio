@@ -14,15 +14,18 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID PLAY_AMB_CITY_LP = 584628495U;
+        static const AkUniqueID PLAY_AMB_CITYFORESTBLEND = 2948244008U;
         static const AkUniqueID PLAY_AMB_DOGBARKS = 791217870U;
         static const AkUniqueID PLAY_AMB_FOREST_LP = 149137005U;
         static const AkUniqueID PLAY_AMB_INTERIOR_LP = 93749488U;
         static const AkUniqueID PLAY_FLY_FOOTSTEP = 958544762U;
         static const AkUniqueID PLAY_IMP_PICKUP = 3369882767U;
-        static const AkUniqueID PLAY_IMP_WALL = 2242885151U;
+        static const AkUniqueID PLAY_IMP_WALL_2D = 1947854728U;
+        static const AkUniqueID PLAY_IMP_WALL_3D = 1964632347U;
         static const AkUniqueID PLAY_MUS_MAIN = 4165304245U;
         static const AkUniqueID PLAY_MVT_BALLROLLING_LP = 4193143717U;
         static const AkUniqueID PLAY_UI_WIN = 2823495579U;
+        static const AkUniqueID STOP_AMB_INTERIOR_LP = 2159561926U;
     } // namespace EVENTS
 
     namespace STATES
@@ -72,6 +75,7 @@ namespace AK
     {
         static const AkUniqueID RTPC_BALLSPEED = 3709966389U;
         static const AkUniqueID RTPC_COLLISIONVELOCITYNORMALIZED = 1573010119U;
+        static const AkUniqueID RTPC_PLAYERDISTANCE = 3045223865U;
     } // namespace GAME_PARAMETERS
 
     namespace BANKS

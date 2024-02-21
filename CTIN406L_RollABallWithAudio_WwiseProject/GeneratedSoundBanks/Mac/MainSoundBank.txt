@@ -4,8 +4,11 @@ Event	ID	Name			Wwise Object Path	Notes
 	584628495	Play_AMB_City_LP			\Default Work Unit\Play_AMB_City_LP	
 	791217870	Play_AMB_DogBarks			\Default Work Unit\Play_AMB_DogBarks	
 	958544762	Play_FLY_Footstep			\Default Work Unit\Play_FLY_Footstep	
-	2242885151	Play_IMP_Wall			\Default Work Unit\Play_IMP_Wall	
+	1947854728	Play_IMP_Wall_2D			\Default Work Unit\Play_IMP_Wall_2D	
+	1964632347	Play_IMP_Wall_3D			\Default Work Unit\Play_IMP_Wall_3D	
+	2159561926	Stop_AMB_Interior_LP			\Default Work Unit\Stop_AMB_Interior_LP	
 	2823495579	Play_UI_Win			\Default Work Unit\Play_UI_Win	
+	2948244008	Play_AMB_CityForestBlend			\Default Work Unit\Play_AMB_CityForestBlend	
 	3369882767	Play_IMP_Pickup			\Default Work Unit\Play_IMP_Pickup	
 	4165304245	Play_MUS_Main			\Default Work Unit\Play_MUS_Main	
 	4193143717	Play_MVT_BallRolling_LP			\Default Work Unit\Play_MVT_BallRolling_LP	
@@ -19,17 +22,24 @@ Switch	ID	Name	Switch Group			Notes
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	1573010119	RTPC_CollisionVelocityNormalized			\Default Work Unit\RTPC_CollisionVelocityNormalized	
+	3045223865	RTPC_PlayerDistance			\Default Work Unit\RTPC_PlayerDistance	
 	3709966389	RTPC_BallSpeed			\Default Work Unit\RTPC_BallSpeed	
+
+Audio Bus	ID	Name			Wwise Object Path	Notes
+	393239870	SFX			\Default Work Unit\Master Audio Bus\SFX	
+	712897226	MUS			\Default Work Unit\Master Audio Bus\MUS	
+	1117531639	AMB			\Default Work Unit\Master Audio Bus\AMB	
+	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	1293407	FLY_Footstep_Grass_04	C:\Users\david\Documents\projects\CTIN406L\projects\CTIN406L_RollABallWithAudio\CTIN406L_RollABallWithAudio_WwiseProject\.cache\Mac\SFX\FLY_Footstep_Grass_04_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\FLY\FLY_Footstep\FLY_Footstep_Grass\FLY_Footstep_Grass_04		47300
 	14961769	AMB_DogBark_03	C:\Users\david\Documents\projects\CTIN406L\projects\CTIN406L_RollABallWithAudio\CTIN406L_RollABallWithAudio_WwiseProject\.cache\Mac\SFX\AMB_DogBark_03_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\AMB\AMB_DogBarks\AMB_DogBark_03		1536096
 	45852958	IMP_Pickup	C:\Users\david\Documents\projects\CTIN406L\projects\CTIN406L_RollABallWithAudio\CTIN406L_RollABallWithAudio_WwiseProject\.cache\Mac\SFX\IMP_Pickup_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\IMP_Pickup		288096
-	103947080	AMB_Forest_LP	C:\Users\david\Documents\projects\CTIN406L\projects\CTIN406L_RollABallWithAudio\CTIN406L_RollABallWithAudio_WwiseProject\.cache\Mac\SFX\AMB_Forest_LP_FBC78EF0.wem		\Actor-Mixer Hierarchy\Default Work Unit\AMB\AMB_Blend\AMB_Forest_LP		4032096
+	103947080	AMB_Forest_LP	C:\Users\david\Documents\projects\CTIN406L\projects\CTIN406L_RollABallWithAudio\CTIN406L_RollABallWithAudio_WwiseProject\.cache\Mac\SFX\AMB_Forest_LP_FBC78EF0.wem		\Actor-Mixer Hierarchy\Default Work Unit\AMB\AMB_CityForestBlend\AMB_Forest_LP		4032096
 	115148276	FLY_Footstep_Grass_03	C:\Users\david\Documents\projects\CTIN406L\projects\CTIN406L_RollABallWithAudio\CTIN406L_RollABallWithAudio_WwiseProject\.cache\Mac\SFX\FLY_Footstep_Grass_03_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\FLY\FLY_Footstep\FLY_Footstep_Grass\FLY_Footstep_Grass_03		47300
 	173716311	AMB_City_LP	C:\Users\david\Documents\projects\CTIN406L\projects\CTIN406L_RollABallWithAudio\CTIN406L_RollABallWithAudio_WwiseProject\.cache\Mac\SFX\AMB_City_LP_FBC78EF0.wem		\Actor-Mixer Hierarchy\Default Work Unit\AMB\AMB_City_LP		3072096
 	215105259	FLY_Footstep_Concrete_02	C:\Users\david\Documents\projects\CTIN406L\projects\CTIN406L_RollABallWithAudio\CTIN406L_RollABallWithAudio_WwiseProject\.cache\Mac\SFX\FLY_Footstep_Concrete_02_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\FLY\FLY_Footstep\FLY_Footstep_Concrete\FLY_Footstep_Concrete_02		384096
-	223782888	IMP_Wall	C:\Users\david\Documents\projects\CTIN406L\projects\CTIN406L_RollABallWithAudio\CTIN406L_RollABallWithAudio_WwiseProject\.cache\Mac\SFX\IMP_Wall_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\IMP_Wall		192096
+	223782888	IMP_Wall_2D	C:\Users\david\Documents\projects\CTIN406L\projects\CTIN406L_RollABallWithAudio\CTIN406L_RollABallWithAudio_WwiseProject\.cache\Mac\SFX\IMP_Wall_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\IMP_Wall_2D		192096
 	361768503	FLY_Footstep_Concrete_01	C:\Users\david\Documents\projects\CTIN406L\projects\CTIN406L_RollABallWithAudio\CTIN406L_RollABallWithAudio_WwiseProject\.cache\Mac\SFX\FLY_Footstep_Concrete_01_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\FLY\FLY_Footstep\FLY_Footstep_Concrete\FLY_Footstep_Concrete_01		384096
 	376193323	FLY_Footstep_Concrete_04	C:\Users\david\Documents\projects\CTIN406L\projects\CTIN406L_RollABallWithAudio\CTIN406L_RollABallWithAudio_WwiseProject\.cache\Mac\SFX\FLY_Footstep_Concrete_04_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\FLY\FLY_Footstep\FLY_Footstep_Concrete\FLY_Footstep_Concrete_04		384096
 	472038755	MUS_Main_LP	C:\Users\david\Documents\projects\CTIN406L\projects\CTIN406L_RollABallWithAudio\CTIN406L_RollABallWithAudio_WwiseProject\.cache\Mac\SFX\MUS_Main_LP_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MUS_Main\MUS_Main_LP\MUS_Main_LP		9216096
