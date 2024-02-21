@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="534561221" Type="User" Language="SFX" Hash="{5D9F8E3F-AC2E-8C5E-72F8-818719063D7E}">
+		<SoundBank Id="534561221" Type="User" Language="SFX" Hash="{E0663527-41FC-2208-6882-E5DCA3A2C071}">
 			<ShortName>MainSoundBank</ShortName>
 			<Path>MainSoundBank.bnk</Path>
 			<Media>
@@ -110,7 +110,7 @@
 						<MediaRef Id="173716311"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="791217870" Name="Play_AMB_DogBarks" DurationType="OneShot" DurationMin="8" DurationMax="8">
+				<Event Id="791217870" Name="Play_AMB_DogBarks" MaxAttenuation="100" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="14961769"/>
 						<MediaRef Id="480614661"/>
@@ -272,5 +272,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{7A7C5067-ED30-D0A8-CC91-8C1D00FAD572}</FileHash>
+	<FileHash>{2BDCF6E7-1CA2-96A2-66F3-BF9B40F4EE9B}</FileHash>
 </SoundBanksInfo>
