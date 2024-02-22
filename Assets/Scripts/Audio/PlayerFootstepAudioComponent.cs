@@ -19,8 +19,8 @@ public class PlayerFootstepAudioComponent : MonoBehaviour
     Vector3 footstepRaycastStartPositionOffset = Vector3.up * 0.05f; // Footstep ray position offset
     float footstepRaycastDistance = 100f; // How far to cast the footstep ray for
 
-    // Handle footsteps (called by animation events)
-    public void OnFootstep()
+    // Play footstep audio (called by animation events)
+    public void PlayFootstepAudio()
     {
         // Cast a ray from the player position (with upwards offset) directly downwards
         Vector3 startPosition = transform.position + footstepRaycastStartPositionOffset;
