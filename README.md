@@ -4,6 +4,17 @@ Roll-A-Ball, now with sound! For USC course CTIN 406L: Sound Design for Games.
 
 Based on Unity's [Roll-A-Ball tutorial](https://learn.unity.com/project/roll-a-ball), adapting the [completed project files](https://assetstore.unity.com/packages/essentials/tutorial-projects/unity-learn-roll-a-ball-completed-project-files-urp-77198) and adding newly implemented audio.
 
+## Week 7 Reference: Dynamically Driven Audio
+1. [Download the `week7-dynamically-driven-audio` version of the project](https://github.com/usdivad/CTIN406L_RollABallWithAudio/archive/refs/heads/week7-dynamically-driven-audio.zip)
+2. The following may be helpful for **Project 2 - Footsteps**:
+	- Unity:
+		- Assets/Scripts/Audio/PlayerFootstepAudioComponent.cs
+		- Assets/Scripts/Audio/TimerBasedFootstepAudioTrigger.cs
+		- Assets/Scenes/Week7_Footsteps_FirstPerson.unity
+		- Assets/Scenes/Week7_Footsteps_ThirdPerson.unity
+	- Wwise (project at CTIN406L_RollABallWithAudio_WwiseProject):
+		- \Actor-Mixer Hierarchy\Default Work Unit\FLY\FLY_Footstep
+
 ## Week 6 Reference: Middleware
 1. [Download the `week6-middleware` version of the project](https://github.com/usdivad/CTIN406L_RollABallWithAudio/archive/refs/heads/week6-middleware.zip)
 2. You may want to look at the following files:
@@ -15,7 +26,7 @@ Based on Unity's [Roll-A-Ball tutorial](https://learn.unity.com/project/roll-a-b
 
 ## Week 6 Reference: Ambience Cont.
 1. [Download the `week6-ambiences-cont` version of the project](https://github.com/usdivad/CTIN406L_RollABallWithAudio/archive/refs/heads/week6-ambiences-cont.zip) and open Assets/Scenes/Week6_AmbienceCont.unity
-2. These scripts in Assets/Scripts/Audio may be helpful for **Project 1**:
+2. These scripts in Assets/Scripts/Audio may be helpful for **Project 1 - Ambience**:
 	- RandomEmitter.cs
 
 ##  Week 5 Reference: Ambience
