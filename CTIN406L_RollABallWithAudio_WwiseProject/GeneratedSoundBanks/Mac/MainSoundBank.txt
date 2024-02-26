@@ -1,5 +1,6 @@
 Event	ID	Name			Wwise Object Path	Notes
 	93749488	Play_AMB_Interior_LP			\Default Work Unit\Play_AMB_Interior_LP	
+	96395413	Play_MUS_BGM_Interactive			\Default Work Unit\Play_MUS_BGM_Interactive	
 	149137005	Play_AMB_Forest_LP			\Default Work Unit\Play_AMB_Forest_LP	
 	584628495	Play_AMB_City_LP			\Default Work Unit\Play_AMB_City_LP	
 	791217870	Play_AMB_DogBarks			\Default Work Unit\Play_AMB_DogBarks	
@@ -20,8 +21,17 @@ Switch	ID	Name	Switch Group			Notes
 	841620460	Concrete	SWI_FootstepMaterial			
 	4248645337	Grass	SWI_FootstepMaterial			
 
+State Group	ID	Name			Wwise Object Path	Notes
+	387365902	STA_MusicSection			\Default Work Unit\STA_MusicSection	
+
+State	ID	Name	State Group			Notes
+	84696445	B	STA_MusicSection			
+	84696446	A	STA_MusicSection			
+	748895195	None	STA_MusicSection			
+
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	1573010119	RTPC_CollisionVelocityNormalized			\Default Work Unit\RTPC_CollisionVelocityNormalized	
+	2653406601	RTPC_PlayerSpeed			\Default Work Unit\RTPC_PlayerSpeed	
 	3045223865	RTPC_PlayerDistance			\Default Work Unit\RTPC_PlayerDistance	
 	3709966389	RTPC_BallSpeed			\Default Work Unit\RTPC_BallSpeed	
 
@@ -41,23 +51,39 @@ Effect plug-ins	ID	Name	Type				Notes
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	1293407	FLY_Footstep_Grass_04	C:\Users\david\Documents\projects\CTIN406L\projects\CTIN406L_RollABallWithAudio\CTIN406L_RollABallWithAudio_WwiseProject\.cache\Mac\SFX\FLY_Footstep_Grass_04_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\FLY\FLY_Footstep\FLY_Footstep_Grass\FLY_Footstep_Grass_04		47300
 	14961769	AMB_DogBark_03	C:\Users\david\Documents\projects\CTIN406L\projects\CTIN406L_RollABallWithAudio\CTIN406L_RollABallWithAudio_WwiseProject\.cache\Mac\SFX\AMB_DogBark_03_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\AMB\AMB_DogBarks\AMB_DogBark_03		1536096
+	15733850	MUS_BGM_B2_Synth	C:\Users\david\Documents\projects\CTIN406L\projects\CTIN406L_RollABallWithAudio\CTIN406L_RollABallWithAudio_WwiseProject\.cache\Mac\SFX\MUS_BGM_B2_Synth_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MUS_BGM_Interactive\MUS_BGM_B\MUS_BGM_B2\MUS_BGM_B2_Synth		2304096
+	41425527	MUS_BGM_B2_DrumsHi	C:\Users\david\Documents\projects\CTIN406L\projects\CTIN406L_RollABallWithAudio\CTIN406L_RollABallWithAudio_WwiseProject\.cache\Mac\SFX\MUS_BGM_B2_DrumsHi_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MUS_BGM_Interactive\MUS_BGM_B\MUS_BGM_B2\MUS_BGM_B2_DrumsHi		2304096
 	45852958	IMP_Pickup	C:\Users\david\Documents\projects\CTIN406L\projects\CTIN406L_RollABallWithAudio\CTIN406L_RollABallWithAudio_WwiseProject\.cache\Mac\SFX\IMP_Pickup_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\IMP_Pickup		288096
+	50857137	MUS_BGM_A2_Piano	C:\Users\david\Documents\projects\CTIN406L\projects\CTIN406L_RollABallWithAudio\CTIN406L_RollABallWithAudio_WwiseProject\.cache\Mac\SFX\MUS_BGM_A2_Piano_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MUS_BGM_Interactive\MUS_BGM_A\MUS_BGM_A2\MUS_BGM_A2_Piano		2304096
+	99241168	MUS_BGM_B1_Piano	C:\Users\david\Documents\projects\CTIN406L\projects\CTIN406L_RollABallWithAudio\CTIN406L_RollABallWithAudio_WwiseProject\.cache\Mac\SFX\MUS_BGM_B1_Piano_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MUS_BGM_Interactive\MUS_BGM_B\MUS_BGM_B1\MUS_BGM_B1_Piano		2304096
 	103947080	AMB_Forest_LP	C:\Users\david\Documents\projects\CTIN406L\projects\CTIN406L_RollABallWithAudio\CTIN406L_RollABallWithAudio_WwiseProject\.cache\Mac\SFX\AMB_Forest_LP_FBC78EF0.wem		\Actor-Mixer Hierarchy\Default Work Unit\AMB\AMB_CityForestBlend\AMB_Forest_LP		4032096
 	115148276	FLY_Footstep_Grass_03	C:\Users\david\Documents\projects\CTIN406L\projects\CTIN406L_RollABallWithAudio\CTIN406L_RollABallWithAudio_WwiseProject\.cache\Mac\SFX\FLY_Footstep_Grass_03_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\FLY\FLY_Footstep\FLY_Footstep_Grass\FLY_Footstep_Grass_03		47300
+	124062832	MUS_BGM_A2_DrumsHi	C:\Users\david\Documents\projects\CTIN406L\projects\CTIN406L_RollABallWithAudio\CTIN406L_RollABallWithAudio_WwiseProject\.cache\Mac\SFX\MUS_BGM_A2_DrumsHi_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MUS_BGM_Interactive\MUS_BGM_A\MUS_BGM_A2\MUS_BGM_A2_DrumsHi		2304096
+	138574565	MUS_BGM_A1_Synth	C:\Users\david\Documents\projects\CTIN406L\projects\CTIN406L_RollABallWithAudio\CTIN406L_RollABallWithAudio_WwiseProject\.cache\Mac\SFX\MUS_BGM_A1_Synth_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MUS_BGM_Interactive\MUS_BGM_A\MUS_BGM_A1\MUS_BGM_A1_Synth		2304096
 	173716311	AMB_City_LP	C:\Users\david\Documents\projects\CTIN406L\projects\CTIN406L_RollABallWithAudio\CTIN406L_RollABallWithAudio_WwiseProject\.cache\Mac\SFX\AMB_City_LP_FBC78EF0.wem		\Actor-Mixer Hierarchy\Default Work Unit\AMB\AMB_City_LP		3072096
 	215105259	FLY_Footstep_Concrete_02	C:\Users\david\Documents\projects\CTIN406L\projects\CTIN406L_RollABallWithAudio\CTIN406L_RollABallWithAudio_WwiseProject\.cache\Mac\SFX\FLY_Footstep_Concrete_02_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\FLY\FLY_Footstep\FLY_Footstep_Concrete\FLY_Footstep_Concrete_02		384096
 	223782888	IMP_Wall_2D	C:\Users\david\Documents\projects\CTIN406L\projects\CTIN406L_RollABallWithAudio\CTIN406L_RollABallWithAudio_WwiseProject\.cache\Mac\SFX\IMP_Wall_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\IMP_Wall_2D		192096
+	284973796	MUS_BGM_B1_DrumsHi	C:\Users\david\Documents\projects\CTIN406L\projects\CTIN406L_RollABallWithAudio\CTIN406L_RollABallWithAudio_WwiseProject\.cache\Mac\SFX\MUS_BGM_B1_DrumsHi_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MUS_BGM_Interactive\MUS_BGM_B\MUS_BGM_B1\MUS_BGM_B1_DrumsHi		2304096
 	361768503	FLY_Footstep_Concrete_01	C:\Users\david\Documents\projects\CTIN406L\projects\CTIN406L_RollABallWithAudio\CTIN406L_RollABallWithAudio_WwiseProject\.cache\Mac\SFX\FLY_Footstep_Concrete_01_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\FLY\FLY_Footstep\FLY_Footstep_Concrete\FLY_Footstep_Concrete_01		384096
 	376193323	FLY_Footstep_Concrete_04	C:\Users\david\Documents\projects\CTIN406L\projects\CTIN406L_RollABallWithAudio\CTIN406L_RollABallWithAudio_WwiseProject\.cache\Mac\SFX\FLY_Footstep_Concrete_04_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\FLY\FLY_Footstep\FLY_Footstep_Concrete\FLY_Footstep_Concrete_04		384096
-	472038755	MUS_Main_LP	C:\Users\david\Documents\projects\CTIN406L\projects\CTIN406L_RollABallWithAudio\CTIN406L_RollABallWithAudio_WwiseProject\.cache\Mac\SFX\MUS_Main_LP_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MUS_Main\MUS_Main_LP\MUS_Main_LP		9216096
+	414495426	MUS_BGM_B1_Synth	C:\Users\david\Documents\projects\CTIN406L\projects\CTIN406L_RollABallWithAudio\CTIN406L_RollABallWithAudio_WwiseProject\.cache\Mac\SFX\MUS_BGM_B1_Synth_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MUS_BGM_Interactive\MUS_BGM_B\MUS_BGM_B1\MUS_BGM_B1_Synth		2304096
+	449851253	MUS_BGM_A1_DrumsLo	C:\Users\david\Documents\projects\CTIN406L\projects\CTIN406L_RollABallWithAudio\CTIN406L_RollABallWithAudio_WwiseProject\.cache\Mac\SFX\MUS_BGM_A1_DrumsLo_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MUS_BGM_Interactive\MUS_BGM_A\MUS_BGM_A1\MUS_BGM_A1_DrumsLo		2304096
+	472038755	MUS_Main_LP	C:\Users\david\Documents\projects\CTIN406L\projects\CTIN406L_RollABallWithAudio\CTIN406L_RollABallWithAudio_WwiseProject\.cache\Mac\SFX\MUS_Main_LP_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MUS_BasicLoop\MUS_Main_LP\MUS_Main_LP		9216096
 	480614661	AMB_DogBark_02	C:\Users\david\Documents\projects\CTIN406L\projects\CTIN406L_RollABallWithAudio\CTIN406L_RollABallWithAudio_WwiseProject\.cache\Mac\SFX\AMB_DogBark_02_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\AMB\AMB_DogBarks\AMB_DogBark_02		1536096
+	497562931	MUS_BGM_B2_DrumsLo	C:\Users\david\Documents\projects\CTIN406L\projects\CTIN406L_RollABallWithAudio\CTIN406L_RollABallWithAudio_WwiseProject\.cache\Mac\SFX\MUS_BGM_B2_DrumsLo_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MUS_BGM_Interactive\MUS_BGM_B\MUS_BGM_B2\MUS_BGM_B2_DrumsLo		2304096
 	505432651	FLY_Footstep_Grass_02	C:\Users\david\Documents\projects\CTIN406L\projects\CTIN406L_RollABallWithAudio\CTIN406L_RollABallWithAudio_WwiseProject\.cache\Mac\SFX\FLY_Footstep_Grass_02_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\FLY\FLY_Footstep\FLY_Footstep_Grass\FLY_Footstep_Grass_02		47300
 	529320610	AMB_DogBark_04	C:\Users\david\Documents\projects\CTIN406L\projects\CTIN406L_RollABallWithAudio\CTIN406L_RollABallWithAudio_WwiseProject\.cache\Mac\SFX\AMB_DogBark_04_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\AMB\AMB_DogBarks\AMB_DogBark_04		1536096
 	557880412	FLY_Footstep_Grass_01	C:\Users\david\Documents\projects\CTIN406L\projects\CTIN406L_RollABallWithAudio\CTIN406L_RollABallWithAudio_WwiseProject\.cache\Mac\SFX\FLY_Footstep_Grass_01_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\FLY\FLY_Footstep\FLY_Footstep_Grass\FLY_Footstep_Grass_01		47300
 	567523311	AMB_Interior_LP	C:\Users\david\Documents\projects\CTIN406L\projects\CTIN406L_RollABallWithAudio\CTIN406L_RollABallWithAudio_WwiseProject\.cache\Mac\SFX\AMB_Interior_LP_FBC78EF0.wem		\Actor-Mixer Hierarchy\Default Work Unit\AMB\AMB_Interior_LP		4992096
+	580980193	MUS_BGM_B2_Piano	C:\Users\david\Documents\projects\CTIN406L\projects\CTIN406L_RollABallWithAudio\CTIN406L_RollABallWithAudio_WwiseProject\.cache\Mac\SFX\MUS_BGM_B2_Piano_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MUS_BGM_Interactive\MUS_BGM_B\MUS_BGM_B2\MUS_BGM_B2_Piano		2304096
 	599393677	UI_Win	C:\Users\david\Documents\projects\CTIN406L\projects\CTIN406L_RollABallWithAudio\CTIN406L_RollABallWithAudio_WwiseProject\.cache\Mac\SFX\UI_Win_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\UI_Win		480096
+	687574380	MUS_BGM_B1_DrumsLo	C:\Users\david\Documents\projects\CTIN406L\projects\CTIN406L_RollABallWithAudio\CTIN406L_RollABallWithAudio_WwiseProject\.cache\Mac\SFX\MUS_BGM_B1_DrumsLo_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MUS_BGM_Interactive\MUS_BGM_B\MUS_BGM_B1\MUS_BGM_B1_DrumsLo		2304096
+	695258061	MUS_BGM_A1_DrumsHi	C:\Users\david\Documents\projects\CTIN406L\projects\CTIN406L_RollABallWithAudio\CTIN406L_RollABallWithAudio_WwiseProject\.cache\Mac\SFX\MUS_BGM_A1_DrumsHi_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MUS_BGM_Interactive\MUS_BGM_A\MUS_BGM_A1\MUS_BGM_A1_DrumsHi		2304096
 	766349313	FLY_Footstep_Concrete_03	C:\Users\david\Documents\projects\CTIN406L\projects\CTIN406L_RollABallWithAudio\CTIN406L_RollABallWithAudio_WwiseProject\.cache\Mac\SFX\FLY_Footstep_Concrete_03_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\FLY\FLY_Footstep\FLY_Footstep_Concrete\FLY_Footstep_Concrete_03		384096
+	784030583	MUS_BGM_A1_Piano	C:\Users\david\Documents\projects\CTIN406L\projects\CTIN406L_RollABallWithAudio\CTIN406L_RollABallWithAudio_WwiseProject\.cache\Mac\SFX\MUS_BGM_A1_Piano_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MUS_BGM_Interactive\MUS_BGM_A\MUS_BGM_A1\MUS_BGM_A1_Piano		2304096
 	852571445	MVT_BallRolling_LP	C:\Users\david\Documents\projects\CTIN406L\projects\CTIN406L_RollABallWithAudio\CTIN406L_RollABallWithAudio_WwiseProject\.cache\Mac\SFX\MVT_BallRolling_LP_FBC78EF0.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\MVT_BallRolling_LP		408096
+	864769827	MUS_BGM_A2_Synth	C:\Users\david\Documents\projects\CTIN406L\projects\CTIN406L_RollABallWithAudio\CTIN406L_RollABallWithAudio_WwiseProject\.cache\Mac\SFX\MUS_BGM_A2_Synth_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MUS_BGM_Interactive\MUS_BGM_A\MUS_BGM_A2\MUS_BGM_A2_Synth		2304096
 	901060277	AMB_DogBark_01	C:\Users\david\Documents\projects\CTIN406L\projects\CTIN406L_RollABallWithAudio\CTIN406L_RollABallWithAudio_WwiseProject\.cache\Mac\SFX\AMB_DogBark_01_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\AMB\AMB_DogBarks\AMB_DogBark_01		1536096
+	1018659083	MUS_BGM_A2_DrumsLo	C:\Users\david\Documents\projects\CTIN406L\projects\CTIN406L_RollABallWithAudio\CTIN406L_RollABallWithAudio_WwiseProject\.cache\Mac\SFX\MUS_BGM_A2_DrumsLo_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\MUS_BGM_Interactive\MUS_BGM_A\MUS_BGM_A2\MUS_BGM_A2_DrumsLo		2304096
 	1039002410	FLY_Footstep_Concrete_05	C:\Users\david\Documents\projects\CTIN406L\projects\CTIN406L_RollABallWithAudio\CTIN406L_RollABallWithAudio_WwiseProject\.cache\Mac\SFX\FLY_Footstep_Concrete_05_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\FLY\FLY_Footstep\FLY_Footstep_Concrete\FLY_Footstep_Concrete_05		384096
 

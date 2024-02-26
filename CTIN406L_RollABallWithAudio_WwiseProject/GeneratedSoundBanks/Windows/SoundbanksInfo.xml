@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="534561221" Type="User" Language="SFX" Hash="{9542AD26-08C7-D632-BDAB-CAA77ACCDD1E}">
+		<SoundBank Id="534561221" Type="User" Language="SFX" Hash="{F438827B-EF70-193F-0B6C-B0A466BDAF3B}">
 			<ShortName>MainSoundBank</ShortName>
 			<Path>MainSoundBank.bnk</Path>
 			<Media>
@@ -21,9 +21,25 @@
 					<ShortName>AMB_DogBark_03.wav</ShortName>
 					<CachePath>SFX/AMB_DogBark_03_818F3B66.wem</CachePath>
 				</File>
+				<File Id="15733850" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MUS_BGM_B2_Synth.wav</ShortName>
+					<CachePath>SFX/MUS_BGM_B2_Synth_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="41425527" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MUS_BGM_B2_DrumsHi.wav</ShortName>
+					<CachePath>SFX/MUS_BGM_B2_DrumsHi_FBC78EF0.wem</CachePath>
+				</File>
 				<File Id="45852958" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>IMP_Pickup.wav</ShortName>
 					<CachePath>SFX/IMP_Pickup_818F3B66.wem</CachePath>
+				</File>
+				<File Id="50857137" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MUS_BGM_A2_Piano.wav</ShortName>
+					<CachePath>SFX/MUS_BGM_A2_Piano_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="99241168" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MUS_BGM_B1_Piano.wav</ShortName>
+					<CachePath>SFX/MUS_BGM_B1_Piano_FBC78EF0.wem</CachePath>
 				</File>
 				<File Id="103947080" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>AMB_Forest_LP.wav</ShortName>
@@ -32,6 +48,14 @@
 				<File Id="115148276" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>FLY_Footstep_Grass_03.wav</ShortName>
 					<CachePath>SFX/FLY_Footstep_Grass_03_818F3B66.wem</CachePath>
+				</File>
+				<File Id="124062832" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MUS_BGM_A2_DrumsHi.wav</ShortName>
+					<CachePath>SFX/MUS_BGM_A2_DrumsHi_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="138574565" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MUS_BGM_A1_Synth.wav</ShortName>
+					<CachePath>SFX/MUS_BGM_A1_Synth_FBC78EF0.wem</CachePath>
 				</File>
 				<File Id="173716311" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>AMB_City_LP.wav</ShortName>
@@ -45,6 +69,10 @@
 					<ShortName>IMP_Wall.wav</ShortName>
 					<CachePath>SFX/IMP_Wall_818F3B66.wem</CachePath>
 				</File>
+				<File Id="284973796" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MUS_BGM_B1_DrumsHi.wav</ShortName>
+					<CachePath>SFX/MUS_BGM_B1_DrumsHi_FBC78EF0.wem</CachePath>
+				</File>
 				<File Id="361768503" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>FLY_Footstep_Concrete_01.wav</ShortName>
 					<CachePath>SFX/FLY_Footstep_Concrete_01_818F3B66.wem</CachePath>
@@ -53,6 +81,14 @@
 					<ShortName>FLY_Footstep_Concrete_04.wav</ShortName>
 					<CachePath>SFX/FLY_Footstep_Concrete_04_818F3B66.wem</CachePath>
 				</File>
+				<File Id="414495426" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MUS_BGM_B1_Synth.wav</ShortName>
+					<CachePath>SFX/MUS_BGM_B1_Synth_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="449851253" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MUS_BGM_A1_DrumsLo.wav</ShortName>
+					<CachePath>SFX/MUS_BGM_A1_DrumsLo_FBC78EF0.wem</CachePath>
+				</File>
 				<File Id="472038755" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MUS_Main_LP.wav</ShortName>
 					<CachePath>SFX/MUS_Main_LP_FBC78EF0.wem</CachePath>
@@ -60,6 +96,10 @@
 				<File Id="480614661" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>AMB_DogBark_02.wav</ShortName>
 					<CachePath>SFX/AMB_DogBark_02_818F3B66.wem</CachePath>
+				</File>
+				<File Id="497562931" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MUS_BGM_B2_DrumsLo.wav</ShortName>
+					<CachePath>SFX/MUS_BGM_B2_DrumsLo_FBC78EF0.wem</CachePath>
 				</File>
 				<File Id="505432651" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>FLY_Footstep_Grass_02.wav</ShortName>
@@ -77,21 +117,45 @@
 					<ShortName>AMB_Interior_LP.wav</ShortName>
 					<CachePath>SFX/AMB_Interior_LP_FBC78EF0.wem</CachePath>
 				</File>
+				<File Id="580980193" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MUS_BGM_B2_Piano.wav</ShortName>
+					<CachePath>SFX/MUS_BGM_B2_Piano_FBC78EF0.wem</CachePath>
+				</File>
 				<File Id="599393677" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>UI_Win.wav</ShortName>
 					<CachePath>SFX/UI_Win_818F3B66.wem</CachePath>
+				</File>
+				<File Id="687574380" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MUS_BGM_B1_DrumsLo.wav</ShortName>
+					<CachePath>SFX/MUS_BGM_B1_DrumsLo_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="695258061" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MUS_BGM_A1_DrumsHi.wav</ShortName>
+					<CachePath>SFX/MUS_BGM_A1_DrumsHi_FBC78EF0.wem</CachePath>
 				</File>
 				<File Id="766349313" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>FLY_Footstep_Concrete_03.wav</ShortName>
 					<CachePath>SFX/FLY_Footstep_Concrete_03_818F3B66.wem</CachePath>
 				</File>
+				<File Id="784030583" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MUS_BGM_A1_Piano.wav</ShortName>
+					<CachePath>SFX/MUS_BGM_A1_Piano_FBC78EF0.wem</CachePath>
+				</File>
 				<File Id="852571445" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MVT_BallRolling_LP.wav</ShortName>
 					<CachePath>SFX/MVT_BallRolling_LP_FBC78EF0.wem</CachePath>
 				</File>
+				<File Id="864769827" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MUS_BGM_A2_Synth.wav</ShortName>
+					<CachePath>SFX/MUS_BGM_A2_Synth_FBC78EF0.wem</CachePath>
+				</File>
 				<File Id="901060277" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>AMB_DogBark_01.wav</ShortName>
 					<CachePath>SFX/AMB_DogBark_01_818F3B66.wem</CachePath>
+				</File>
+				<File Id="1018659083" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MUS_BGM_A2_DrumsLo.wav</ShortName>
+					<CachePath>SFX/MUS_BGM_A2_DrumsLo_FBC78EF0.wem</CachePath>
 				</File>
 				<File Id="1039002410" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>FLY_Footstep_Concrete_05.wav</ShortName>
@@ -190,6 +254,65 @@
 						<MediaRef Id="223782888"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="96395413" Name="Play_MUS_BGM_Interactive" DurationType="Infinite">
+					<SwitchContainers>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="387365902" Id="84696446"/>
+							<MediaRefs>
+								<MediaRef Id="50857137"/>
+								<MediaRef Id="124062832"/>
+								<MediaRef Id="138574565"/>
+								<MediaRef Id="449851253"/>
+								<MediaRef Id="695258061"/>
+								<MediaRef Id="784030583"/>
+								<MediaRef Id="864769827"/>
+								<MediaRef Id="1018659083"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="387365902" Id="84696445"/>
+							<MediaRefs>
+								<MediaRef Id="15733850"/>
+								<MediaRef Id="41425527"/>
+								<MediaRef Id="99241168"/>
+								<MediaRef Id="284973796"/>
+								<MediaRef Id="414495426"/>
+								<MediaRef Id="497562931"/>
+								<MediaRef Id="580980193"/>
+								<MediaRef Id="687574380"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="387365902" Id="84696446"/>
+							<MediaRefs>
+								<MediaRef Id="50857137"/>
+								<MediaRef Id="124062832"/>
+								<MediaRef Id="138574565"/>
+								<MediaRef Id="449851253"/>
+								<MediaRef Id="695258061"/>
+								<MediaRef Id="784030583"/>
+								<MediaRef Id="864769827"/>
+								<MediaRef Id="1018659083"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="387365902" Id="84696445"/>
+							<MediaRefs>
+								<MediaRef Id="15733850"/>
+								<MediaRef Id="41425527"/>
+								<MediaRef Id="99241168"/>
+								<MediaRef Id="284973796"/>
+								<MediaRef Id="414495426"/>
+								<MediaRef Id="497562931"/>
+								<MediaRef Id="580980193"/>
+								<MediaRef Id="687574380"/>
+							</MediaRefs>
+						</SwitchContainer>
+					</SwitchContainers>
+					<ActionSetState>
+						<ActionSetStateEntry GroupId="387365902" Id="84696446" Name="A"/>
+					</ActionSetState>
+				</Event>
 				<Event Id="4165304245" Name="Play_MUS_Main" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="472038755"/>
@@ -229,9 +352,19 @@
 			</AuxBusses>
 			<GameParameters>
 				<GameParameter Id="1573010119" Name="RTPC_CollisionVelocityNormalized"/>
+				<GameParameter Id="2653406601" Name="RTPC_PlayerSpeed"/>
 				<GameParameter Id="3045223865" Name="RTPC_PlayerDistance"/>
 				<GameParameter Id="3709966389" Name="RTPC_BallSpeed"/>
 			</GameParameters>
+			<StateGroups>
+				<StateGroup Id="387365902" Name="STA_MusicSection">
+					<States>
+						<State Id="84696445" Name="B"/>
+						<State Id="84696446" Name="A"/>
+						<State Id="748895195" Name="None"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
 			<SwitchGroups>
 				<SwitchGroup Id="3045844422" Name="SWI_FootstepMaterial">
 					<Switches>
@@ -241,7 +374,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{D7AAA0F0-F646-5A9E-C53F-86C1D67A19FA}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{98789173-5323-CB87-B9A7-1E7D90A483F3}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -271,10 +404,18 @@
 			</AuxBusses>
 			<GameParameters>
 				<GameParameter Id="1573010119" Name="RTPC_CollisionVelocityNormalized"/>
+				<GameParameter Id="2653406601" Name="RTPC_PlayerSpeed"/>
 				<GameParameter Id="3045223865" Name="RTPC_PlayerDistance"/>
 				<GameParameter Id="3709966389" Name="RTPC_BallSpeed"/>
 			</GameParameters>
 			<StateGroups>
+				<StateGroup Id="387365902" Name="STA_MusicSection">
+					<States>
+						<State Id="84696445" Name="B"/>
+						<State Id="84696446" Name="A"/>
+						<State Id="748895195" Name="None"/>
+					</States>
+				</StateGroup>
 				<StateGroup Id="530992273" Name="STA_GameState">
 					<States>
 						<State Id="748895195" Name="None"/>
@@ -300,5 +441,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{0C8C1714-FCFA-36D7-9A53-8F93D726EE30}</FileHash>
+	<FileHash>{0236E7E5-D4B4-9BC8-95D8-F643139CCC4F}</FileHash>
 </SoundBanksInfo>

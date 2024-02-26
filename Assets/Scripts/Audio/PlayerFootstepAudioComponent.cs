@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /** Component that handles player footstep audio **/
-
+// TODO: Rename this player movement audio component
 public class PlayerFootstepAudioComponent : MonoBehaviour
 {
     [SerializeField]
@@ -16,8 +16,30 @@ public class PlayerFootstepAudioComponent : MonoBehaviour
     [SerializeField]
     AK.Wwise.Switch footstepMaterialSwitch_Grass; // Switch for grass
 
+    [SerializeField]
+    AK.Wwise.RTPC playerSpeedRtpc; // []
+
     Vector3 footstepRaycastStartPositionOffset = Vector3.up * 0.05f; // Footstep ray position offset
     float footstepRaycastDistance = 100f; // How far to cast the footstep ray for
+
+    CharacterController characterController; // Cached reference to the character controller
+
+    private void Start()
+    {
+        characterController = GetComponent<CharacterController>();
+    }
+
+    private void Update()
+    {
+        if (characterController == null)
+        {
+            return;
+        }
+
+        playerSpeedRtpc.SetGlobalValue(characterController.velocity.magnitude);
+
+        Debug.Log(characterController.velocity.magnitude);
+    }
 
     // Handle footsteps (called by animation events)
     public void OnFootstep()

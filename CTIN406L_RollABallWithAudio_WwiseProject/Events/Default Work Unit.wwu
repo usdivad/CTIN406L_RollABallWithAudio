@@ -93,7 +93,7 @@
 						<Action Name="" ID="{4096C1B2-FEDB-45DD-8B64-59CD139954BA}" ShortID="1040105115">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="MUS_Main" ID="{4002AAD4-91BE-4DAC-9651-F4FA4AC74752}" WorkUnitID="{749D61E4-F82D-4EEF-B729-5F9971B28A87}"/>
+									<ObjectRef Name="MUS_BasicLoop" ID="{4002AAD4-91BE-4DAC-9651-F4FA4AC74752}" WorkUnitID="{749D61E4-F82D-4EEF-B729-5F9971B28A87}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -158,6 +158,27 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="IMP_Wall_3D" ID="{D87BCABC-CB4E-4556-9F5A-CC2179CC14EF}" WorkUnitID="{8B8FB572-AE0C-4A3C-9B99-BB3729166F0F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_MUS_BGM_Interactive" ID="{B9AECF7B-9ED6-4B80-AA51-2091C09308C1}">
+					<ChildrenList>
+						<Action Name="" ID="{F25C0874-1605-4B1C-886A-C4DC85C83F23}" ShortID="1036187104">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MUS_BGM_Interactive" ID="{8B727149-B7BE-4C70-9BC0-37B76F377FBC}" WorkUnitID="{749D61E4-F82D-4EEF-B729-5F9971B28A87}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{0A74A4A5-256D-4862-98A4-70B98AB4F5AC}" ShortID="188558186">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="A" ID="{08F611C8-6BFE-4232-99E5-115773117B30}" WorkUnitID="{BCAF97F5-3258-4E68-B8DC-C0AC5D1AAF07}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

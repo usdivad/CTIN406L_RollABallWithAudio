@@ -22,6 +22,7 @@ namespace AK
         static const AkUniqueID PLAY_IMP_PICKUP = 3369882767U;
         static const AkUniqueID PLAY_IMP_WALL_2D = 1947854728U;
         static const AkUniqueID PLAY_IMP_WALL_3D = 1964632347U;
+        static const AkUniqueID PLAY_MUS_BGM_INTERACTIVE = 96395413U;
         static const AkUniqueID PLAY_MUS_MAIN = 4165304245U;
         static const AkUniqueID PLAY_MVT_BALLROLLING_LP = 4193143717U;
         static const AkUniqueID PLAY_UI_WIN = 2823495579U;
@@ -41,6 +42,18 @@ namespace AK
                 static const AkUniqueID STA_GAMESTATE_WIN = 2087516798U;
             } // namespace STATE
         } // namespace STA_GAMESTATE
+
+        namespace STA_MUSICSECTION
+        {
+            static const AkUniqueID GROUP = 387365902U;
+
+            namespace STATE
+            {
+                static const AkUniqueID A = 84696446U;
+                static const AkUniqueID B = 84696445U;
+                static const AkUniqueID NONE = 748895195U;
+            } // namespace STATE
+        } // namespace STA_MUSICSECTION
 
     } // namespace STATES
 
@@ -76,6 +89,7 @@ namespace AK
         static const AkUniqueID RTPC_BALLSPEED = 3709966389U;
         static const AkUniqueID RTPC_COLLISIONVELOCITYNORMALIZED = 1573010119U;
         static const AkUniqueID RTPC_PLAYERDISTANCE = 3045223865U;
+        static const AkUniqueID RTPC_PLAYERSPEED = 2653406601U;
     } // namespace GAME_PARAMETERS
 
     namespace BANKS

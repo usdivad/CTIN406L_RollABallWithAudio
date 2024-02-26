@@ -10,6 +10,13 @@
 						<State Name="STA_GameState_Win" ID="{5D135D14-E0D1-45ED-85F9-0FE18FC05B51}"/>
 					</ChildrenList>
 				</StateGroup>
+				<StateGroup Name="STA_MusicSection" ID="{6FFF2221-E67E-412C-9D81-4FFB7F0F9D24}">
+					<ChildrenList>
+						<State Name="None" ID="{B1D4E4FE-5B27-4096-A439-B9A35287C3B3}"/>
+						<State Name="A" ID="{08F611C8-6BFE-4232-99E5-115773117B30}"/>
+						<State Name="B" ID="{AC1199D8-7670-460A-B767-2856ACDB5B40}"/>
+					</ChildrenList>
+				</StateGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</States>
