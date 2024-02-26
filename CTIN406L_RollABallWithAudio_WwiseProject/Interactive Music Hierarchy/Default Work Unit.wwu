@@ -3536,7 +3536,7 @@
 						<ObjectList Name="Entries">
 							<Reference>
 								<Local>
-									<MultiSwitchEntry Name="" ID="{6E0BF850-C9DF-462A-ACE0-9AD270E895F6}">
+									<MultiSwitchEntry Name="" ID="{EA29B94A-C6CE-4D2F-A1DD-7074E3E5505A}">
 										<ReferenceList>
 											<Reference Name="AudioNode">
 												<ObjectRef Name="MUS_BGM_A" ID="{C7FBFA7E-501A-4F91-92B6-D3C67F212DDE}" WorkUnitID="{749D61E4-F82D-4EEF-B729-5F9971B28A87}"/>
@@ -3554,7 +3554,7 @@
 							</Reference>
 							<Reference>
 								<Local>
-									<MultiSwitchEntry Name="" ID="{79005E74-7F87-4467-9563-22D10F14A670}">
+									<MultiSwitchEntry Name="" ID="{DD166FE4-9706-485F-A415-A394ECA416BE}">
 										<ReferenceList>
 											<Reference Name="AudioNode">
 												<ObjectRef Name="MUS_BGM_B" ID="{2249646F-9D1C-4ED9-A6DF-5FB601AE67D7}" WorkUnitID="{749D61E4-F82D-4EEF-B729-5F9971B28A87}"/>
@@ -3572,7 +3572,7 @@
 							</Reference>
 							<Reference>
 								<Local>
-									<MultiSwitchEntry Name="" ID="{92449A8F-BF73-423E-8CB6-FD7B8DF8EBA8}">
+									<MultiSwitchEntry Name="" ID="{9748EE96-BDD0-449B-9FEE-F31BF7B7E051}">
 										<ReferenceList>
 											<Reference Name="AudioNode">
 												<ObjectRef Name="MUS_BGM_C" ID="{1BA8C50E-838E-4931-88F8-F0F248E03E3E}" WorkUnitID="{749D61E4-F82D-4EEF-B729-5F9971B28A87}"/>
