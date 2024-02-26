@@ -26,10 +26,17 @@ public class BallAudioComponent : MonoBehaviour
     AK.Wwise.State musicPickupState;
 
     [SerializeField]
+    AK.Wwise.State musicWinState;
+
+    [SerializeField]
+    AK.Wwise.Event musicPickupTrigger;
+
+    [SerializeField]
     float pickupTimeIncrementAmount = 6f;
 
     bool isInPickupState = false;
-    private float pickupTimeRemaining = 0f;
+    float pickupTimeRemaining = 0f;
+    bool didWin = false;
 
     // Start is called before the first frame update
     void Start()
@@ -40,7 +47,7 @@ public class BallAudioComponent : MonoBehaviour
 
     private void Update()
     {
-        if (isInPickupState)
+        if (isInPickupState && !didWin)
         {
             if (pickupTimeRemaining <= 0f)
             {
@@ -51,10 +58,9 @@ public class BallAudioComponent : MonoBehaviour
             {
                 pickupTimeRemaining -= Time.deltaTime;
             }
-        }
 
-        Debug.Log("Pickup time remaining: " + pickupTimeRemaining);
-        
+            Debug.Log("Pickup time remaining: " + pickupTimeRemaining);
+        }
     }
 
     // Update audio for ball rolling. This is called within PlayerController.FixedUpdate()
@@ -68,15 +74,23 @@ public class BallAudioComponent : MonoBehaviour
     public void PlayPickupAudio()
     {
         pickupAudioEvent.Post(this.gameObject);
+        musicPickupTrigger.Post(this.gameObject);
 
-        musicPickupState.SetValue();
-        isInPickupState = true;
-        pickupTimeRemaining += pickupTimeIncrementAmount;
+        if (!didWin)
+        {
+            musicPickupState.SetValue();
+            isInPickupState = true;
+            pickupTimeRemaining += pickupTimeIncrementAmount;
+        }
     }
 
     // Play win SFX. Called within PlayerController.SetCountText()
     public void PlayWinAudio()
     {
         winAudioEvent.Post(this.gameObject);
+        musicWinState.SetValue();
+
+        didWin = true;
+        isInPickupState = false;
     }
 }

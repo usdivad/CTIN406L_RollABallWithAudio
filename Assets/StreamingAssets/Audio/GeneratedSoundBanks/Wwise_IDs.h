@@ -27,6 +27,7 @@ namespace AK
         static const AkUniqueID PLAY_MVT_BALLROLLING_LP = 4193143717U;
         static const AkUniqueID PLAY_UI_WIN = 2823495579U;
         static const AkUniqueID STOP_AMB_INTERIOR_LP = 2159561926U;
+        static const AkUniqueID TRIGGER_MUS_PICKUP = 3340362146U;
     } // namespace EVENTS
 
     namespace STATES
@@ -51,6 +52,7 @@ namespace AK
             {
                 static const AkUniqueID A = 84696446U;
                 static const AkUniqueID B = 84696445U;
+                static const AkUniqueID C = 84696444U;
                 static const AkUniqueID NONE = 748895195U;
             } // namespace STATE
         } // namespace STA_MUSICSECTION
@@ -91,6 +93,11 @@ namespace AK
         static const AkUniqueID RTPC_PLAYERDISTANCE = 3045223865U;
         static const AkUniqueID RTPC_PLAYERSPEED = 2653406601U;
     } // namespace GAME_PARAMETERS
+
+    namespace TRIGGERS
+    {
+        static const AkUniqueID MUS_PICKUP = 965785689U;
+    } // namespace TRIGGERS
 
     namespace BANKS
     {

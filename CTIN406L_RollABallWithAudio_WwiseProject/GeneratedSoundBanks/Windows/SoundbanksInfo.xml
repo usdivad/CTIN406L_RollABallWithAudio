@@ -9,13 +9,17 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="534561221" Type="User" Language="SFX" Hash="{F438827B-EF70-193F-0B6C-B0A466BDAF3B}">
+		<SoundBank Id="534561221" Type="User" Language="SFX" Hash="{EBDC8293-9E73-6F99-07A9-6088C21DFE6D}">
 			<ShortName>MainSoundBank</ShortName>
 			<Path>MainSoundBank.bnk</Path>
 			<Media>
 				<File Id="1293407" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>FLY_Footstep_Grass_04.wav</ShortName>
 					<CachePath>SFX/FLY_Footstep_Grass_04_818F3B66.wem</CachePath>
+				</File>
+				<File Id="1652184" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MUS_BGM_C_Synth.wav</ShortName>
+					<CachePath>SFX/MUS_BGM_C_Synth_FBC78EF0.wem</CachePath>
 				</File>
 				<File Id="14961769" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>AMB_DogBark_03.wav</ShortName>
@@ -28,6 +32,10 @@
 				<File Id="41425527" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MUS_BGM_B2_DrumsHi.wav</ShortName>
 					<CachePath>SFX/MUS_BGM_B2_DrumsHi_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="44105883" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MUS_BGM_C_DrumsHi.wav</ShortName>
+					<CachePath>SFX/MUS_BGM_C_DrumsHi_FBC78EF0.wem</CachePath>
 				</File>
 				<File Id="45852958" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>IMP_Pickup.wav</ShortName>
@@ -69,6 +77,10 @@
 					<ShortName>IMP_Wall.wav</ShortName>
 					<CachePath>SFX/IMP_Wall_818F3B66.wem</CachePath>
 				</File>
+				<File Id="271616668" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MUS_Stinger_Pickup_04.wav</ShortName>
+					<CachePath>SFX/MUS_Stinger_Pickup_04_FBC78EF0.wem</CachePath>
+				</File>
 				<File Id="284973796" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MUS_BGM_B1_DrumsHi.wav</ShortName>
 					<CachePath>SFX/MUS_BGM_B1_DrumsHi_FBC78EF0.wem</CachePath>
@@ -100,6 +112,10 @@
 				<File Id="497562931" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MUS_BGM_B2_DrumsLo.wav</ShortName>
 					<CachePath>SFX/MUS_BGM_B2_DrumsLo_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="501616457" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MUS_Stinger_Pickup_01.wav</ShortName>
+					<CachePath>SFX/MUS_Stinger_Pickup_01_FBC78EF0.wem</CachePath>
 				</File>
 				<File Id="505432651" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>FLY_Footstep_Grass_02.wav</ShortName>
@@ -141,6 +157,10 @@
 					<ShortName>MUS_BGM_A1_Piano.wav</ShortName>
 					<CachePath>SFX/MUS_BGM_A1_Piano_FBC78EF0.wem</CachePath>
 				</File>
+				<File Id="827291237" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MUS_BGM_C_DrumsLo.wav</ShortName>
+					<CachePath>SFX/MUS_BGM_C_DrumsLo_FBC78EF0.wem</CachePath>
+				</File>
 				<File Id="852571445" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MVT_BallRolling_LP.wav</ShortName>
 					<CachePath>SFX/MVT_BallRolling_LP_FBC78EF0.wem</CachePath>
@@ -157,9 +177,17 @@
 					<ShortName>MUS_BGM_A2_DrumsLo.wav</ShortName>
 					<CachePath>SFX/MUS_BGM_A2_DrumsLo_FBC78EF0.wem</CachePath>
 				</File>
+				<File Id="1020803172" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MUS_Stinger_Pickup_03.wav</ShortName>
+					<CachePath>SFX/MUS_Stinger_Pickup_03_FBC78EF0.wem</CachePath>
+				</File>
 				<File Id="1039002410" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>FLY_Footstep_Concrete_05.wav</ShortName>
 					<CachePath>SFX/FLY_Footstep_Concrete_05_818F3B66.wem</CachePath>
+				</File>
+				<File Id="1064460418" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MUS_Stinger_Pickup_02.wav</ShortName>
+					<CachePath>SFX/MUS_Stinger_Pickup_02_FBC78EF0.wem</CachePath>
 				</File>
 			</Media>
 			<Plugins>
@@ -255,6 +283,12 @@
 					</MediaRefs>
 				</Event>
 				<Event Id="96395413" Name="Play_MUS_BGM_Interactive" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="271616668"/>
+						<MediaRef Id="501616457"/>
+						<MediaRef Id="1020803172"/>
+						<MediaRef Id="1064460418"/>
+					</MediaRefs>
 					<SwitchContainers>
 						<SwitchContainer>
 							<SwitchValue GroupType="State" GroupId="387365902" Id="84696446"/>
@@ -283,6 +317,14 @@
 							</MediaRefs>
 						</SwitchContainer>
 						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="387365902" Id="84696444"/>
+							<MediaRefs>
+								<MediaRef Id="1652184"/>
+								<MediaRef Id="44105883"/>
+								<MediaRef Id="827291237"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
 							<SwitchValue GroupType="State" GroupId="387365902" Id="84696446"/>
 							<MediaRefs>
 								<MediaRef Id="50857137"/>
@@ -306,6 +348,14 @@
 								<MediaRef Id="497562931"/>
 								<MediaRef Id="580980193"/>
 								<MediaRef Id="687574380"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="387365902" Id="84696444"/>
+							<MediaRefs>
+								<MediaRef Id="1652184"/>
+								<MediaRef Id="44105883"/>
+								<MediaRef Id="827291237"/>
 							</MediaRefs>
 						</SwitchContainer>
 					</SwitchContainers>
@@ -333,6 +383,11 @@
 						<MediaRef Id="567523311"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="3340362146" Name="Trigger_MUS_Pickup" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
+					<ActionTrigger>
+						<ActionTriggerEntry Id="965785689" Name="MUS_Pickup"/>
+					</ActionTrigger>
+				</Event>
 			</Events>
 			<Busses>
 				<Bus Id="393239870" Name="SFX"/>
@@ -359,6 +414,7 @@
 			<StateGroups>
 				<StateGroup Id="387365902" Name="STA_MusicSection">
 					<States>
+						<State Id="84696444" Name="C"/>
 						<State Id="84696445" Name="B"/>
 						<State Id="84696446" Name="A"/>
 						<State Id="748895195" Name="None"/>
@@ -373,6 +429,9 @@
 					</Switches>
 				</SwitchGroup>
 			</SwitchGroups>
+			<Triggers>
+				<Trigger Id="965785689" Name="MUS_Pickup"/>
+			</Triggers>
 		</SoundBank>
 		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{98789173-5323-CB87-B9A7-1E7D90A483F3}">
 			<ShortName>Init</ShortName>
@@ -411,6 +470,7 @@
 			<StateGroups>
 				<StateGroup Id="387365902" Name="STA_MusicSection">
 					<States>
+						<State Id="84696444" Name="C"/>
 						<State Id="84696445" Name="B"/>
 						<State Id="84696446" Name="A"/>
 						<State Id="748895195" Name="None"/>
@@ -441,5 +501,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{0236E7E5-D4B4-9BC8-95D8-F643139CCC4F}</FileHash>
+	<FileHash>{7A18506D-8E51-7602-F477-B6EFDA764BD6}</FileHash>
 </SoundBanksInfo>

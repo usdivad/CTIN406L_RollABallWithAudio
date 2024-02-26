@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{B7DC32A8-D0D4-43BB-A45F-F0A97EED0EBD}" SchemaVersion="119">
 	<Triggers>
-		<WorkUnit Name="Default Work Unit" ID="{B7DC32A8-D0D4-43BB-A45F-F0A97EED0EBD}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{B7DC32A8-D0D4-43BB-A45F-F0A97EED0EBD}" PersistMode="Standalone">
+			<ChildrenList>
+				<Trigger Name="MUS_Pickup" ID="{F6D78C12-9787-4301-95BC-6AFEAC3BE285}"/>
+			</ChildrenList>
+		</WorkUnit>
 	</Triggers>
 </WwiseDocument>

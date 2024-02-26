@@ -184,6 +184,21 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Trigger_MUS_Pickup" ID="{5CDDD343-2E52-44F8-A8AB-B3049613EA87}">
+					<ChildrenList>
+						<Action Name="" ID="{187192DA-A782-41FF-9548-94BDDB3FA997}" ShortID="296316141">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="35"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MUS_Pickup" ID="{F6D78C12-9787-4301-95BC-6AFEAC3BE285}" WorkUnitID="{B7DC32A8-D0D4-43BB-A45F-F0A97EED0EBD}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
