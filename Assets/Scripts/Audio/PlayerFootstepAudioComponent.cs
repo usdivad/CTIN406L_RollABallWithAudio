@@ -21,6 +21,7 @@ public class PlayerFootstepAudioComponent : MonoBehaviour
 
     Vector3 footstepRaycastStartPositionOffset = Vector3.up * 0.05f; // Footstep ray position offset
     float footstepRaycastDistance = 100f; // How far to cast the footstep ray for
+    float animationEventWeightThreshold = 0.5f; // Anim weight threshold below which we don't play footstep audio
 
     CharacterController characterController; // Cached reference to the character controller
 
@@ -41,8 +42,17 @@ public class PlayerFootstepAudioComponent : MonoBehaviour
         Debug.Log(characterController.velocity.magnitude);
     }
 
-    // Handle footsteps (called by animation events)
-    public void OnFootstep()
+    // Play footstep audio from an animation event (used for third-person footsteps)
+    public void PlayFootstepAudioFromAnimationEvent(AnimationEvent animationEvent)
+    {
+        if (animationEvent.animatorClipInfo.weight > animationEventWeightThreshold)
+        {
+            PlayFootstepAudio();
+        }
+    }
+
+    // Play footstep audio directly (used for first-person footsteps)
+    public void PlayFootstepAudio()
     {
         // Cast a ray from the player position (with upwards offset) directly downwards
         Vector3 startPosition = transform.position + footstepRaycastStartPositionOffset;
@@ -58,14 +68,14 @@ public class PlayerFootstepAudioComponent : MonoBehaviour
             if (hitCollider.CompareTag("Concrete")) // Concrete
             {
                 footstepMaterialSwitch_Concrete.SetValue(this.gameObject);
-                Debug.Log("OnFootstep(): Concrete");
+                Debug.Log("PlayFootstepAudio(): Concrete");
 
                 break;
             }
             else if (hitCollider.CompareTag("Grass")) // Grass
             {
                 footstepMaterialSwitch_Grass.SetValue(this.gameObject);
-                Debug.Log("OnFootstep(): Grass");
+                Debug.Log("PlayFootstepAudio(): Grass");
 
                 break;
             }

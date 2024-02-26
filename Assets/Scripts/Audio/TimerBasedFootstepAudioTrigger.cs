@@ -55,7 +55,7 @@ public class TimerBasedFootstepAudioTrigger : MonoBehaviour
         // Timer interval has been reached; trigger a footstep
         if (timerBasedFootstepsTimeElapsed >= timerBasedFootstepsInterval)
         {
-            footstepAudioComponent.OnFootstep();
+            footstepAudioComponent.PlayFootstepAudio();
             timerBasedFootstepsTimeElapsed = 0f;
         }
         else
