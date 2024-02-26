@@ -12,6 +12,7 @@ public class NonPlayerBall : MonoBehaviour
     public float speed;
     public Text countText;
     public Text winText;
+    public int countMax = 12;
 
     // Create private references to the rigidbody component on the ball, and the count of pick up objects picked up so far
     private Rigidbody rb;
@@ -73,8 +74,8 @@ public class NonPlayerBall : MonoBehaviour
         // Update the text field of our 'countText' variable
         countText.text = "Count: " + count.ToString();
 
-        // Check if our 'count' is equal to or exceeded 12
-        if (count >= 12)
+        // Check if our 'count' is equal to or exceeded countMax
+        if (count >= countMax)
         {
             // Set the text value of our 'winText'
             winText.text = "You Win!";
