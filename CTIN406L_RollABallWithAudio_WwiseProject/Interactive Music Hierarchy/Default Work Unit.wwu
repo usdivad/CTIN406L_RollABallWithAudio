@@ -769,10 +769,20 @@
 										</MusicTransition>
 										<MusicTransition Name="Transition" ID="{209076E8-184C-401A-8FE6-B9F28E5C62A3}">
 											<PropertyList>
+												<Property Name="EnableDestinationFadeIn" Type="bool" Value="True"/>
 												<Property Name="PlayDestinationPreEntry" Type="bool" Value="False"/>
 												<Property Name="SourceContextType" Type="int16" Value="1"/>
 											</PropertyList>
-											<TransitionInfo/>
+											<TransitionInfo>
+												<DestinationFadeIn>
+													<MusicFade Name="Destination Fade-in" ID="{350FE94A-3898-4830-A035-894F27DA314D}">
+														<PropertyList>
+															<Property Name="FadeCurve" Type="int16" Value="1"/>
+															<Property Name="FadeTime" Type="Real64" Value="0.05"/>
+														</PropertyList>
+													</MusicFade>
+												</DestinationFadeIn>
+											</TransitionInfo>
 										</MusicTransition>
 										<MusicTransition Name="Transition" ID="{4BFD28D4-7E7B-499A-8005-62FF8A313E29}">
 											<PropertyList>
@@ -788,6 +798,39 @@
 												</Reference>
 											</ReferenceList>
 											<TransitionInfo/>
+										</MusicTransition>
+										<MusicTransition Name="Transition" ID="{718BB868-FDC6-4AF1-BB29-96FDC41D7001}">
+											<PropertyList>
+												<Property Name="DestinationContextType" Type="int16" Value="2"/>
+												<Property Name="EnableDestinationFadeIn" Type="bool" Value="True"/>
+												<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
+												<Property Name="ExitSourceAt" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="DestinationContextObject">
+													<ObjectRef Name="MUS_BGM_C" ID="{1BA8C50E-838E-4931-88F8-F0F248E03E3E}" WorkUnitID="{749D61E4-F82D-4EEF-B729-5F9971B28A87}"/>
+												</Reference>
+											</ReferenceList>
+											<TransitionInfo>
+												<SourceFadeOut>
+													<MusicFade Name="Source Fade-out" ID="{591F1BEE-64E7-445A-A1B0-C49D158CD6E1}">
+														<PropertyList>
+															<Property Name="FadeCurve" Type="int16" Value="1"/>
+															<Property Name="FadeTime" Type="Real64" Value="0.1"/>
+															<Property Name="FadeType" Type="int16" Value="1"/>
+														</PropertyList>
+													</MusicFade>
+												</SourceFadeOut>
+												<DestinationFadeIn>
+													<MusicFade Name="Destination Fade-in" ID="{E0B6115D-ADD8-4C4F-A4CE-9D36B5115DA0}">
+														<PropertyList>
+															<Property Name="FadeCurve" Type="int16" Value="1"/>
+															<Property Name="FadeOffset" Type="Real64" Value="-0.025"/>
+															<Property Name="FadeTime" Type="Real64" Value="0.05"/>
+														</PropertyList>
+													</MusicFade>
+												</DestinationFadeIn>
+											</TransitionInfo>
 										</MusicTransition>
 									</ChildrenList>
 									<TransitionInfo/>
@@ -3186,6 +3229,16 @@
 											</PropertyList>
 											<ChildrenList>
 												<MusicPlaylistItem Name="" ID="{4D553D3C-EEDC-4211-A43C-D9A65E550BDA}" ShortID="611908069">
+													<PropertyList>
+														<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Segment">
+															<ObjectRef Name="MUS_BGM_C1" ID="{86665CA7-2A5C-4D1B-9764-F81954664ED0}" WorkUnitID="{749D61E4-F82D-4EEF-B729-5F9971B28A87}"/>
+														</Reference>
+													</ReferenceList>
+												</MusicPlaylistItem>
+												<MusicPlaylistItem Name="" ID="{A3308457-B277-4DF5-8C9D-5FA823DD2675}" ShortID="115282426">
 													<PropertyList>
 														<Property Name="PlaylistItemType" Type="int16" Value="1"/>
 													</PropertyList>
