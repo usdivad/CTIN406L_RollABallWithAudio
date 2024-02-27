@@ -724,6 +724,7 @@
 				<MusicSwitchContainer Name="MUS_BGM_Interactive" ID="{8B727149-B7BE-4C70-9BC0-37B76F377FBC}" ShortID="316460375">
 					<PropertyList>
 						<Property Name="GridFrequencyPreset" Type="int16" Value="57"/>
+						<Property Name="Tempo" Type="Real64" Value="132"/>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -791,10 +792,10 @@
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="DestinationContextObject">
-													<ObjectRef Name="MUS_BGM_A" ID="{C7FBFA7E-501A-4F91-92B6-D3C67F212DDE}" WorkUnitID="{749D61E4-F82D-4EEF-B729-5F9971B28A87}"/>
+													<ObjectRef Name="MUS_BGM_Idle" ID="{C7FBFA7E-501A-4F91-92B6-D3C67F212DDE}" WorkUnitID="{749D61E4-F82D-4EEF-B729-5F9971B28A87}"/>
 												</Reference>
 												<Reference Name="SourceContextObject">
-													<ObjectRef Name="MUS_BGM_B" ID="{2249646F-9D1C-4ED9-A6DF-5FB601AE67D7}" WorkUnitID="{749D61E4-F82D-4EEF-B729-5F9971B28A87}"/>
+													<ObjectRef Name="MUS_BGM_PickedUp" ID="{2249646F-9D1C-4ED9-A6DF-5FB601AE67D7}" WorkUnitID="{749D61E4-F82D-4EEF-B729-5F9971B28A87}"/>
 												</Reference>
 											</ReferenceList>
 											<TransitionInfo/>
@@ -808,7 +809,7 @@
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="DestinationContextObject">
-													<ObjectRef Name="MUS_BGM_C" ID="{1BA8C50E-838E-4931-88F8-F0F248E03E3E}" WorkUnitID="{749D61E4-F82D-4EEF-B729-5F9971B28A87}"/>
+													<ObjectRef Name="MUS_BGM_Win" ID="{1BA8C50E-838E-4931-88F8-F0F248E03E3E}" WorkUnitID="{749D61E4-F82D-4EEF-B729-5F9971B28A87}"/>
 												</Reference>
 											</ReferenceList>
 											<TransitionInfo>
@@ -839,7 +840,7 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<MusicPlaylistContainer Name="MUS_BGM_A" ID="{C7FBFA7E-501A-4F91-92B6-D3C67F212DDE}" ShortID="536595081">
+						<MusicPlaylistContainer Name="MUS_BGM_Idle" ID="{C7FBFA7E-501A-4F91-92B6-D3C67F212DDE}" ShortID="536595081">
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F31277D4-DD00-4059-A6A3-67EE41BC19BA}"/>
@@ -854,13 +855,13 @@
 												<Property Name="LoopCount" Type="int16" Value="0"/>
 											</PropertyList>
 											<ChildrenList>
-												<MusicPlaylistItem Name="" ID="{46BCA227-E168-4A57-BDA3-147699A818F7}" ShortID="877294819">
+												<MusicPlaylistItem Name="" ID="{CC7FDDF8-6684-49F7-BBAA-73D53DE65BD8}" ShortID="374937417">
 													<PropertyList>
 														<Property Name="PlaylistItemType" Type="int16" Value="1"/>
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Segment">
-															<ObjectRef Name="MUS_BGM_A1_NoSynth" ID="{B711E7E0-2324-48B5-9948-4B1AD228D818}" WorkUnitID="{749D61E4-F82D-4EEF-B729-5F9971B28A87}"/>
+															<ObjectRef Name="MUS_BGM_Idle_01_NoSynth" ID="{82E949B3-FC02-404B-BBA7-6D8B133D227A}" WorkUnitID="{749D61E4-F82D-4EEF-B729-5F9971B28A87}"/>
 														</Reference>
 													</ReferenceList>
 												</MusicPlaylistItem>
@@ -870,7 +871,7 @@
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Segment">
-															<ObjectRef Name="MUS_BGM_A1" ID="{ADF140E6-EB17-41E4-B2B6-A46CEF6A6E67}" WorkUnitID="{749D61E4-F82D-4EEF-B729-5F9971B28A87}"/>
+															<ObjectRef Name="MUS_BGM_Idle_01" ID="{ADF140E6-EB17-41E4-B2B6-A46CEF6A6E67}" WorkUnitID="{749D61E4-F82D-4EEF-B729-5F9971B28A87}"/>
 														</Reference>
 													</ReferenceList>
 												</MusicPlaylistItem>
@@ -880,7 +881,7 @@
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Segment">
-															<ObjectRef Name="MUS_BGM_A2" ID="{3CA2043A-37DF-45A3-8EFC-89AFB3BE7087}" WorkUnitID="{749D61E4-F82D-4EEF-B729-5F9971B28A87}"/>
+															<ObjectRef Name="MUS_BGM_Idle_02" ID="{3CA2043A-37DF-45A3-8EFC-89AFB3BE7087}" WorkUnitID="{749D61E4-F82D-4EEF-B729-5F9971B28A87}"/>
 														</Reference>
 													</ReferenceList>
 												</MusicPlaylistItem>
@@ -921,7 +922,7 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<MusicSegment Name="MUS_BGM_A1" ID="{ADF140E6-EB17-41E4-B2B6-A46CEF6A6E67}" ShortID="901321949">
+								<MusicSegment Name="MUS_BGM_Idle_01" ID="{ADF140E6-EB17-41E4-B2B6-A46CEF6A6E67}" ShortID="901321949">
 									<PropertyList>
 										<Property Name="EndPosition" Type="Real64" Value="15125"/>
 									</PropertyList>
@@ -934,14 +935,14 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<MusicTrack Name="MUS_BGM_A1_DrumsHi" ID="{A7B3ABE6-E257-471F-B099-F6F6B13F2B58}" ShortID="187606941">
+										<MusicTrack Name="MUS_BGM_132bpm_Idle_DrumsHi_01" ID="{704F0A3B-741F-4A78-B821-A2AB9B3FAE8C}" ShortID="513495818">
 											<ReferenceList>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC1FDB7B-AB4A-403B-9ED1-5C49551A2787}"/>
 												</Reference>
 												<Reference Name="TransitionRoot">
 													<Custom>
-														<MusicTransition Name="Root" ID="{CC012C19-9B33-4011-9869-73D754AA9532}">
+														<MusicTransition Name="Root" ID="{6FE0A081-875B-45CA-8191-345543CF8B9C}">
 															<PropertyList>
 																<Property Name="IsFolder" Type="bool" Value="True"/>
 															</PropertyList>
@@ -951,11 +952,11 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="MUS_BGM_A1_DrumsHi" ID="{C1931A23-834A-4EFF-AB2B-347F56E3D0F9}">
+												<AudioFileSource Name="MUS_BGM_132bpm_Idle_DrumsHi_01" ID="{2DCD28BD-1411-4828-AE11-865F744F86CE}">
 													<Language>SFX</Language>
-													<AudioFile>MUS_BGM_A1_DrumsHi.wav</AudioFile>
+													<AudioFile>MUS_BGM_132bpm_Idle_DrumsHi_01.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="695258061"/>
+														<MediaID ID="47516979"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
@@ -963,7 +964,7 @@
 												<ObjectList Name="RTPC">
 													<Reference>
 														<Local>
-															<RTPC Name="" ID="{EE188BCD-D51A-4459-B767-B849A2017905}" ShortID="1002183918">
+															<RTPC Name="" ID="{C0D95E08-48D8-400E-BDD2-DEA862A4BC0B}" ShortID="382474813">
 																<PropertyList>
 																	<Property Name="PropertyName" Type="string" Value="Volume"/>
 																</PropertyList>
@@ -973,7 +974,7 @@
 																	</Reference>
 																	<Reference Name="Curve">
 																		<Custom>
-																			<Curve Name="" ID="{2D2C5025-3EAC-452A-BB5E-BF3718790773}">
+																			<Curve Name="" ID="{9B8082BD-B31E-4FB0-830A-CF9253C51A93}">
 																				<PropertyList>
 																					<Property Name="Flags" Type="int32" Value="3"/>
 																				</PropertyList>
@@ -1010,18 +1011,18 @@
 												<ObjectList Name="Sequences">
 													<Reference>
 														<Local>
-															<MusicTrackSequence Name="" ID="{0C896652-FC28-4758-81CB-5E7288485413}">
+															<MusicTrackSequence Name="" ID="{CF958948-D9FC-4CD7-A49F-7451E53E9E8F}">
 																<ObjectLists>
 																	<ObjectList Name="Clips">
 																		<Reference>
 																			<Local>
-																				<MusicClip Name="MUS_BGM_A1_DrumsHi" ID="{CAFC0B8D-083B-426A-B638-2C6454347DB2}">
+																				<MusicClip Name="MUS_BGM_132bpm_Idle_DrumsHi_01" ID="{B5BB15F1-D79C-49A4-9D79-1EA4698BD686}">
 																					<PropertyList>
-																						<Property Name="EndTrimOffset" Type="Real64" Value="12000"/>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="10909.1041666667"/>
 																						<Property Name="FadeInMode" Type="int16" Value="0"/>
 																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
 																					</PropertyList>
-																					<AudioSourceRef Name="MUS_BGM_A1_DrumsHi" ID="{C1931A23-834A-4EFF-AB2B-347F56E3D0F9}"/>
+																					<AudioSourceRef Name="MUS_BGM_132bpm_Idle_DrumsHi_01" ID="{2DCD28BD-1411-4828-AE11-865F744F86CE}"/>
 																				</MusicClip>
 																			</Local>
 																		</Reference>
@@ -1033,14 +1034,14 @@
 												</ObjectList>
 											</ObjectLists>
 										</MusicTrack>
-										<MusicTrack Name="MUS_BGM_A1_DrumsLo" ID="{820FA558-A5CF-404C-91B4-E6E65A932EE2}" ShortID="555970903">
+										<MusicTrack Name="MUS_BGM_132bpm_Idle_DrumsLo_01" ID="{513F07A0-220D-4DA6-A1BF-CD830693569B}" ShortID="149638957">
 											<ReferenceList>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC1FDB7B-AB4A-403B-9ED1-5C49551A2787}"/>
 												</Reference>
 												<Reference Name="TransitionRoot">
 													<Custom>
-														<MusicTransition Name="Root" ID="{A2520211-F844-48EA-8638-3DC3B3CCF0AC}">
+														<MusicTransition Name="Root" ID="{FEF74327-62B8-402D-AA46-0C7936676F46}">
 															<PropertyList>
 																<Property Name="IsFolder" Type="bool" Value="True"/>
 															</PropertyList>
@@ -1050,11 +1051,11 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="MUS_BGM_A1_DrumsLo" ID="{0F015F1D-F39B-4720-BFB9-362FBB7812B7}">
+												<AudioFileSource Name="MUS_BGM_132bpm_Idle_DrumsLo_01" ID="{481DA367-0912-4C5E-95CD-E2D445D8927C}">
 													<Language>SFX</Language>
-													<AudioFile>MUS_BGM_A1_DrumsLo.wav</AudioFile>
+													<AudioFile>MUS_BGM_132bpm_Idle_DrumsLo_01.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="449851253"/>
+														<MediaID ID="1070807779"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
@@ -1062,7 +1063,7 @@
 												<ObjectList Name="RTPC">
 													<Reference>
 														<Local>
-															<RTPC Name="" ID="{3392F440-EE57-4B90-86B5-4A346640F5FA}" ShortID="754086394">
+															<RTPC Name="" ID="{55A3BF5F-4AA2-4FC0-B793-F2A291A2FCF0}" ShortID="381782234">
 																<PropertyList>
 																	<Property Name="PropertyName" Type="string" Value="Volume"/>
 																</PropertyList>
@@ -1072,7 +1073,7 @@
 																	</Reference>
 																	<Reference Name="Curve">
 																		<Custom>
-																			<Curve Name="" ID="{026E0D5C-0B07-4F71-855A-06DBE42E0878}">
+																			<Curve Name="" ID="{ED1F9A5E-7F16-45E0-B2EE-1FE680F16EC6}">
 																				<PropertyList>
 																					<Property Name="Flags" Type="int32" Value="3"/>
 																				</PropertyList>
@@ -1109,18 +1110,18 @@
 												<ObjectList Name="Sequences">
 													<Reference>
 														<Local>
-															<MusicTrackSequence Name="" ID="{1E09E34F-6AC4-4E06-942B-7ADF0A5AA813}">
+															<MusicTrackSequence Name="" ID="{9EB3D51A-EE75-4472-A5A9-BC694E344F2C}">
 																<ObjectLists>
 																	<ObjectList Name="Clips">
 																		<Reference>
 																			<Local>
-																				<MusicClip Name="MUS_BGM_A1_DrumsLo" ID="{CE993C5D-92A4-4922-9234-2C03B3DFA87A}">
+																				<MusicClip Name="MUS_BGM_132bpm_Idle_DrumsLo_01" ID="{1739776E-04D8-443E-999C-C90250C71F3A}">
 																					<PropertyList>
-																						<Property Name="EndTrimOffset" Type="Real64" Value="12000"/>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="10909.1041666667"/>
 																						<Property Name="FadeInMode" Type="int16" Value="0"/>
 																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
 																					</PropertyList>
-																					<AudioSourceRef Name="MUS_BGM_A1_DrumsLo" ID="{0F015F1D-F39B-4720-BFB9-362FBB7812B7}"/>
+																					<AudioSourceRef Name="MUS_BGM_132bpm_Idle_DrumsLo_01" ID="{481DA367-0912-4C5E-95CD-E2D445D8927C}"/>
 																				</MusicClip>
 																			</Local>
 																		</Reference>
@@ -1132,14 +1133,14 @@
 												</ObjectList>
 											</ObjectLists>
 										</MusicTrack>
-										<MusicTrack Name="MUS_BGM_A1_Piano" ID="{B3C2139B-C26E-4B52-A770-0916C92CA7A9}" ShortID="549148673">
+										<MusicTrack Name="MUS_BGM_132bpm_Idle_Piano_01" ID="{899FA8F5-10A3-4863-906C-4C8566EEF4AE}" ShortID="237838131">
 											<ReferenceList>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC1FDB7B-AB4A-403B-9ED1-5C49551A2787}"/>
 												</Reference>
 												<Reference Name="TransitionRoot">
 													<Custom>
-														<MusicTransition Name="Root" ID="{D10A42EF-58B0-48B8-A6D1-FB8ABDBAC7CF}">
+														<MusicTransition Name="Root" ID="{9A416258-3BA3-489B-82A7-45744BB1B1FD}">
 															<PropertyList>
 																<Property Name="IsFolder" Type="bool" Value="True"/>
 															</PropertyList>
@@ -1149,11 +1150,11 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="MUS_BGM_A1_Piano" ID="{D2B43C1B-4A05-48FB-8798-99D73DD640C0}">
+												<AudioFileSource Name="MUS_BGM_132bpm_Idle_Piano_01" ID="{7E9A3886-2A1C-4E1E-8D28-B2B8C9E4B149}">
 													<Language>SFX</Language>
-													<AudioFile>MUS_BGM_A1_Piano.wav</AudioFile>
+													<AudioFile>MUS_BGM_132bpm_Idle_Piano_01.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="784030583"/>
+														<MediaID ID="438989920"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
@@ -1161,18 +1162,18 @@
 												<ObjectList Name="Sequences">
 													<Reference>
 														<Local>
-															<MusicTrackSequence Name="" ID="{A65671CE-277D-4ED4-A7A2-748430DA8F80}">
+															<MusicTrackSequence Name="" ID="{1326C2B1-DC3F-4192-AFFE-60F966319B97}">
 																<ObjectLists>
 																	<ObjectList Name="Clips">
 																		<Reference>
 																			<Local>
-																				<MusicClip Name="MUS_BGM_A1_Piano" ID="{59BE2159-D411-4EBC-A0C0-28B0B5C4E761}">
+																				<MusicClip Name="MUS_BGM_132bpm_Idle_Piano_01" ID="{2D13F7C3-4DB1-40EF-ABFB-13FDEB5544C1}">
 																					<PropertyList>
-																						<Property Name="EndTrimOffset" Type="Real64" Value="12000"/>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="10909.1041666667"/>
 																						<Property Name="FadeInMode" Type="int16" Value="0"/>
 																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
 																					</PropertyList>
-																					<AudioSourceRef Name="MUS_BGM_A1_Piano" ID="{D2B43C1B-4A05-48FB-8798-99D73DD640C0}"/>
+																					<AudioSourceRef Name="MUS_BGM_132bpm_Idle_Piano_01" ID="{7E9A3886-2A1C-4E1E-8D28-B2B8C9E4B149}"/>
 																				</MusicClip>
 																			</Local>
 																		</Reference>
@@ -1184,14 +1185,14 @@
 												</ObjectList>
 											</ObjectLists>
 										</MusicTrack>
-										<MusicTrack Name="MUS_BGM_A1_Synth" ID="{FEEBB554-D9C9-43DE-B89F-C84B37A91735}" ShortID="8940055">
+										<MusicTrack Name="MUS_BGM_132bpm_Idle_Synth_01" ID="{6DC7E116-3B92-4EAE-9785-A4479961950A}" ShortID="960601821">
 											<ReferenceList>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC1FDB7B-AB4A-403B-9ED1-5C49551A2787}"/>
 												</Reference>
 												<Reference Name="TransitionRoot">
 													<Custom>
-														<MusicTransition Name="Root" ID="{06F89F62-66B8-4C16-AA68-74C0D02F53A8}">
+														<MusicTransition Name="Root" ID="{F7610F3A-EB2A-4DAE-B839-7E652E4AE9CD}">
 															<PropertyList>
 																<Property Name="IsFolder" Type="bool" Value="True"/>
 															</PropertyList>
@@ -1201,11 +1202,11 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="MUS_BGM_A1_Synth" ID="{1FF478C1-820D-436D-B6CD-4E56BE0B5AF4}">
+												<AudioFileSource Name="MUS_BGM_132bpm_Idle_Synth_01" ID="{979462F8-9BCA-4D84-AEEF-7DDC26EFB1BD}">
 													<Language>SFX</Language>
-													<AudioFile>MUS_BGM_A1_Synth.wav</AudioFile>
+													<AudioFile>MUS_BGM_132bpm_Idle_Synth_01.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="138574565"/>
+														<MediaID ID="17273617"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
@@ -1213,18 +1214,18 @@
 												<ObjectList Name="Sequences">
 													<Reference>
 														<Local>
-															<MusicTrackSequence Name="" ID="{1CC34542-B377-4880-9245-5E9F5FBBC679}">
+															<MusicTrackSequence Name="" ID="{E16FD64A-9BBA-41AD-BC67-5F857763FFDB}">
 																<ObjectLists>
 																	<ObjectList Name="Clips">
 																		<Reference>
 																			<Local>
-																				<MusicClip Name="MUS_BGM_A1_Synth" ID="{C1371351-4BEE-4AAE-B48C-BBA787F2EA98}">
+																				<MusicClip Name="MUS_BGM_132bpm_Idle_Synth_01" ID="{17C9641D-D3DD-489A-A687-DC7BF84B3E82}">
 																					<PropertyList>
-																						<Property Name="EndTrimOffset" Type="Real64" Value="12000"/>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="10909.1041666667"/>
 																						<Property Name="FadeInMode" Type="int16" Value="0"/>
 																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
 																					</PropertyList>
-																					<AudioSourceRef Name="MUS_BGM_A1_Synth" ID="{1FF478C1-820D-436D-B6CD-4E56BE0B5AF4}"/>
+																					<AudioSourceRef Name="MUS_BGM_132bpm_Idle_Synth_01" ID="{979462F8-9BCA-4D84-AEEF-7DDC26EFB1BD}"/>
 																				</MusicClip>
 																			</Local>
 																		</Reference>
@@ -1243,7 +1244,7 @@
 												<Local>
 													<MusicCue Name="Entry Cue" ID="{ED2A753D-2027-4ACB-B7DC-FC6270E1786C}">
 														<PropertyList>
-															<Property Name="TimeMs" Type="Real64" Value="2000"/>
+															<Property Name="TimeMs" Type="Real64" Value="1818.18181818182"/>
 														</PropertyList>
 													</MusicCue>
 												</Local>
@@ -1253,7 +1254,7 @@
 													<MusicCue Name="Exit Cue" ID="{D84B8A86-9195-44CB-AE2D-F9C8D4D9E9E3}">
 														<PropertyList>
 															<Property Name="CueType" Type="int16" Value="1"/>
-															<Property Name="TimeMs" Type="Real64" Value="10000"/>
+															<Property Name="TimeMs" Type="Real64" Value="9090.90909090909"/>
 														</PropertyList>
 													</MusicCue>
 												</Local>
@@ -1261,7 +1262,7 @@
 										</ObjectList>
 									</ObjectLists>
 								</MusicSegment>
-								<MusicSegment Name="MUS_BGM_A2" ID="{3CA2043A-37DF-45A3-8EFC-89AFB3BE7087}" ShortID="914646988">
+								<MusicSegment Name="MUS_BGM_Idle_02" ID="{3CA2043A-37DF-45A3-8EFC-89AFB3BE7087}" ShortID="914646988">
 									<PropertyList>
 										<Property Name="EndPosition" Type="Real64" Value="12000"/>
 									</PropertyList>
@@ -1274,14 +1275,14 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<MusicTrack Name="MUS_BGM_A2_DrumsHi" ID="{40B02F7D-9187-49B7-869E-8BC15AD72915}" ShortID="375668050">
+										<MusicTrack Name="MUS_BGM_132bpm_Idle_DrumsHi_02" ID="{8C99371C-399F-41B7-A502-755526BDE508}" ShortID="604358840">
 											<ReferenceList>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC1FDB7B-AB4A-403B-9ED1-5C49551A2787}"/>
 												</Reference>
 												<Reference Name="TransitionRoot">
 													<Custom>
-														<MusicTransition Name="Root" ID="{FC14114F-952F-4965-944A-078FA3CDDCCE}">
+														<MusicTransition Name="Root" ID="{9D304D4F-2AA4-43EF-826C-045D2FE685EA}">
 															<PropertyList>
 																<Property Name="IsFolder" Type="bool" Value="True"/>
 															</PropertyList>
@@ -1291,11 +1292,11 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="MUS_BGM_A2_DrumsHi" ID="{646F92E5-F216-497B-9FBD-21B8615C90B4}">
+												<AudioFileSource Name="MUS_BGM_132bpm_Idle_DrumsHi_02" ID="{E9663FBF-8F15-41F5-A59A-3F188654E10D}">
 													<Language>SFX</Language>
-													<AudioFile>MUS_BGM_A2_DrumsHi.wav</AudioFile>
+													<AudioFile>MUS_BGM_132bpm_Idle_DrumsHi_02.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="124062832"/>
+														<MediaID ID="1027642669"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
@@ -1303,7 +1304,7 @@
 												<ObjectList Name="RTPC">
 													<Reference>
 														<Local>
-															<RTPC Name="" ID="{2E51A4F4-DE3C-4EA9-9DF6-1D14942A6D6A}" ShortID="585412328">
+															<RTPC Name="" ID="{2DC7C563-E710-4B92-AB79-B10D82C4AF55}" ShortID="750322832">
 																<PropertyList>
 																	<Property Name="PropertyName" Type="string" Value="Volume"/>
 																</PropertyList>
@@ -1313,7 +1314,7 @@
 																	</Reference>
 																	<Reference Name="Curve">
 																		<Custom>
-																			<Curve Name="" ID="{937F21E7-AFCD-4817-9D33-EBA21F955955}">
+																			<Curve Name="" ID="{E061795F-8ADE-4C28-9193-EAFFC461E743}">
 																				<PropertyList>
 																					<Property Name="Flags" Type="int32" Value="3"/>
 																				</PropertyList>
@@ -1350,18 +1351,18 @@
 												<ObjectList Name="Sequences">
 													<Reference>
 														<Local>
-															<MusicTrackSequence Name="" ID="{744A365C-DD14-4FD7-A6AC-FAAB011C1D43}">
+															<MusicTrackSequence Name="" ID="{D4C66FED-63F7-48D9-BA81-31F6E7C280F0}">
 																<ObjectLists>
 																	<ObjectList Name="Clips">
 																		<Reference>
 																			<Local>
-																				<MusicClip Name="MUS_BGM_A2_DrumsHi" ID="{1940B8ED-85A4-4819-8D94-D15313A90954}">
+																				<MusicClip Name="MUS_BGM_132bpm_Idle_DrumsHi_02" ID="{1B0D38BB-561C-4D88-A654-48569F3C9273}">
 																					<PropertyList>
-																						<Property Name="EndTrimOffset" Type="Real64" Value="12000"/>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="10909.1041666667"/>
 																						<Property Name="FadeInMode" Type="int16" Value="0"/>
 																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
 																					</PropertyList>
-																					<AudioSourceRef Name="MUS_BGM_A2_DrumsHi" ID="{646F92E5-F216-497B-9FBD-21B8615C90B4}"/>
+																					<AudioSourceRef Name="MUS_BGM_132bpm_Idle_DrumsHi_02" ID="{E9663FBF-8F15-41F5-A59A-3F188654E10D}"/>
 																				</MusicClip>
 																			</Local>
 																		</Reference>
@@ -1373,14 +1374,14 @@
 												</ObjectList>
 											</ObjectLists>
 										</MusicTrack>
-										<MusicTrack Name="MUS_BGM_A2_DrumsLo" ID="{45E84198-F75B-4A33-9801-06518A062CFE}" ShortID="452704887">
+										<MusicTrack Name="MUS_BGM_132bpm_Idle_DrumsLo_02" ID="{78D5C8F9-A737-4E37-AB8C-A8FBE9964188}" ShortID="677337466">
 											<ReferenceList>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC1FDB7B-AB4A-403B-9ED1-5C49551A2787}"/>
 												</Reference>
 												<Reference Name="TransitionRoot">
 													<Custom>
-														<MusicTransition Name="Root" ID="{B7E1EB36-667D-4561-9EC7-DB8B10070B7D}">
+														<MusicTransition Name="Root" ID="{D7EBE34E-1B71-467C-A967-7AC8BDB3149E}">
 															<PropertyList>
 																<Property Name="IsFolder" Type="bool" Value="True"/>
 															</PropertyList>
@@ -1390,11 +1391,11 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="MUS_BGM_A2_DrumsLo" ID="{1C56B829-D6E1-4664-9C86-226107C87130}">
+												<AudioFileSource Name="MUS_BGM_132bpm_Idle_DrumsLo_02" ID="{5E7D3820-4D56-4742-BD4B-4452F27D7A03}">
 													<Language>SFX</Language>
-													<AudioFile>MUS_BGM_A2_DrumsLo.wav</AudioFile>
+													<AudioFile>MUS_BGM_132bpm_Idle_DrumsLo_02.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="1018659083"/>
+														<MediaID ID="123513959"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
@@ -1402,7 +1403,7 @@
 												<ObjectList Name="RTPC">
 													<Reference>
 														<Local>
-															<RTPC Name="" ID="{9D6F787F-D2CC-4F46-A18A-B485D1DA35BC}" ShortID="243778510">
+															<RTPC Name="" ID="{FAE65A77-2449-467B-B089-1F95DC12A4F0}" ShortID="665662897">
 																<PropertyList>
 																	<Property Name="PropertyName" Type="string" Value="Volume"/>
 																</PropertyList>
@@ -1412,7 +1413,7 @@
 																	</Reference>
 																	<Reference Name="Curve">
 																		<Custom>
-																			<Curve Name="" ID="{A7F02898-04CE-47A7-B2FB-A140EFEE1A8B}">
+																			<Curve Name="" ID="{A6764C73-3BD6-4061-B149-EB8DB53E2D1E}">
 																				<PropertyList>
 																					<Property Name="Flags" Type="int32" Value="3"/>
 																				</PropertyList>
@@ -1449,18 +1450,18 @@
 												<ObjectList Name="Sequences">
 													<Reference>
 														<Local>
-															<MusicTrackSequence Name="" ID="{DCE7936A-3013-471D-B437-BABEC1F6CB27}">
+															<MusicTrackSequence Name="" ID="{97BAA176-585E-417F-9E28-7AB0B3FD6E70}">
 																<ObjectLists>
 																	<ObjectList Name="Clips">
 																		<Reference>
 																			<Local>
-																				<MusicClip Name="MUS_BGM_A2_DrumsLo" ID="{8AB20DDE-0E18-4EB8-8002-8591EF5CDFED}">
+																				<MusicClip Name="MUS_BGM_132bpm_Idle_DrumsLo_02" ID="{85A5E950-A26C-4E53-AAF8-E2E790621A5D}">
 																					<PropertyList>
-																						<Property Name="EndTrimOffset" Type="Real64" Value="12000"/>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="10909.1041666667"/>
 																						<Property Name="FadeInMode" Type="int16" Value="0"/>
 																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
 																					</PropertyList>
-																					<AudioSourceRef Name="MUS_BGM_A2_DrumsLo" ID="{1C56B829-D6E1-4664-9C86-226107C87130}"/>
+																					<AudioSourceRef Name="MUS_BGM_132bpm_Idle_DrumsLo_02" ID="{5E7D3820-4D56-4742-BD4B-4452F27D7A03}"/>
 																				</MusicClip>
 																			</Local>
 																		</Reference>
@@ -1472,14 +1473,14 @@
 												</ObjectList>
 											</ObjectLists>
 										</MusicTrack>
-										<MusicTrack Name="MUS_BGM_A2_Piano" ID="{027220DB-BA3F-4934-A9E7-D6317F4784E8}" ShortID="219595950">
+										<MusicTrack Name="MUS_BGM_132bpm_Idle_Piano_02" ID="{769A4B55-85C1-4DED-A8B4-3AE06F346B64}" ShortID="354151016">
 											<ReferenceList>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC1FDB7B-AB4A-403B-9ED1-5C49551A2787}"/>
 												</Reference>
 												<Reference Name="TransitionRoot">
 													<Custom>
-														<MusicTransition Name="Root" ID="{18FD2E64-D97A-4CD7-A7E6-B745308F1FFF}">
+														<MusicTransition Name="Root" ID="{03DCD82B-84DB-4C91-B898-BA66F3AE7253}">
 															<PropertyList>
 																<Property Name="IsFolder" Type="bool" Value="True"/>
 															</PropertyList>
@@ -1489,11 +1490,11 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="MUS_BGM_A2_Piano" ID="{98A76433-0703-429E-9C91-80CE00206377}">
+												<AudioFileSource Name="MUS_BGM_132bpm_Idle_Piano_02" ID="{FAFB6703-4E1D-4AD8-BA16-D31A2EE98380}">
 													<Language>SFX</Language>
-													<AudioFile>MUS_BGM_A2_Piano.wav</AudioFile>
+													<AudioFile>MUS_BGM_132bpm_Idle_Piano_02.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="50857137"/>
+														<MediaID ID="379781787"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
@@ -1501,18 +1502,18 @@
 												<ObjectList Name="Sequences">
 													<Reference>
 														<Local>
-															<MusicTrackSequence Name="" ID="{782A40EC-28D3-49FC-A2F6-C2C614012ED2}">
+															<MusicTrackSequence Name="" ID="{F70EF175-1F3B-42A0-9B3C-3B34F6B7D1BE}">
 																<ObjectLists>
 																	<ObjectList Name="Clips">
 																		<Reference>
 																			<Local>
-																				<MusicClip Name="MUS_BGM_A2_Piano" ID="{F83F5412-4D71-4314-9DDB-E898A3714748}">
+																				<MusicClip Name="MUS_BGM_132bpm_Idle_Piano_02" ID="{92CD9880-7A35-4CEE-8645-C6B6CA5EC7A5}">
 																					<PropertyList>
-																						<Property Name="EndTrimOffset" Type="Real64" Value="12000"/>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="10909.1041666667"/>
 																						<Property Name="FadeInMode" Type="int16" Value="0"/>
 																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
 																					</PropertyList>
-																					<AudioSourceRef Name="MUS_BGM_A2_Piano" ID="{98A76433-0703-429E-9C91-80CE00206377}"/>
+																					<AudioSourceRef Name="MUS_BGM_132bpm_Idle_Piano_02" ID="{FAFB6703-4E1D-4AD8-BA16-D31A2EE98380}"/>
 																				</MusicClip>
 																			</Local>
 																		</Reference>
@@ -1524,14 +1525,14 @@
 												</ObjectList>
 											</ObjectLists>
 										</MusicTrack>
-										<MusicTrack Name="MUS_BGM_A2_Synth" ID="{18105F14-3CC6-411C-8629-01D9588037CD}" ShortID="558428445">
+										<MusicTrack Name="MUS_BGM_132bpm_Idle_Synth_02" ID="{EF5D806A-653F-4F0B-909A-FC44D6A3AFD7}" ShortID="42315819">
 											<ReferenceList>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC1FDB7B-AB4A-403B-9ED1-5C49551A2787}"/>
 												</Reference>
 												<Reference Name="TransitionRoot">
 													<Custom>
-														<MusicTransition Name="Root" ID="{5196A312-9DCF-41BC-9255-2059A01A5E06}">
+														<MusicTransition Name="Root" ID="{DEE4D536-88CE-4688-B5E5-62AD76810AF1}">
 															<PropertyList>
 																<Property Name="IsFolder" Type="bool" Value="True"/>
 															</PropertyList>
@@ -1541,11 +1542,11 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="MUS_BGM_A2_Synth" ID="{6B60998C-F4CA-4F49-9848-B9796441BA22}">
+												<AudioFileSource Name="MUS_BGM_132bpm_Idle_Synth_02" ID="{8BA2B7A3-DE5C-4CDD-BEB7-3C5D6C201FFC}">
 													<Language>SFX</Language>
-													<AudioFile>MUS_BGM_A2_Synth.wav</AudioFile>
+													<AudioFile>MUS_BGM_132bpm_Idle_Synth_02.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="864769827"/>
+														<MediaID ID="356762521"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
@@ -1553,18 +1554,18 @@
 												<ObjectList Name="Sequences">
 													<Reference>
 														<Local>
-															<MusicTrackSequence Name="" ID="{8303B47C-07F2-4B9F-834D-33FBEC39A0B4}">
+															<MusicTrackSequence Name="" ID="{A3AF9579-662F-4564-B7E2-F13124077084}">
 																<ObjectLists>
 																	<ObjectList Name="Clips">
 																		<Reference>
 																			<Local>
-																				<MusicClip Name="MUS_BGM_A2_Synth" ID="{3239541D-049C-4D4E-91CB-1B571BBF92A4}">
+																				<MusicClip Name="MUS_BGM_132bpm_Idle_Synth_02" ID="{80A7651F-A92F-46C5-9D66-2AF89A86D765}">
 																					<PropertyList>
-																						<Property Name="EndTrimOffset" Type="Real64" Value="12000"/>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="10909.1041666667"/>
 																						<Property Name="FadeInMode" Type="int16" Value="0"/>
 																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
 																					</PropertyList>
-																					<AudioSourceRef Name="MUS_BGM_A2_Synth" ID="{6B60998C-F4CA-4F49-9848-B9796441BA22}"/>
+																					<AudioSourceRef Name="MUS_BGM_132bpm_Idle_Synth_02" ID="{8BA2B7A3-DE5C-4CDD-BEB7-3C5D6C201FFC}"/>
 																				</MusicClip>
 																			</Local>
 																		</Reference>
@@ -1583,7 +1584,7 @@
 												<Local>
 													<MusicCue Name="Entry Cue" ID="{C64C9081-EE93-4AF6-8FE8-B29E63880046}">
 														<PropertyList>
-															<Property Name="TimeMs" Type="Real64" Value="2000"/>
+															<Property Name="TimeMs" Type="Real64" Value="1818.18181818182"/>
 														</PropertyList>
 													</MusicCue>
 												</Local>
@@ -1593,7 +1594,7 @@
 													<MusicCue Name="Exit Cue" ID="{306AF02D-2B48-4DD1-BD19-BBAE70923058}">
 														<PropertyList>
 															<Property Name="CueType" Type="int16" Value="1"/>
-															<Property Name="TimeMs" Type="Real64" Value="10000"/>
+															<Property Name="TimeMs" Type="Real64" Value="9090.90909090909"/>
 														</PropertyList>
 													</MusicCue>
 												</Local>
@@ -1601,7 +1602,7 @@
 										</ObjectList>
 									</ObjectLists>
 								</MusicSegment>
-								<MusicSegment Name="MUS_BGM_A1_NoSynth" ID="{B711E7E0-2324-48B5-9948-4B1AD228D818}" ShortID="756296070">
+								<MusicSegment Name="MUS_BGM_Idle_01_NoSynth" ID="{82E949B3-FC02-404B-BBA7-6D8B133D227A}" ShortID="496120800">
 									<PropertyList>
 										<Property Name="EndPosition" Type="Real64" Value="15125"/>
 									</PropertyList>
@@ -1614,14 +1615,14 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<MusicTrack Name="MUS_BGM_A1_DrumsHi" ID="{E0CEE9B9-C39D-439E-9B22-A2123F5F12AD}" ShortID="1027250601">
+										<MusicTrack Name="MUS_BGM_132bpm_Idle_DrumsHi_01" ID="{A58CB6F8-1556-48A3-9452-45EF1C928874}" ShortID="238817871">
 											<ReferenceList>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC1FDB7B-AB4A-403B-9ED1-5C49551A2787}"/>
 												</Reference>
 												<Reference Name="TransitionRoot">
 													<Custom>
-														<MusicTransition Name="Root" ID="{F54DE547-A7A4-463F-9788-AAC86C57486E}">
+														<MusicTransition Name="Root" ID="{3202A6AA-728C-4962-95DD-FEBC2A19F5EC}">
 															<PropertyList>
 																<Property Name="IsFolder" Type="bool" Value="True"/>
 															</PropertyList>
@@ -1631,11 +1632,11 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="MUS_BGM_A1_DrumsHi" ID="{ED50F8B2-BD09-4F7A-B75C-19D36F4E6EE5}">
+												<AudioFileSource Name="MUS_BGM_132bpm_Idle_DrumsHi_01" ID="{4536E85A-E3D6-4FF7-915A-71A78A565E6F}">
 													<Language>SFX</Language>
-													<AudioFile>MUS_BGM_A1_DrumsHi.wav</AudioFile>
+													<AudioFile>MUS_BGM_132bpm_Idle_DrumsHi_01.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="695258061"/>
+														<MediaID ID="47516979"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
@@ -1643,7 +1644,7 @@
 												<ObjectList Name="RTPC">
 													<Reference>
 														<Local>
-															<RTPC Name="" ID="{0AD33B23-14D0-4969-ADE8-1C2E744F054F}" ShortID="874515391">
+															<RTPC Name="" ID="{EF41761E-410A-42E8-8973-39E651A8032F}" ShortID="1016205239">
 																<PropertyList>
 																	<Property Name="PropertyName" Type="string" Value="Volume"/>
 																</PropertyList>
@@ -1653,7 +1654,7 @@
 																	</Reference>
 																	<Reference Name="Curve">
 																		<Custom>
-																			<Curve Name="" ID="{800E75F8-0E7C-4AEA-BFFB-F989E3C22F2A}">
+																			<Curve Name="" ID="{819F52D4-50FE-4093-8DB8-1F853C5A0360}">
 																				<PropertyList>
 																					<Property Name="Flags" Type="int32" Value="3"/>
 																				</PropertyList>
@@ -1690,18 +1691,18 @@
 												<ObjectList Name="Sequences">
 													<Reference>
 														<Local>
-															<MusicTrackSequence Name="" ID="{D89DF207-F7E6-4362-B19F-D91CF2C15E6B}">
+															<MusicTrackSequence Name="" ID="{47ADBAED-3ABA-4C6C-95E8-8376693FE516}">
 																<ObjectLists>
 																	<ObjectList Name="Clips">
 																		<Reference>
 																			<Local>
-																				<MusicClip Name="MUS_BGM_A1_DrumsHi" ID="{295F5621-B25A-48F5-80B7-F2AC357AF5B4}">
+																				<MusicClip Name="MUS_BGM_132bpm_Idle_DrumsHi_01" ID="{37B97BF8-726B-484A-8665-B08D0FE27DAF}">
 																					<PropertyList>
-																						<Property Name="EndTrimOffset" Type="Real64" Value="12000"/>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="10909.1041666667"/>
 																						<Property Name="FadeInMode" Type="int16" Value="0"/>
 																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
 																					</PropertyList>
-																					<AudioSourceRef Name="MUS_BGM_A1_DrumsHi" ID="{ED50F8B2-BD09-4F7A-B75C-19D36F4E6EE5}"/>
+																					<AudioSourceRef Name="MUS_BGM_132bpm_Idle_DrumsHi_01" ID="{4536E85A-E3D6-4FF7-915A-71A78A565E6F}"/>
 																				</MusicClip>
 																			</Local>
 																		</Reference>
@@ -1713,14 +1714,14 @@
 												</ObjectList>
 											</ObjectLists>
 										</MusicTrack>
-										<MusicTrack Name="MUS_BGM_A1_DrumsLo" ID="{E56009D2-1D43-44E4-974E-DB3EACF91709}" ShortID="806282182">
+										<MusicTrack Name="MUS_BGM_132bpm_Idle_DrumsLo_01" ID="{61B21F6C-BFD7-45A4-9380-E112F131D5B2}" ShortID="520693412">
 											<ReferenceList>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC1FDB7B-AB4A-403B-9ED1-5C49551A2787}"/>
 												</Reference>
 												<Reference Name="TransitionRoot">
 													<Custom>
-														<MusicTransition Name="Root" ID="{46628F26-10D1-4F27-8698-C11B9CCB5D2F}">
+														<MusicTransition Name="Root" ID="{6873B1DB-7E4A-4B05-9B16-2071BBB7F0D8}">
 															<PropertyList>
 																<Property Name="IsFolder" Type="bool" Value="True"/>
 															</PropertyList>
@@ -1730,11 +1731,11 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="MUS_BGM_A1_DrumsLo" ID="{E1C973B8-0D78-4206-A3BA-EAF1F9D322D3}">
+												<AudioFileSource Name="MUS_BGM_132bpm_Idle_DrumsLo_01" ID="{BE2B339F-7D9D-43F9-9D93-CCFD412119CF}">
 													<Language>SFX</Language>
-													<AudioFile>MUS_BGM_A1_DrumsLo.wav</AudioFile>
+													<AudioFile>MUS_BGM_132bpm_Idle_DrumsLo_01.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="449851253"/>
+														<MediaID ID="1070807779"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
@@ -1742,7 +1743,7 @@
 												<ObjectList Name="RTPC">
 													<Reference>
 														<Local>
-															<RTPC Name="" ID="{3AD398D9-B326-4D4E-9C71-B7EACC686D01}" ShortID="1072005382">
+															<RTPC Name="" ID="{7B80FB97-E74D-4F91-AAFC-36801A42CF69}" ShortID="903433037">
 																<PropertyList>
 																	<Property Name="PropertyName" Type="string" Value="Volume"/>
 																</PropertyList>
@@ -1752,7 +1753,7 @@
 																	</Reference>
 																	<Reference Name="Curve">
 																		<Custom>
-																			<Curve Name="" ID="{77F78BF5-A3D8-47DE-A8E3-1EB940F6199E}">
+																			<Curve Name="" ID="{0B7AE424-B289-4668-8D8B-B8D34BD4A7B7}">
 																				<PropertyList>
 																					<Property Name="Flags" Type="int32" Value="3"/>
 																				</PropertyList>
@@ -1789,18 +1790,18 @@
 												<ObjectList Name="Sequences">
 													<Reference>
 														<Local>
-															<MusicTrackSequence Name="" ID="{197F4288-3448-43BA-AA0A-AF3007F0E4BE}">
+															<MusicTrackSequence Name="" ID="{12241FFA-63E8-4C7C-9CEB-56D99950C5B3}">
 																<ObjectLists>
 																	<ObjectList Name="Clips">
 																		<Reference>
 																			<Local>
-																				<MusicClip Name="MUS_BGM_A1_DrumsLo" ID="{6DCECA32-447D-4E54-8CE0-3E8F9E1889FA}">
+																				<MusicClip Name="MUS_BGM_132bpm_Idle_DrumsLo_01" ID="{C96EF693-D2FD-4705-8143-55BF78368C1C}">
 																					<PropertyList>
-																						<Property Name="EndTrimOffset" Type="Real64" Value="12000"/>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="10909.1041666667"/>
 																						<Property Name="FadeInMode" Type="int16" Value="0"/>
 																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
 																					</PropertyList>
-																					<AudioSourceRef Name="MUS_BGM_A1_DrumsLo" ID="{E1C973B8-0D78-4206-A3BA-EAF1F9D322D3}"/>
+																					<AudioSourceRef Name="MUS_BGM_132bpm_Idle_DrumsLo_01" ID="{BE2B339F-7D9D-43F9-9D93-CCFD412119CF}"/>
 																				</MusicClip>
 																			</Local>
 																		</Reference>
@@ -1812,14 +1813,14 @@
 												</ObjectList>
 											</ObjectLists>
 										</MusicTrack>
-										<MusicTrack Name="MUS_BGM_A1_Piano" ID="{F444600F-D4F4-4A94-A179-88AC3D9635EF}" ShortID="437468995">
+										<MusicTrack Name="MUS_BGM_132bpm_Idle_Piano_01" ID="{DBB2FAE6-5F13-4E7F-8279-93D2908436F8}" ShortID="721167741">
 											<ReferenceList>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC1FDB7B-AB4A-403B-9ED1-5C49551A2787}"/>
 												</Reference>
 												<Reference Name="TransitionRoot">
 													<Custom>
-														<MusicTransition Name="Root" ID="{CDC61E9D-EC72-4F00-A1E8-246B4A5CCC9E}">
+														<MusicTransition Name="Root" ID="{C5B9ACCE-7940-47E8-ACCC-3DBD211559C6}">
 															<PropertyList>
 																<Property Name="IsFolder" Type="bool" Value="True"/>
 															</PropertyList>
@@ -1829,11 +1830,11 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="MUS_BGM_A1_Piano" ID="{22092A4D-608E-40F6-83E0-E1967A1A2129}">
+												<AudioFileSource Name="MUS_BGM_132bpm_Idle_Piano_01" ID="{5490F832-1A3A-4C2C-897D-7E8E5E5D82D1}">
 													<Language>SFX</Language>
-													<AudioFile>MUS_BGM_A1_Piano.wav</AudioFile>
+													<AudioFile>MUS_BGM_132bpm_Idle_Piano_01.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="784030583"/>
+														<MediaID ID="438989920"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
@@ -1841,18 +1842,18 @@
 												<ObjectList Name="Sequences">
 													<Reference>
 														<Local>
-															<MusicTrackSequence Name="" ID="{5998F3B1-D663-43C7-8339-EACD60C7380E}">
+															<MusicTrackSequence Name="" ID="{FCF9DC0B-E95C-46BB-BD97-3347D59675C3}">
 																<ObjectLists>
 																	<ObjectList Name="Clips">
 																		<Reference>
 																			<Local>
-																				<MusicClip Name="MUS_BGM_A1_Piano" ID="{2AFF2A8F-BB33-49FE-B13D-5AA9493FEFAA}">
+																				<MusicClip Name="MUS_BGM_132bpm_Idle_Piano_01" ID="{E93F4CCC-42D9-439A-95E2-C2F0B1BB0C65}">
 																					<PropertyList>
-																						<Property Name="EndTrimOffset" Type="Real64" Value="12000"/>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="10909.1041666667"/>
 																						<Property Name="FadeInMode" Type="int16" Value="0"/>
 																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
 																					</PropertyList>
-																					<AudioSourceRef Name="MUS_BGM_A1_Piano" ID="{22092A4D-608E-40F6-83E0-E1967A1A2129}"/>
+																					<AudioSourceRef Name="MUS_BGM_132bpm_Idle_Piano_01" ID="{5490F832-1A3A-4C2C-897D-7E8E5E5D82D1}"/>
 																				</MusicClip>
 																			</Local>
 																		</Reference>
@@ -1869,19 +1870,19 @@
 										<ObjectList Name="Cues">
 											<Reference>
 												<Local>
-													<MusicCue Name="Entry Cue" ID="{135104B9-230D-4893-BC40-6112429567CB}">
+													<MusicCue Name="Entry Cue" ID="{8B96E796-8A1B-48E9-8CDB-7733EE272422}">
 														<PropertyList>
-															<Property Name="TimeMs" Type="Real64" Value="2000"/>
+															<Property Name="TimeMs" Type="Real64" Value="1818.18181818182"/>
 														</PropertyList>
 													</MusicCue>
 												</Local>
 											</Reference>
 											<Reference>
 												<Local>
-													<MusicCue Name="Exit Cue" ID="{5DE68B55-7C99-4C10-A5E8-27329D23DC44}">
+													<MusicCue Name="Exit Cue" ID="{89F609CA-80CA-4CB9-B2E2-3304E727010C}">
 														<PropertyList>
 															<Property Name="CueType" Type="int16" Value="1"/>
-															<Property Name="TimeMs" Type="Real64" Value="10000"/>
+															<Property Name="TimeMs" Type="Real64" Value="9090.90909090909"/>
 														</PropertyList>
 													</MusicCue>
 												</Local>
@@ -1891,7 +1892,7 @@
 								</MusicSegment>
 							</ChildrenList>
 						</MusicPlaylistContainer>
-						<MusicPlaylistContainer Name="MUS_BGM_B" ID="{2249646F-9D1C-4ED9-A6DF-5FB601AE67D7}" ShortID="154500427">
+						<MusicPlaylistContainer Name="MUS_BGM_PickedUp" ID="{2249646F-9D1C-4ED9-A6DF-5FB601AE67D7}" ShortID="154500427">
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F31277D4-DD00-4059-A6A3-67EE41BC19BA}"/>
@@ -1913,7 +1914,7 @@
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Segment">
-															<ObjectRef Name="MUS_BGM_B1" ID="{C5F64B83-8FC8-4A97-860B-7CD9BEA840D0}" WorkUnitID="{749D61E4-F82D-4EEF-B729-5F9971B28A87}"/>
+															<ObjectRef Name="MUS_BGM_PickedUp_01" ID="{C5F64B83-8FC8-4A97-860B-7CD9BEA840D0}" WorkUnitID="{749D61E4-F82D-4EEF-B729-5F9971B28A87}"/>
 														</Reference>
 													</ReferenceList>
 												</MusicPlaylistItem>
@@ -1923,7 +1924,17 @@
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Segment">
-															<ObjectRef Name="MUS_BGM_B2" ID="{0F1F9C9F-09F5-430C-A51F-AB996146FFDE}" WorkUnitID="{749D61E4-F82D-4EEF-B729-5F9971B28A87}"/>
+															<ObjectRef Name="MUS_BGM_PickedUp_02" ID="{0F1F9C9F-09F5-430C-A51F-AB996146FFDE}" WorkUnitID="{749D61E4-F82D-4EEF-B729-5F9971B28A87}"/>
+														</Reference>
+													</ReferenceList>
+												</MusicPlaylistItem>
+												<MusicPlaylistItem Name="" ID="{AC937D35-6FBB-4553-AC3C-879B8AB7950C}" ShortID="874553448">
+													<PropertyList>
+														<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Segment">
+															<ObjectRef Name="MUS_BGM_PickedUp_03" ID="{B4BF7015-327B-4F1D-9997-4CCEA94D0BDB}" WorkUnitID="{749D61E4-F82D-4EEF-B729-5F9971B28A87}"/>
 														</Reference>
 													</ReferenceList>
 												</MusicPlaylistItem>
@@ -1955,7 +1966,7 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<MusicSegment Name="MUS_BGM_B1" ID="{C5F64B83-8FC8-4A97-860B-7CD9BEA840D0}" ShortID="483450932">
+								<MusicSegment Name="MUS_BGM_PickedUp_01" ID="{C5F64B83-8FC8-4A97-860B-7CD9BEA840D0}" ShortID="483450932">
 									<PropertyList>
 										<Property Name="EndPosition" Type="Real64" Value="13750"/>
 									</PropertyList>
@@ -1968,14 +1979,14 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<MusicTrack Name="MUS_BGM_B1_DrumsHi" ID="{64F2C460-82AF-4FFD-B827-BEBE36B47E66}" ShortID="1029246370">
+										<MusicTrack Name="MUS_BGM_132bpm_PickedUp_DrumsHi_01" ID="{22874286-CD77-45D5-9D5E-031A0EE5ABFC}" ShortID="324015582">
 											<ReferenceList>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC1FDB7B-AB4A-403B-9ED1-5C49551A2787}"/>
 												</Reference>
 												<Reference Name="TransitionRoot">
 													<Custom>
-														<MusicTransition Name="Root" ID="{BAF9B290-2565-486A-ACE9-AAFD4F1F7FB6}">
+														<MusicTransition Name="Root" ID="{67984C06-426B-4A6B-9390-F52841164C47}">
 															<PropertyList>
 																<Property Name="IsFolder" Type="bool" Value="True"/>
 															</PropertyList>
@@ -1985,11 +1996,11 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="MUS_BGM_B1_DrumsHi" ID="{C8B6FA68-6257-41A2-8DF2-D500DA5700AD}">
+												<AudioFileSource Name="MUS_BGM_132bpm_PickedUp_DrumsHi_01" ID="{943E2446-8E4D-4D22-A0CD-58627A04EDE4}">
 													<Language>SFX</Language>
-													<AudioFile>MUS_BGM_B1_DrumsHi.wav</AudioFile>
+													<AudioFile>MUS_BGM_132bpm_PickedUp_DrumsHi_01.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="284973796"/>
+														<MediaID ID="797697480"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
@@ -1997,7 +2008,7 @@
 												<ObjectList Name="RTPC">
 													<Reference>
 														<Local>
-															<RTPC Name="" ID="{70AA54C5-5495-4CEE-B48A-594B62DAD053}" ShortID="575414730">
+															<RTPC Name="" ID="{132B9994-15B2-4270-B06E-F6CEE7503F64}" ShortID="580527931">
 																<PropertyList>
 																	<Property Name="PropertyName" Type="string" Value="Volume"/>
 																</PropertyList>
@@ -2007,7 +2018,7 @@
 																	</Reference>
 																	<Reference Name="Curve">
 																		<Custom>
-																			<Curve Name="" ID="{015EF579-4F7E-4CB5-A869-2BBCE0666C46}">
+																			<Curve Name="" ID="{625CBB47-39B7-4E42-8B69-D15E9FDE1E1C}">
 																				<PropertyList>
 																					<Property Name="Flags" Type="int32" Value="3"/>
 																				</PropertyList>
@@ -2044,18 +2055,18 @@
 												<ObjectList Name="Sequences">
 													<Reference>
 														<Local>
-															<MusicTrackSequence Name="" ID="{1DF3CF56-04F0-40DC-B948-29E111A6BBD3}">
+															<MusicTrackSequence Name="" ID="{7A7FDDBE-BDAE-474A-88A0-1B4B9ACA4003}">
 																<ObjectLists>
 																	<ObjectList Name="Clips">
 																		<Reference>
 																			<Local>
-																				<MusicClip Name="MUS_BGM_B1_DrumsHi" ID="{678F88A9-4581-4AA4-A8C2-379B87436B34}">
+																				<MusicClip Name="MUS_BGM_132bpm_PickedUp_DrumsHi_01" ID="{6DF47515-009E-4BF9-99CE-1BCA5E5F76B3}">
 																					<PropertyList>
-																						<Property Name="EndTrimOffset" Type="Real64" Value="12000"/>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="10909.1041666667"/>
 																						<Property Name="FadeInMode" Type="int16" Value="0"/>
 																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
 																					</PropertyList>
-																					<AudioSourceRef Name="MUS_BGM_B1_DrumsHi" ID="{C8B6FA68-6257-41A2-8DF2-D500DA5700AD}"/>
+																					<AudioSourceRef Name="MUS_BGM_132bpm_PickedUp_DrumsHi_01" ID="{943E2446-8E4D-4D22-A0CD-58627A04EDE4}"/>
 																				</MusicClip>
 																			</Local>
 																		</Reference>
@@ -2067,14 +2078,14 @@
 												</ObjectList>
 											</ObjectLists>
 										</MusicTrack>
-										<MusicTrack Name="MUS_BGM_B1_DrumsLo" ID="{0E895260-5A5E-431B-B66C-C4160106D17B}" ShortID="1010293536">
+										<MusicTrack Name="MUS_BGM_132bpm_PickedUp_DrumsLo_01" ID="{7AF43C66-B90F-43E1-9844-28B658E3EAB6}" ShortID="574662851">
 											<ReferenceList>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC1FDB7B-AB4A-403B-9ED1-5C49551A2787}"/>
 												</Reference>
 												<Reference Name="TransitionRoot">
 													<Custom>
-														<MusicTransition Name="Root" ID="{F4323FFE-B6FE-40E4-BEB3-7F50AD119EC8}">
+														<MusicTransition Name="Root" ID="{F11A1D39-FBB3-4382-B677-6405A9DCC693}">
 															<PropertyList>
 																<Property Name="IsFolder" Type="bool" Value="True"/>
 															</PropertyList>
@@ -2084,11 +2095,11 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="MUS_BGM_B1_DrumsLo" ID="{E0AB477F-980E-484E-B0A6-4D88C91FDE35}">
+												<AudioFileSource Name="MUS_BGM_132bpm_PickedUp_DrumsLo_01" ID="{50AFBCFA-28D1-41F9-9164-5E7EB7DF952B}">
 													<Language>SFX</Language>
-													<AudioFile>MUS_BGM_B1_DrumsLo.wav</AudioFile>
+													<AudioFile>MUS_BGM_132bpm_PickedUp_DrumsLo_01.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="687574380"/>
+														<MediaID ID="721423106"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
@@ -2096,7 +2107,7 @@
 												<ObjectList Name="RTPC">
 													<Reference>
 														<Local>
-															<RTPC Name="" ID="{EB1CE329-3A2F-4DD0-947B-263A07D434CA}" ShortID="800211435">
+															<RTPC Name="" ID="{535EB5F1-71DA-44EA-94E1-96ED4EE18D93}" ShortID="299753101">
 																<PropertyList>
 																	<Property Name="PropertyName" Type="string" Value="Volume"/>
 																</PropertyList>
@@ -2106,7 +2117,7 @@
 																	</Reference>
 																	<Reference Name="Curve">
 																		<Custom>
-																			<Curve Name="" ID="{CC5F3C3C-763F-4416-9EA8-DCB398BFCFCC}">
+																			<Curve Name="" ID="{834AC6BC-15B5-45F7-9669-FD8C8772DAF6}">
 																				<PropertyList>
 																					<Property Name="Flags" Type="int32" Value="3"/>
 																				</PropertyList>
@@ -2143,18 +2154,18 @@
 												<ObjectList Name="Sequences">
 													<Reference>
 														<Local>
-															<MusicTrackSequence Name="" ID="{3719A2D2-1683-49D0-8551-613019F15791}">
+															<MusicTrackSequence Name="" ID="{0A9224BC-2394-4B6B-8560-31591EEA2E9C}">
 																<ObjectLists>
 																	<ObjectList Name="Clips">
 																		<Reference>
 																			<Local>
-																				<MusicClip Name="MUS_BGM_B1_DrumsLo" ID="{D8B3F737-A5A2-4185-9F7A-0BDF97CC44F3}">
+																				<MusicClip Name="MUS_BGM_132bpm_PickedUp_DrumsLo_01" ID="{2A776DE1-C416-4565-8B86-FF9BD7AFC527}">
 																					<PropertyList>
-																						<Property Name="EndTrimOffset" Type="Real64" Value="12000"/>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="10909.1041666667"/>
 																						<Property Name="FadeInMode" Type="int16" Value="0"/>
 																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
 																					</PropertyList>
-																					<AudioSourceRef Name="MUS_BGM_B1_DrumsLo" ID="{E0AB477F-980E-484E-B0A6-4D88C91FDE35}"/>
+																					<AudioSourceRef Name="MUS_BGM_132bpm_PickedUp_DrumsLo_01" ID="{50AFBCFA-28D1-41F9-9164-5E7EB7DF952B}"/>
 																				</MusicClip>
 																			</Local>
 																		</Reference>
@@ -2166,14 +2177,14 @@
 												</ObjectList>
 											</ObjectLists>
 										</MusicTrack>
-										<MusicTrack Name="MUS_BGM_B1_Piano" ID="{DC74E769-96C9-4817-AD38-70492DC373DB}" ShortID="239366922">
+										<MusicTrack Name="MUS_BGM_132bpm_PickedUp_Piano_01" ID="{B3D7564D-DAC2-4B28-AC4F-0F052728F413}" ShortID="405527762">
 											<ReferenceList>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC1FDB7B-AB4A-403B-9ED1-5C49551A2787}"/>
 												</Reference>
 												<Reference Name="TransitionRoot">
 													<Custom>
-														<MusicTransition Name="Root" ID="{5398A9C2-F2D5-480A-91D5-4C49BAAE8DF1}">
+														<MusicTransition Name="Root" ID="{2195A05B-3E0A-497E-9D3A-A2E18796C0A4}">
 															<PropertyList>
 																<Property Name="IsFolder" Type="bool" Value="True"/>
 															</PropertyList>
@@ -2183,11 +2194,11 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="MUS_BGM_B1_Piano" ID="{11E2BF8C-1B82-4E1A-B5F2-2C6D6B3FDCC6}">
+												<AudioFileSource Name="MUS_BGM_132bpm_PickedUp_Piano_01" ID="{754B472C-428D-4E21-8476-42427CDF571E}">
 													<Language>SFX</Language>
-													<AudioFile>MUS_BGM_B1_Piano.wav</AudioFile>
+													<AudioFile>MUS_BGM_132bpm_PickedUp_Piano_01.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="99241168"/>
+														<MediaID ID="6629817"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
@@ -2195,18 +2206,18 @@
 												<ObjectList Name="Sequences">
 													<Reference>
 														<Local>
-															<MusicTrackSequence Name="" ID="{8229B3B8-F186-4672-AEF4-517A9D0FC526}">
+															<MusicTrackSequence Name="" ID="{DF00636A-8F34-47B5-A0C8-47AAF62C53D4}">
 																<ObjectLists>
 																	<ObjectList Name="Clips">
 																		<Reference>
 																			<Local>
-																				<MusicClip Name="MUS_BGM_B1_Piano" ID="{286F4351-175B-4B57-AF46-5C318605E176}">
+																				<MusicClip Name="MUS_BGM_132bpm_PickedUp_Piano_01" ID="{213E6EB7-09A0-4138-A6C4-2A6DE656DAA0}">
 																					<PropertyList>
-																						<Property Name="EndTrimOffset" Type="Real64" Value="12000"/>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="10909.1041666667"/>
 																						<Property Name="FadeInMode" Type="int16" Value="0"/>
 																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
 																					</PropertyList>
-																					<AudioSourceRef Name="MUS_BGM_B1_Piano" ID="{11E2BF8C-1B82-4E1A-B5F2-2C6D6B3FDCC6}"/>
+																					<AudioSourceRef Name="MUS_BGM_132bpm_PickedUp_Piano_01" ID="{754B472C-428D-4E21-8476-42427CDF571E}"/>
 																				</MusicClip>
 																			</Local>
 																		</Reference>
@@ -2218,14 +2229,14 @@
 												</ObjectList>
 											</ObjectLists>
 										</MusicTrack>
-										<MusicTrack Name="MUS_BGM_B1_Synth" ID="{83BE5F05-DD46-4F52-8670-38BEFCB6ABAA}" ShortID="768464243">
+										<MusicTrack Name="MUS_BGM_132bpm_PickedUp_Synth_01" ID="{D54E4F08-1ACC-4383-9E5A-87D9186FB5E0}" ShortID="32187968">
 											<ReferenceList>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC1FDB7B-AB4A-403B-9ED1-5C49551A2787}"/>
 												</Reference>
 												<Reference Name="TransitionRoot">
 													<Custom>
-														<MusicTransition Name="Root" ID="{5CEA8796-1D87-4A0E-BA59-1ECB8BA11553}">
+														<MusicTransition Name="Root" ID="{BA22D8A3-262F-4593-ABE7-46A909EEB47C}">
 															<PropertyList>
 																<Property Name="IsFolder" Type="bool" Value="True"/>
 															</PropertyList>
@@ -2235,11 +2246,11 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="MUS_BGM_B1_Synth" ID="{162BEA49-4B63-414C-AC74-100696D409C4}">
+												<AudioFileSource Name="MUS_BGM_132bpm_PickedUp_Synth_01" ID="{D632ADB7-D6DA-42B2-AB62-8E96FEF5FB64}">
 													<Language>SFX</Language>
-													<AudioFile>MUS_BGM_B1_Synth.wav</AudioFile>
+													<AudioFile>MUS_BGM_132bpm_PickedUp_Synth_01.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="414495426"/>
+														<MediaID ID="498252147"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
@@ -2247,18 +2258,18 @@
 												<ObjectList Name="Sequences">
 													<Reference>
 														<Local>
-															<MusicTrackSequence Name="" ID="{52FE04B9-933C-430B-BED0-9AE9A8CE3FE0}">
+															<MusicTrackSequence Name="" ID="{0E0A546B-7584-4222-8E3B-3B3BE4AD8CC6}">
 																<ObjectLists>
 																	<ObjectList Name="Clips">
 																		<Reference>
 																			<Local>
-																				<MusicClip Name="MUS_BGM_B1_Synth" ID="{B4B70349-AD45-45E5-829B-44C5208B92BC}">
+																				<MusicClip Name="MUS_BGM_132bpm_PickedUp_Synth_01" ID="{1F41C8CF-EFBB-44C7-8923-C1900F0AF2C2}">
 																					<PropertyList>
-																						<Property Name="EndTrimOffset" Type="Real64" Value="12000"/>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="10909.1041666667"/>
 																						<Property Name="FadeInMode" Type="int16" Value="0"/>
 																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
 																					</PropertyList>
-																					<AudioSourceRef Name="MUS_BGM_B1_Synth" ID="{162BEA49-4B63-414C-AC74-100696D409C4}"/>
+																					<AudioSourceRef Name="MUS_BGM_132bpm_PickedUp_Synth_01" ID="{D632ADB7-D6DA-42B2-AB62-8E96FEF5FB64}"/>
 																				</MusicClip>
 																			</Local>
 																		</Reference>
@@ -2277,7 +2288,7 @@
 												<Local>
 													<MusicCue Name="Entry Cue" ID="{5082FF6A-98A8-45B1-ABFB-2F2039C3E043}">
 														<PropertyList>
-															<Property Name="TimeMs" Type="Real64" Value="2000"/>
+															<Property Name="TimeMs" Type="Real64" Value="1818.18181818182"/>
 														</PropertyList>
 													</MusicCue>
 												</Local>
@@ -2287,7 +2298,7 @@
 													<MusicCue Name="Exit Cue" ID="{9CCF331C-59E5-4FC9-BEE3-0F5F1C191538}">
 														<PropertyList>
 															<Property Name="CueType" Type="int16" Value="1"/>
-															<Property Name="TimeMs" Type="Real64" Value="10000"/>
+															<Property Name="TimeMs" Type="Real64" Value="9090.90909090909"/>
 														</PropertyList>
 													</MusicCue>
 												</Local>
@@ -2295,7 +2306,7 @@
 										</ObjectList>
 									</ObjectLists>
 								</MusicSegment>
-								<MusicSegment Name="MUS_BGM_B2" ID="{0F1F9C9F-09F5-430C-A51F-AB996146FFDE}" ShortID="1060665677">
+								<MusicSegment Name="MUS_BGM_PickedUp_02" ID="{0F1F9C9F-09F5-430C-A51F-AB996146FFDE}" ShortID="1060665677">
 									<PropertyList>
 										<Property Name="EndPosition" Type="Real64" Value="12000"/>
 									</PropertyList>
@@ -2308,14 +2319,14 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<MusicTrack Name="MUS_BGM_B2_DrumsHi" ID="{566FBB54-F033-4019-9FC7-F6814DE1B5FC}" ShortID="702947031">
+										<MusicTrack Name="MUS_BGM_132bpm_PickedUp_DrumsHi_02" ID="{9BB0EE01-B40A-452A-B1DE-A88910CAD55B}" ShortID="76110123">
 											<ReferenceList>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC1FDB7B-AB4A-403B-9ED1-5C49551A2787}"/>
 												</Reference>
 												<Reference Name="TransitionRoot">
 													<Custom>
-														<MusicTransition Name="Root" ID="{DB6B6B40-6124-4C80-93A4-650D0AF71F14}">
+														<MusicTransition Name="Root" ID="{F190B4AD-F9CE-4013-ACEE-681FBA4314C6}">
 															<PropertyList>
 																<Property Name="IsFolder" Type="bool" Value="True"/>
 															</PropertyList>
@@ -2325,11 +2336,11 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="MUS_BGM_B2_DrumsHi" ID="{0547CF40-BD3F-42DC-A673-58605FABB946}">
+												<AudioFileSource Name="MUS_BGM_132bpm_PickedUp_DrumsHi_02" ID="{166601BC-D34B-4F19-9890-61F758849C50}">
 													<Language>SFX</Language>
-													<AudioFile>MUS_BGM_B2_DrumsHi.wav</AudioFile>
+													<AudioFile>MUS_BGM_132bpm_PickedUp_DrumsHi_02.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="41425527"/>
+														<MediaID ID="411483796"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
@@ -2337,7 +2348,7 @@
 												<ObjectList Name="RTPC">
 													<Reference>
 														<Local>
-															<RTPC Name="" ID="{F37736EB-25FB-4E1A-AAE2-C060BB024885}" ShortID="366341670">
+															<RTPC Name="" ID="{A09386F2-DD4D-453D-905C-3EFD0DD4A488}" ShortID="815738568">
 																<PropertyList>
 																	<Property Name="PropertyName" Type="string" Value="Volume"/>
 																</PropertyList>
@@ -2347,7 +2358,7 @@
 																	</Reference>
 																	<Reference Name="Curve">
 																		<Custom>
-																			<Curve Name="" ID="{998F877E-ED49-432B-B8A1-66F68914FD8B}">
+																			<Curve Name="" ID="{1DA06C3F-50B1-43B9-B227-B72B40265F02}">
 																				<PropertyList>
 																					<Property Name="Flags" Type="int32" Value="3"/>
 																				</PropertyList>
@@ -2384,18 +2395,18 @@
 												<ObjectList Name="Sequences">
 													<Reference>
 														<Local>
-															<MusicTrackSequence Name="" ID="{C477FF78-5AB5-4D87-93CA-E7ECCC9B334A}">
+															<MusicTrackSequence Name="" ID="{CCADE950-2C58-4769-A778-8F10EC32D7FC}">
 																<ObjectLists>
 																	<ObjectList Name="Clips">
 																		<Reference>
 																			<Local>
-																				<MusicClip Name="MUS_BGM_B2_DrumsHi" ID="{A97CCAF7-8C0B-4987-80FE-FDB9E4DCBCF2}">
+																				<MusicClip Name="MUS_BGM_132bpm_PickedUp_DrumsHi_02" ID="{4DB64E53-E051-4085-A0C4-A6EB0E497AD7}">
 																					<PropertyList>
-																						<Property Name="EndTrimOffset" Type="Real64" Value="12000"/>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="10909.1041666667"/>
 																						<Property Name="FadeInMode" Type="int16" Value="0"/>
 																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
 																					</PropertyList>
-																					<AudioSourceRef Name="MUS_BGM_B2_DrumsHi" ID="{0547CF40-BD3F-42DC-A673-58605FABB946}"/>
+																					<AudioSourceRef Name="MUS_BGM_132bpm_PickedUp_DrumsHi_02" ID="{166601BC-D34B-4F19-9890-61F758849C50}"/>
 																				</MusicClip>
 																			</Local>
 																		</Reference>
@@ -2407,14 +2418,14 @@
 												</ObjectList>
 											</ObjectLists>
 										</MusicTrack>
-										<MusicTrack Name="MUS_BGM_B2_DrumsLo" ID="{E21848AE-0C34-4232-AD36-F6EF948B0D50}" ShortID="889464445">
+										<MusicTrack Name="MUS_BGM_132bpm_PickedUp_DrumsLo_02" ID="{0298B121-CCB2-4BB5-B89A-9E2E3858A907}" ShortID="428755961">
 											<ReferenceList>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC1FDB7B-AB4A-403B-9ED1-5C49551A2787}"/>
 												</Reference>
 												<Reference Name="TransitionRoot">
 													<Custom>
-														<MusicTransition Name="Root" ID="{19BCF8F9-029B-4BD0-BB10-940127A4E9AE}">
+														<MusicTransition Name="Root" ID="{14EC5F2E-0705-476E-8033-84F351D9CE6A}">
 															<PropertyList>
 																<Property Name="IsFolder" Type="bool" Value="True"/>
 															</PropertyList>
@@ -2424,11 +2435,11 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="MUS_BGM_B2_DrumsLo" ID="{52441D67-B309-4353-9B46-9D5690D3ECF8}">
+												<AudioFileSource Name="MUS_BGM_132bpm_PickedUp_DrumsLo_02" ID="{DB53312F-367C-4A70-8399-49CC49069CE4}">
 													<Language>SFX</Language>
-													<AudioFile>MUS_BGM_B2_DrumsLo.wav</AudioFile>
+													<AudioFile>MUS_BGM_132bpm_PickedUp_DrumsLo_02.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="497562931"/>
+														<MediaID ID="376825196"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
@@ -2436,7 +2447,7 @@
 												<ObjectList Name="RTPC">
 													<Reference>
 														<Local>
-															<RTPC Name="" ID="{7E800F68-0BC1-4A64-8E01-5234DCDBF302}" ShortID="1068483162">
+															<RTPC Name="" ID="{BC6F0890-9D36-4A37-89A5-F062D1BDC43A}" ShortID="559125766">
 																<PropertyList>
 																	<Property Name="PropertyName" Type="string" Value="Volume"/>
 																</PropertyList>
@@ -2446,7 +2457,7 @@
 																	</Reference>
 																	<Reference Name="Curve">
 																		<Custom>
-																			<Curve Name="" ID="{AD4CEF12-8489-47AB-AA62-5987A63D8F74}">
+																			<Curve Name="" ID="{DE0B7881-F218-48DD-9096-9AD0569F5EFD}">
 																				<PropertyList>
 																					<Property Name="Flags" Type="int32" Value="3"/>
 																				</PropertyList>
@@ -2483,18 +2494,18 @@
 												<ObjectList Name="Sequences">
 													<Reference>
 														<Local>
-															<MusicTrackSequence Name="" ID="{FD836D1B-607D-42E8-933F-037781969C4B}">
+															<MusicTrackSequence Name="" ID="{4923B625-7F14-4F8C-A585-56319DE9F1EF}">
 																<ObjectLists>
 																	<ObjectList Name="Clips">
 																		<Reference>
 																			<Local>
-																				<MusicClip Name="MUS_BGM_B2_DrumsLo" ID="{C12C1BB9-615F-4266-8B34-FBEE055BB5E9}">
+																				<MusicClip Name="MUS_BGM_132bpm_PickedUp_DrumsLo_02" ID="{4E10C02A-43E0-4230-8C24-F6AF3620DC48}">
 																					<PropertyList>
-																						<Property Name="EndTrimOffset" Type="Real64" Value="12000"/>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="10909.1041666667"/>
 																						<Property Name="FadeInMode" Type="int16" Value="0"/>
 																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
 																					</PropertyList>
-																					<AudioSourceRef Name="MUS_BGM_B2_DrumsLo" ID="{52441D67-B309-4353-9B46-9D5690D3ECF8}"/>
+																					<AudioSourceRef Name="MUS_BGM_132bpm_PickedUp_DrumsLo_02" ID="{DB53312F-367C-4A70-8399-49CC49069CE4}"/>
 																				</MusicClip>
 																			</Local>
 																		</Reference>
@@ -2506,14 +2517,14 @@
 												</ObjectList>
 											</ObjectLists>
 										</MusicTrack>
-										<MusicTrack Name="MUS_BGM_B2_Piano" ID="{0832115F-742C-4AE0-8F27-FC4C0F942B6E}" ShortID="965794311">
+										<MusicTrack Name="MUS_BGM_132bpm_PickedUp_Piano_02" ID="{39D6A440-1630-4F09-9A36-5E4C0B860EC5}" ShortID="625045040">
 											<ReferenceList>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC1FDB7B-AB4A-403B-9ED1-5C49551A2787}"/>
 												</Reference>
 												<Reference Name="TransitionRoot">
 													<Custom>
-														<MusicTransition Name="Root" ID="{6DA34BDE-59F0-46B1-9CB0-95D70F85BD36}">
+														<MusicTransition Name="Root" ID="{7E623B9A-A599-4169-8716-4F88CD4B3403}">
 															<PropertyList>
 																<Property Name="IsFolder" Type="bool" Value="True"/>
 															</PropertyList>
@@ -2523,11 +2534,11 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="MUS_BGM_B2_Piano" ID="{E0AD9A4D-2AE0-406A-8D8A-F9B25EB1A32E}">
+												<AudioFileSource Name="MUS_BGM_132bpm_PickedUp_Piano_02" ID="{5384A9FF-D67D-4A63-89A0-E2633B16B1DB}">
 													<Language>SFX</Language>
-													<AudioFile>MUS_BGM_B2_Piano.wav</AudioFile>
+													<AudioFile>MUS_BGM_132bpm_PickedUp_Piano_02.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="580980193"/>
+														<MediaID ID="25460242"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
@@ -2535,18 +2546,18 @@
 												<ObjectList Name="Sequences">
 													<Reference>
 														<Local>
-															<MusicTrackSequence Name="" ID="{33853222-0EF3-40A8-9740-A61188C681FA}">
+															<MusicTrackSequence Name="" ID="{4C30213F-91DD-44EE-8BA0-3C9B5538329C}">
 																<ObjectLists>
 																	<ObjectList Name="Clips">
 																		<Reference>
 																			<Local>
-																				<MusicClip Name="MUS_BGM_B2_Piano" ID="{25155195-3864-4ECB-A99D-F3BD1EB251A8}">
+																				<MusicClip Name="MUS_BGM_132bpm_PickedUp_Piano_02" ID="{52A478B7-94A9-4B7E-BF8A-544A9D177BFB}">
 																					<PropertyList>
-																						<Property Name="EndTrimOffset" Type="Real64" Value="12000"/>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="10909.1041666667"/>
 																						<Property Name="FadeInMode" Type="int16" Value="0"/>
 																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
 																					</PropertyList>
-																					<AudioSourceRef Name="MUS_BGM_B2_Piano" ID="{E0AD9A4D-2AE0-406A-8D8A-F9B25EB1A32E}"/>
+																					<AudioSourceRef Name="MUS_BGM_132bpm_PickedUp_Piano_02" ID="{5384A9FF-D67D-4A63-89A0-E2633B16B1DB}"/>
 																				</MusicClip>
 																			</Local>
 																		</Reference>
@@ -2558,14 +2569,14 @@
 												</ObjectList>
 											</ObjectLists>
 										</MusicTrack>
-										<MusicTrack Name="MUS_BGM_B2_Synth" ID="{2637CE82-4275-412F-94BB-732EE8FD5F94}" ShortID="12985227">
+										<MusicTrack Name="MUS_BGM_132bpm_PickedUp_Synth_02" ID="{CF334BCB-0007-45C3-9450-1FAEDE1CBF0C}" ShortID="369586609">
 											<ReferenceList>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC1FDB7B-AB4A-403B-9ED1-5C49551A2787}"/>
 												</Reference>
 												<Reference Name="TransitionRoot">
 													<Custom>
-														<MusicTransition Name="Root" ID="{7D472684-1EA2-4180-9E7C-16E16AACFFEA}">
+														<MusicTransition Name="Root" ID="{231A04A9-3D0D-4E5B-9B99-56E6FFAC71FA}">
 															<PropertyList>
 																<Property Name="IsFolder" Type="bool" Value="True"/>
 															</PropertyList>
@@ -2575,11 +2586,11 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="MUS_BGM_B2_Synth" ID="{FCF48541-8D6C-451A-85C6-EACC259BAB5E}">
+												<AudioFileSource Name="MUS_BGM_132bpm_PickedUp_Synth_02" ID="{0F506D09-06BD-4535-BBBD-8A597452A6B1}">
 													<Language>SFX</Language>
-													<AudioFile>MUS_BGM_B2_Synth.wav</AudioFile>
+													<AudioFile>MUS_BGM_132bpm_PickedUp_Synth_02.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="15733850"/>
+														<MediaID ID="741593281"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
@@ -2587,18 +2598,18 @@
 												<ObjectList Name="Sequences">
 													<Reference>
 														<Local>
-															<MusicTrackSequence Name="" ID="{A83FBC66-2287-435A-BE9C-759D60EA83FC}">
+															<MusicTrackSequence Name="" ID="{30825060-E776-4E58-B3EF-4A5C39AB3B13}">
 																<ObjectLists>
 																	<ObjectList Name="Clips">
 																		<Reference>
 																			<Local>
-																				<MusicClip Name="MUS_BGM_B2_Synth" ID="{49044747-3BB8-4A5B-88F9-DFEDD0C1361B}">
+																				<MusicClip Name="MUS_BGM_132bpm_PickedUp_Synth_02" ID="{52FEC22C-EF38-4E8D-BADE-E00D3E1BFEE7}">
 																					<PropertyList>
-																						<Property Name="EndTrimOffset" Type="Real64" Value="12000"/>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="10909.1041666667"/>
 																						<Property Name="FadeInMode" Type="int16" Value="0"/>
 																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
 																					</PropertyList>
-																					<AudioSourceRef Name="MUS_BGM_B2_Synth" ID="{FCF48541-8D6C-451A-85C6-EACC259BAB5E}"/>
+																					<AudioSourceRef Name="MUS_BGM_132bpm_PickedUp_Synth_02" ID="{0F506D09-06BD-4535-BBBD-8A597452A6B1}"/>
 																				</MusicClip>
 																			</Local>
 																		</Reference>
@@ -2617,7 +2628,7 @@
 												<Local>
 													<MusicCue Name="Entry Cue" ID="{971823F0-73F4-4C2D-8B8B-30BB63BAAD70}">
 														<PropertyList>
-															<Property Name="TimeMs" Type="Real64" Value="2000"/>
+															<Property Name="TimeMs" Type="Real64" Value="1818.18181818182"/>
 														</PropertyList>
 													</MusicCue>
 												</Local>
@@ -2627,7 +2638,7 @@
 													<MusicCue Name="Exit Cue" ID="{256BA7E6-61E3-410A-8A22-A1F5CCEE9AD3}">
 														<PropertyList>
 															<Property Name="CueType" Type="int16" Value="1"/>
-															<Property Name="TimeMs" Type="Real64" Value="10000"/>
+															<Property Name="TimeMs" Type="Real64" Value="9090.90909090909"/>
 														</PropertyList>
 													</MusicCue>
 												</Local>
@@ -2635,9 +2646,9 @@
 										</ObjectList>
 									</ObjectLists>
 								</MusicSegment>
-								<MusicSegment Name="MUS_BGM_B1_NoSynth" ID="{CA878A44-F017-4AE1-A69B-18CC231DDDC4}" ShortID="589319069">
+								<MusicSegment Name="MUS_BGM_PickedUp_03" ID="{B4BF7015-327B-4F1D-9997-4CCEA94D0BDB}" ShortID="908572984">
 									<PropertyList>
-										<Property Name="EndPosition" Type="Real64" Value="13750"/>
+										<Property Name="EndPosition" Type="Real64" Value="12679.3625914316"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -2648,14 +2659,14 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<MusicTrack Name="MUS_BGM_B1_DrumsHi" ID="{C43348CF-28D5-4E0E-8CDB-8AE5D52096DF}" ShortID="601203066">
+										<MusicTrack Name="MUS_BGM_132bpm_PickedUp_DrumsHi_03" ID="{0781055B-1AC4-4E7F-A003-A0B410116177}" ShortID="1061646061">
 											<ReferenceList>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC1FDB7B-AB4A-403B-9ED1-5C49551A2787}"/>
 												</Reference>
 												<Reference Name="TransitionRoot">
 													<Custom>
-														<MusicTransition Name="Root" ID="{3EAE8AEC-16CD-4D41-BC02-1A8A2FE80B6C}">
+														<MusicTransition Name="Root" ID="{65E05CE5-5C9A-41C1-BB55-8F44DA236E53}">
 															<PropertyList>
 																<Property Name="IsFolder" Type="bool" Value="True"/>
 															</PropertyList>
@@ -2665,11 +2676,11 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="MUS_BGM_B1_DrumsHi" ID="{80284172-7189-46A7-9A15-B7B69B011E72}">
+												<AudioFileSource Name="MUS_BGM_132bpm_PickedUp_DrumsHi_03" ID="{551CBC28-CF78-4DCD-8F77-659F977FBCC6}">
 													<Language>SFX</Language>
-													<AudioFile>MUS_BGM_B1_DrumsHi.wav</AudioFile>
+													<AudioFile>MUS_BGM_132bpm_PickedUp_DrumsHi_03.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="284973796"/>
+														<MediaID ID="105298233"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
@@ -2677,7 +2688,7 @@
 												<ObjectList Name="RTPC">
 													<Reference>
 														<Local>
-															<RTPC Name="" ID="{BDC86128-21D9-49F0-8734-651492CD788C}" ShortID="544519798">
+															<RTPC Name="" ID="{1DBFEDBD-27D1-4ABC-84B9-89C60B9B241D}" ShortID="182429253">
 																<PropertyList>
 																	<Property Name="PropertyName" Type="string" Value="Volume"/>
 																</PropertyList>
@@ -2687,7 +2698,7 @@
 																	</Reference>
 																	<Reference Name="Curve">
 																		<Custom>
-																			<Curve Name="" ID="{E696D38B-24D0-420B-B391-056D96AB32BE}">
+																			<Curve Name="" ID="{727358F0-3E32-4D27-8DE0-28861E25B75B}">
 																				<PropertyList>
 																					<Property Name="Flags" Type="int32" Value="3"/>
 																				</PropertyList>
@@ -2724,18 +2735,18 @@
 												<ObjectList Name="Sequences">
 													<Reference>
 														<Local>
-															<MusicTrackSequence Name="" ID="{CE889698-203A-46C0-AEC0-BA54968A5BFB}">
+															<MusicTrackSequence Name="" ID="{FD27506F-EB78-42DA-BE41-4C5C1CF09AE4}">
 																<ObjectLists>
 																	<ObjectList Name="Clips">
 																		<Reference>
 																			<Local>
-																				<MusicClip Name="MUS_BGM_B1_DrumsHi" ID="{466A1D0A-DA77-411C-A179-A3E0EEC6BABA}">
+																				<MusicClip Name="MUS_BGM_132bpm_PickedUp_DrumsHi_03" ID="{DACD70C1-C968-426F-B30A-09608A319B47}">
 																					<PropertyList>
-																						<Property Name="EndTrimOffset" Type="Real64" Value="12000"/>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="10909.1041666667"/>
 																						<Property Name="FadeInMode" Type="int16" Value="0"/>
 																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
 																					</PropertyList>
-																					<AudioSourceRef Name="MUS_BGM_B1_DrumsHi" ID="{80284172-7189-46A7-9A15-B7B69B011E72}"/>
+																					<AudioSourceRef Name="MUS_BGM_132bpm_PickedUp_DrumsHi_03" ID="{551CBC28-CF78-4DCD-8F77-659F977FBCC6}"/>
 																				</MusicClip>
 																			</Local>
 																		</Reference>
@@ -2747,14 +2758,14 @@
 												</ObjectList>
 											</ObjectLists>
 										</MusicTrack>
-										<MusicTrack Name="MUS_BGM_B1_DrumsLo" ID="{9C82C07E-F1AF-4F19-AC63-409CEC8E239A}" ShortID="143116202">
+										<MusicTrack Name="MUS_BGM_132bpm_PickedUp_DrumsLo_03" ID="{F539F48D-4E2D-4464-B18E-8DE42AF7131E}" ShortID="504838172">
 											<ReferenceList>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC1FDB7B-AB4A-403B-9ED1-5C49551A2787}"/>
 												</Reference>
 												<Reference Name="TransitionRoot">
 													<Custom>
-														<MusicTransition Name="Root" ID="{2664E81E-A539-4B13-B5E5-20CC80BE140A}">
+														<MusicTransition Name="Root" ID="{6FA9EB27-45A5-4A9A-B23D-540631627FB6}">
 															<PropertyList>
 																<Property Name="IsFolder" Type="bool" Value="True"/>
 															</PropertyList>
@@ -2764,11 +2775,11 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="MUS_BGM_B1_DrumsLo" ID="{9A644354-AE03-42BE-BD18-FAEAA9C51BDD}">
+												<AudioFileSource Name="MUS_BGM_132bpm_PickedUp_DrumsLo_03" ID="{2E4F27D2-95E1-4EEF-9C79-9DF23DC02939}">
 													<Language>SFX</Language>
-													<AudioFile>MUS_BGM_B1_DrumsLo.wav</AudioFile>
+													<AudioFile>MUS_BGM_132bpm_PickedUp_DrumsLo_03.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="687574380"/>
+														<MediaID ID="486742681"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
@@ -2776,7 +2787,7 @@
 												<ObjectList Name="RTPC">
 													<Reference>
 														<Local>
-															<RTPC Name="" ID="{64DB2D9B-DE85-4FC4-B944-1206FCBDA9AA}" ShortID="865762578">
+															<RTPC Name="" ID="{44BC8D57-2C73-4C13-8F51-2A8C98B59C7C}" ShortID="843829008">
 																<PropertyList>
 																	<Property Name="PropertyName" Type="string" Value="Volume"/>
 																</PropertyList>
@@ -2786,7 +2797,7 @@
 																	</Reference>
 																	<Reference Name="Curve">
 																		<Custom>
-																			<Curve Name="" ID="{51FDD5C9-7655-48AE-959E-AA1177566CE4}">
+																			<Curve Name="" ID="{7A43B21B-251B-4174-A140-374A3D749BD3}">
 																				<PropertyList>
 																					<Property Name="Flags" Type="int32" Value="3"/>
 																				</PropertyList>
@@ -2823,18 +2834,18 @@
 												<ObjectList Name="Sequences">
 													<Reference>
 														<Local>
-															<MusicTrackSequence Name="" ID="{84FD6181-E440-4E23-BAB6-43B425623C47}">
+															<MusicTrackSequence Name="" ID="{550391B2-62C6-4473-819D-EAD04C26E97A}">
 																<ObjectLists>
 																	<ObjectList Name="Clips">
 																		<Reference>
 																			<Local>
-																				<MusicClip Name="MUS_BGM_B1_DrumsLo" ID="{8DB168C0-43D7-4868-A5B7-26A9B01F4DD4}">
+																				<MusicClip Name="MUS_BGM_132bpm_PickedUp_DrumsLo_03" ID="{794D526D-52B1-414C-9457-50B8A4424AB5}">
 																					<PropertyList>
-																						<Property Name="EndTrimOffset" Type="Real64" Value="12000"/>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="10909.1041666667"/>
 																						<Property Name="FadeInMode" Type="int16" Value="0"/>
 																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
 																					</PropertyList>
-																					<AudioSourceRef Name="MUS_BGM_B1_DrumsLo" ID="{9A644354-AE03-42BE-BD18-FAEAA9C51BDD}"/>
+																					<AudioSourceRef Name="MUS_BGM_132bpm_PickedUp_DrumsLo_03" ID="{2E4F27D2-95E1-4EEF-9C79-9DF23DC02939}"/>
 																				</MusicClip>
 																			</Local>
 																		</Reference>
@@ -2846,14 +2857,14 @@
 												</ObjectList>
 											</ObjectLists>
 										</MusicTrack>
-										<MusicTrack Name="MUS_BGM_B1_Piano" ID="{43AD4E1B-09E9-458D-A0DA-A69D05786E63}" ShortID="883868742">
+										<MusicTrack Name="MUS_BGM_132bpm_PickedUp_Piano_03" ID="{AA4181F4-A78F-417B-B9B2-8AADB4B498E1}" ShortID="319208893">
 											<ReferenceList>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC1FDB7B-AB4A-403B-9ED1-5C49551A2787}"/>
 												</Reference>
 												<Reference Name="TransitionRoot">
 													<Custom>
-														<MusicTransition Name="Root" ID="{7B3A3191-142B-4CD6-A9FD-A0D6E2D7F079}">
+														<MusicTransition Name="Root" ID="{CCABBE6E-806A-4972-87EB-BEC2FA78CFDF}">
 															<PropertyList>
 																<Property Name="IsFolder" Type="bool" Value="True"/>
 															</PropertyList>
@@ -2863,11 +2874,11 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="MUS_BGM_B1_Piano" ID="{810988D1-8EAD-4721-B779-71336C1BC427}">
+												<AudioFileSource Name="MUS_BGM_132bpm_PickedUp_Piano_03" ID="{30132E22-BBE3-4597-9D6A-EDF14ABF160F}">
 													<Language>SFX</Language>
-													<AudioFile>MUS_BGM_B1_Piano.wav</AudioFile>
+													<AudioFile>MUS_BGM_132bpm_PickedUp_Piano_03.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="99241168"/>
+														<MediaID ID="797152947"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
@@ -2875,18 +2886,70 @@
 												<ObjectList Name="Sequences">
 													<Reference>
 														<Local>
-															<MusicTrackSequence Name="" ID="{E2C95BC8-CD29-4D40-B35A-7C38D7EA46C2}">
+															<MusicTrackSequence Name="" ID="{A43931B5-9671-42F0-A519-7B0606DB63A5}">
 																<ObjectLists>
 																	<ObjectList Name="Clips">
 																		<Reference>
 																			<Local>
-																				<MusicClip Name="MUS_BGM_B1_Piano" ID="{C274FCCA-E0EE-45D3-865B-3C27C5F28FD5}">
+																				<MusicClip Name="MUS_BGM_132bpm_PickedUp_Piano_03" ID="{6F33717E-C277-4C17-8E21-6A590ACE385F}">
 																					<PropertyList>
-																						<Property Name="EndTrimOffset" Type="Real64" Value="12000"/>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="10909.1041666667"/>
 																						<Property Name="FadeInMode" Type="int16" Value="0"/>
 																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
 																					</PropertyList>
-																					<AudioSourceRef Name="MUS_BGM_B1_Piano" ID="{810988D1-8EAD-4721-B779-71336C1BC427}"/>
+																					<AudioSourceRef Name="MUS_BGM_132bpm_PickedUp_Piano_03" ID="{30132E22-BBE3-4597-9D6A-EDF14ABF160F}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+										<MusicTrack Name="MUS_BGM_132bpm_PickedUp_Synth_03" ID="{B08343D8-8E06-48E5-BC47-8B37271C628A}" ShortID="336980353">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC1FDB7B-AB4A-403B-9ED1-5C49551A2787}"/>
+												</Reference>
+												<Reference Name="TransitionRoot">
+													<Custom>
+														<MusicTransition Name="Root" ID="{59D06260-5350-4BED-9138-CEA0D462D554}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="MUS_BGM_132bpm_PickedUp_Synth_03" ID="{F4AFA761-022D-4800-AF63-665E7BD69BBD}">
+													<Language>SFX</Language>
+													<AudioFile>MUS_BGM_132bpm_PickedUp_Synth_03.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="356880520"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{49CD678D-4A9D-420B-ADB6-C43C2EC239AB}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="MUS_BGM_132bpm_PickedUp_Synth_03" ID="{110C391E-21FC-40C2-89D6-F316AD4889AD}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="10909.1041666667"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="MUS_BGM_132bpm_PickedUp_Synth_03" ID="{F4AFA761-022D-4800-AF63-665E7BD69BBD}"/>
 																				</MusicClip>
 																			</Local>
 																		</Reference>
@@ -2903,307 +2966,19 @@
 										<ObjectList Name="Cues">
 											<Reference>
 												<Local>
-													<MusicCue Name="Entry Cue" ID="{37E82DE2-C67B-439A-BFA1-072D1E877FD8}">
+													<MusicCue Name="Entry Cue" ID="{1CF41668-A627-42DE-AAC1-5D42647233BF}">
 														<PropertyList>
-															<Property Name="TimeMs" Type="Real64" Value="2000"/>
+															<Property Name="TimeMs" Type="Real64" Value="1818.18181818182"/>
 														</PropertyList>
 													</MusicCue>
 												</Local>
 											</Reference>
 											<Reference>
 												<Local>
-													<MusicCue Name="Exit Cue" ID="{D5894E4A-63D8-447D-8D01-E764EC8BD652}">
+													<MusicCue Name="Exit Cue" ID="{57CD4B9D-A6C2-41DF-9F36-CB3652F22351}">
 														<PropertyList>
 															<Property Name="CueType" Type="int16" Value="1"/>
-															<Property Name="TimeMs" Type="Real64" Value="10000"/>
-														</PropertyList>
-													</MusicCue>
-												</Local>
-											</Reference>
-										</ObjectList>
-									</ObjectLists>
-								</MusicSegment>
-								<MusicSegment Name="MUS_BGM_B2_NoSynth" ID="{56338DD2-B03D-452F-B18A-C5476A7B7EFC}" ShortID="222116614">
-									<PropertyList>
-										<Property Name="EndPosition" Type="Real64" Value="12000"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F31277D4-DD00-4059-A6A3-67EE41BC19BA}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC1FDB7B-AB4A-403B-9ED1-5C49551A2787}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<MusicTrack Name="MUS_BGM_B2_DrumsHi" ID="{57984CCB-FB11-4924-8168-1697D4DE08A9}" ShortID="266447766">
-											<ReferenceList>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC1FDB7B-AB4A-403B-9ED1-5C49551A2787}"/>
-												</Reference>
-												<Reference Name="TransitionRoot">
-													<Custom>
-														<MusicTransition Name="Root" ID="{A611C06A-7045-4093-A07F-AFB409DDEEE4}">
-															<PropertyList>
-																<Property Name="IsFolder" Type="bool" Value="True"/>
-															</PropertyList>
-															<TransitionInfo/>
-														</MusicTransition>
-													</Custom>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="MUS_BGM_B2_DrumsHi" ID="{C727CB03-9ECE-4369-B93E-628F0E2F0284}">
-													<Language>SFX</Language>
-													<AudioFile>MUS_BGM_B2_DrumsHi.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="41425527"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ObjectLists>
-												<ObjectList Name="RTPC">
-													<Reference>
-														<Local>
-															<RTPC Name="" ID="{397C1856-6ED3-4ED1-A5A1-6B145FCD638C}" ShortID="837461126">
-																<PropertyList>
-																	<Property Name="PropertyName" Type="string" Value="Volume"/>
-																</PropertyList>
-																<ReferenceList>
-																	<Reference Name="ControlInput">
-																		<ObjectRef Name="RTPC_PlayerSpeed" ID="{EBFFBCE4-CAFC-46BA-BAC1-34F8FA8DAF89}" WorkUnitID="{D6D3403D-3D26-45E3-8F8E-D39F34A69414}"/>
-																	</Reference>
-																	<Reference Name="Curve">
-																		<Custom>
-																			<Curve Name="" ID="{474184D3-B319-4120-B36B-B0F313B785FB}">
-																				<PropertyList>
-																					<Property Name="Flags" Type="int32" Value="3"/>
-																				</PropertyList>
-																				<PointList>
-																					<Point>
-																						<XPos>0</XPos>
-																						<YPos>-200</YPos>
-																						<Flags>5</Flags>
-																					</Point>
-																					<Point>
-																						<XPos>5.5</XPos>
-																						<YPos>-200</YPos>
-																						<Flags>0</Flags>
-																					</Point>
-																					<Point>
-																						<XPos>6</XPos>
-																						<YPos>0</YPos>
-																						<Flags>0</Flags>
-																					</Point>
-																					<Point>
-																						<XPos>10</XPos>
-																						<YPos>0</YPos>
-																						<Flags>37</Flags>
-																					</Point>
-																				</PointList>
-																			</Curve>
-																		</Custom>
-																	</Reference>
-																</ReferenceList>
-															</RTPC>
-														</Local>
-													</Reference>
-												</ObjectList>
-												<ObjectList Name="Sequences">
-													<Reference>
-														<Local>
-															<MusicTrackSequence Name="" ID="{AA4DDC8F-E48F-4FA8-8BCC-7F294EBBFE51}">
-																<ObjectLists>
-																	<ObjectList Name="Clips">
-																		<Reference>
-																			<Local>
-																				<MusicClip Name="MUS_BGM_B2_DrumsHi" ID="{797B012A-2AFD-4A37-9611-D6B3581626E4}">
-																					<PropertyList>
-																						<Property Name="EndTrimOffset" Type="Real64" Value="12000"/>
-																						<Property Name="FadeInMode" Type="int16" Value="0"/>
-																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
-																					</PropertyList>
-																					<AudioSourceRef Name="MUS_BGM_B2_DrumsHi" ID="{C727CB03-9ECE-4369-B93E-628F0E2F0284}"/>
-																				</MusicClip>
-																			</Local>
-																		</Reference>
-																	</ObjectList>
-																</ObjectLists>
-															</MusicTrackSequence>
-														</Local>
-													</Reference>
-												</ObjectList>
-											</ObjectLists>
-										</MusicTrack>
-										<MusicTrack Name="MUS_BGM_B2_DrumsLo" ID="{E06251D6-7946-42E7-AC0A-D2811ACE7931}" ShortID="719547774">
-											<ReferenceList>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC1FDB7B-AB4A-403B-9ED1-5C49551A2787}"/>
-												</Reference>
-												<Reference Name="TransitionRoot">
-													<Custom>
-														<MusicTransition Name="Root" ID="{19DC21F6-D824-4FD4-A434-2FB73415FA2D}">
-															<PropertyList>
-																<Property Name="IsFolder" Type="bool" Value="True"/>
-															</PropertyList>
-															<TransitionInfo/>
-														</MusicTransition>
-													</Custom>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="MUS_BGM_B2_DrumsLo" ID="{0CA59268-FB44-46EF-8ECA-CC70A97B9702}">
-													<Language>SFX</Language>
-													<AudioFile>MUS_BGM_B2_DrumsLo.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="497562931"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ObjectLists>
-												<ObjectList Name="RTPC">
-													<Reference>
-														<Local>
-															<RTPC Name="" ID="{E30B1385-1F5A-4471-A7DE-1463E031B10C}" ShortID="826634529">
-																<PropertyList>
-																	<Property Name="PropertyName" Type="string" Value="Volume"/>
-																</PropertyList>
-																<ReferenceList>
-																	<Reference Name="ControlInput">
-																		<ObjectRef Name="RTPC_PlayerSpeed" ID="{EBFFBCE4-CAFC-46BA-BAC1-34F8FA8DAF89}" WorkUnitID="{D6D3403D-3D26-45E3-8F8E-D39F34A69414}"/>
-																	</Reference>
-																	<Reference Name="Curve">
-																		<Custom>
-																			<Curve Name="" ID="{C830151C-A04C-4A0C-B114-77429716B0AD}">
-																				<PropertyList>
-																					<Property Name="Flags" Type="int32" Value="3"/>
-																				</PropertyList>
-																				<PointList>
-																					<Point>
-																						<XPos>0</XPos>
-																						<YPos>-200</YPos>
-																						<Flags>5</Flags>
-																					</Point>
-																					<Point>
-																						<XPos>1</XPos>
-																						<YPos>-200</YPos>
-																						<Flags>0</Flags>
-																					</Point>
-																					<Point>
-																						<XPos>3</XPos>
-																						<YPos>0</YPos>
-																						<Flags>0</Flags>
-																					</Point>
-																					<Point>
-																						<XPos>10</XPos>
-																						<YPos>0</YPos>
-																						<Flags>37</Flags>
-																					</Point>
-																				</PointList>
-																			</Curve>
-																		</Custom>
-																	</Reference>
-																</ReferenceList>
-															</RTPC>
-														</Local>
-													</Reference>
-												</ObjectList>
-												<ObjectList Name="Sequences">
-													<Reference>
-														<Local>
-															<MusicTrackSequence Name="" ID="{FDA9B6AA-5CC8-4001-8106-D7111DDBC628}">
-																<ObjectLists>
-																	<ObjectList Name="Clips">
-																		<Reference>
-																			<Local>
-																				<MusicClip Name="MUS_BGM_B2_DrumsLo" ID="{CDF53CBC-0A6A-4E98-B7FA-0AAE7034382F}">
-																					<PropertyList>
-																						<Property Name="EndTrimOffset" Type="Real64" Value="12000"/>
-																						<Property Name="FadeInMode" Type="int16" Value="0"/>
-																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
-																					</PropertyList>
-																					<AudioSourceRef Name="MUS_BGM_B2_DrumsLo" ID="{0CA59268-FB44-46EF-8ECA-CC70A97B9702}"/>
-																				</MusicClip>
-																			</Local>
-																		</Reference>
-																	</ObjectList>
-																</ObjectLists>
-															</MusicTrackSequence>
-														</Local>
-													</Reference>
-												</ObjectList>
-											</ObjectLists>
-										</MusicTrack>
-										<MusicTrack Name="MUS_BGM_B2_Piano" ID="{EDD8F447-8BB6-4DD8-ACD3-552D5F2E5B3E}" ShortID="583427648">
-											<ReferenceList>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC1FDB7B-AB4A-403B-9ED1-5C49551A2787}"/>
-												</Reference>
-												<Reference Name="TransitionRoot">
-													<Custom>
-														<MusicTransition Name="Root" ID="{21BE47FB-55AE-437E-B0BF-1029B710FB6B}">
-															<PropertyList>
-																<Property Name="IsFolder" Type="bool" Value="True"/>
-															</PropertyList>
-															<TransitionInfo/>
-														</MusicTransition>
-													</Custom>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="MUS_BGM_B2_Piano" ID="{723BA961-E78F-4970-8D92-04EA9AC19D8A}">
-													<Language>SFX</Language>
-													<AudioFile>MUS_BGM_B2_Piano.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="580980193"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ObjectLists>
-												<ObjectList Name="Sequences">
-													<Reference>
-														<Local>
-															<MusicTrackSequence Name="" ID="{2BEC8C28-74D8-459C-B484-9C4621B28724}">
-																<ObjectLists>
-																	<ObjectList Name="Clips">
-																		<Reference>
-																			<Local>
-																				<MusicClip Name="MUS_BGM_B2_Piano" ID="{76490C3E-DEE3-4E95-9AC2-227AB6A54532}">
-																					<PropertyList>
-																						<Property Name="EndTrimOffset" Type="Real64" Value="12000"/>
-																						<Property Name="FadeInMode" Type="int16" Value="0"/>
-																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
-																					</PropertyList>
-																					<AudioSourceRef Name="MUS_BGM_B2_Piano" ID="{723BA961-E78F-4970-8D92-04EA9AC19D8A}"/>
-																				</MusicClip>
-																			</Local>
-																		</Reference>
-																	</ObjectList>
-																</ObjectLists>
-															</MusicTrackSequence>
-														</Local>
-													</Reference>
-												</ObjectList>
-											</ObjectLists>
-										</MusicTrack>
-									</ChildrenList>
-									<ObjectLists>
-										<ObjectList Name="Cues">
-											<Reference>
-												<Local>
-													<MusicCue Name="Entry Cue" ID="{884FFDC4-5A3D-46B4-ABE7-9C4940EE0EC4}">
-														<PropertyList>
-															<Property Name="TimeMs" Type="Real64" Value="2000"/>
-														</PropertyList>
-													</MusicCue>
-												</Local>
-											</Reference>
-											<Reference>
-												<Local>
-													<MusicCue Name="Exit Cue" ID="{3B4E2741-B643-4915-B8C5-AE41492343A9}">
-														<PropertyList>
-															<Property Name="CueType" Type="int16" Value="1"/>
-															<Property Name="TimeMs" Type="Real64" Value="10000"/>
+															<Property Name="TimeMs" Type="Real64" Value="9090.90909090909"/>
 														</PropertyList>
 													</MusicCue>
 												</Local>
@@ -3213,7 +2988,7 @@
 								</MusicSegment>
 							</ChildrenList>
 						</MusicPlaylistContainer>
-						<MusicPlaylistContainer Name="MUS_BGM_C" ID="{1BA8C50E-838E-4931-88F8-F0F248E03E3E}" ShortID="142897444">
+						<MusicPlaylistContainer Name="MUS_BGM_Win" ID="{1BA8C50E-838E-4931-88F8-F0F248E03E3E}" ShortID="142897444">
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F31277D4-DD00-4059-A6A3-67EE41BC19BA}"/>
@@ -3234,7 +3009,7 @@
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Segment">
-															<ObjectRef Name="MUS_BGM_C1" ID="{86665CA7-2A5C-4D1B-9764-F81954664ED0}" WorkUnitID="{749D61E4-F82D-4EEF-B729-5F9971B28A87}"/>
+															<ObjectRef Name="MUS_BGM_Win_01" ID="{86665CA7-2A5C-4D1B-9764-F81954664ED0}" WorkUnitID="{749D61E4-F82D-4EEF-B729-5F9971B28A87}"/>
 														</Reference>
 													</ReferenceList>
 												</MusicPlaylistItem>
@@ -3244,7 +3019,7 @@
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Segment">
-															<ObjectRef Name="MUS_BGM_C1" ID="{86665CA7-2A5C-4D1B-9764-F81954664ED0}" WorkUnitID="{749D61E4-F82D-4EEF-B729-5F9971B28A87}"/>
+															<ObjectRef Name="MUS_BGM_Win_01" ID="{86665CA7-2A5C-4D1B-9764-F81954664ED0}" WorkUnitID="{749D61E4-F82D-4EEF-B729-5F9971B28A87}"/>
 														</Reference>
 													</ReferenceList>
 												</MusicPlaylistItem>
@@ -3269,7 +3044,7 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<MusicSegment Name="MUS_BGM_C1" ID="{86665CA7-2A5C-4D1B-9764-F81954664ED0}" ShortID="750901769">
+								<MusicSegment Name="MUS_BGM_Win_01" ID="{86665CA7-2A5C-4D1B-9764-F81954664ED0}" ShortID="750901769">
 									<PropertyList>
 										<Property Name="EndPosition" Type="Real64" Value="20333.3333333333"/>
 									</PropertyList>
@@ -3282,14 +3057,14 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<MusicTrack Name="MUS_BGM_C_DrumsHi" ID="{ED811E5A-DC6F-4722-B443-8C6621AAD1C2}" ShortID="553067558">
+										<MusicTrack Name="MUS_BGM_132bpm_Win_DrumsHi_01" ID="{30E19A28-9B7D-4FE4-9F09-184DC60618C2}" ShortID="749517930">
 											<ReferenceList>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC1FDB7B-AB4A-403B-9ED1-5C49551A2787}"/>
 												</Reference>
 												<Reference Name="TransitionRoot">
 													<Custom>
-														<MusicTransition Name="Root" ID="{EC5E83F8-0E9F-4C49-A0F7-DAB25585E001}">
+														<MusicTransition Name="Root" ID="{076067D0-DF34-4B25-912C-380E33159015}">
 															<PropertyList>
 																<Property Name="IsFolder" Type="bool" Value="True"/>
 															</PropertyList>
@@ -3299,11 +3074,11 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="MUS_BGM_C_DrumsHi" ID="{5567FE3F-3D2F-40ED-82E2-538DC9CCD914}">
+												<AudioFileSource Name="MUS_BGM_132bpm_Win_DrumsHi_01" ID="{807BC9DF-6409-463C-BF8D-A64183FE8CEF}">
 													<Language>SFX</Language>
-													<AudioFile>MUS_BGM_C_DrumsHi.wav</AudioFile>
+													<AudioFile>MUS_BGM_132bpm_Win_DrumsHi_01.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="44105883"/>
+														<MediaID ID="514786370"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
@@ -3311,7 +3086,7 @@
 												<ObjectList Name="RTPC">
 													<Reference>
 														<Local>
-															<RTPC Name="" ID="{F5DBDA7B-CF0B-4C36-9BE0-DC4DD3D2FD56}" ShortID="602895573">
+															<RTPC Name="" ID="{749DB788-051C-4636-B2DA-A7C27EAF5C39}" ShortID="294465348">
 																<PropertyList>
 																	<Property Name="PropertyName" Type="string" Value="Volume"/>
 																</PropertyList>
@@ -3321,7 +3096,7 @@
 																	</Reference>
 																	<Reference Name="Curve">
 																		<Custom>
-																			<Curve Name="" ID="{AAEE081F-FDEA-4EBF-A6BC-A6F3CF577CFB}">
+																			<Curve Name="" ID="{3B4E4F4D-842A-474E-AA20-8215B1273036}">
 																				<PropertyList>
 																					<Property Name="Flags" Type="int32" Value="3"/>
 																				</PropertyList>
@@ -3358,18 +3133,18 @@
 												<ObjectList Name="Sequences">
 													<Reference>
 														<Local>
-															<MusicTrackSequence Name="" ID="{9B8FF3C8-7F8A-4866-84AF-8E1D6597D493}">
+															<MusicTrackSequence Name="" ID="{2B3503D0-2F0F-413C-BFAA-0BAF5DD08662}">
 																<ObjectLists>
 																	<ObjectList Name="Clips">
 																		<Reference>
 																			<Local>
-																				<MusicClip Name="MUS_BGM_C_DrumsHi" ID="{0D9D6184-46E3-4F45-B974-2D418306F465}">
+																				<MusicClip Name="MUS_BGM_132bpm_Win_DrumsHi_01" ID="{37C47947-2810-45BC-9EE7-47682C1DE12D}">
 																					<PropertyList>
-																						<Property Name="EndTrimOffset" Type="Real64" Value="20000"/>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="18181.8333333333"/>
 																						<Property Name="FadeInMode" Type="int16" Value="0"/>
 																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
 																					</PropertyList>
-																					<AudioSourceRef Name="MUS_BGM_C_DrumsHi" ID="{5567FE3F-3D2F-40ED-82E2-538DC9CCD914}"/>
+																					<AudioSourceRef Name="MUS_BGM_132bpm_Win_DrumsHi_01" ID="{807BC9DF-6409-463C-BF8D-A64183FE8CEF}"/>
 																				</MusicClip>
 																			</Local>
 																		</Reference>
@@ -3381,14 +3156,14 @@
 												</ObjectList>
 											</ObjectLists>
 										</MusicTrack>
-										<MusicTrack Name="MUS_BGM_C_DrumsLo" ID="{85912E42-34CB-4CCF-AE21-D31EE3E17609}" ShortID="1052636077">
+										<MusicTrack Name="MUS_BGM_132bpm_Win_DrumsLo_01" ID="{4FA95824-DDEF-4C1F-86B6-07AEF6650616}" ShortID="688793666">
 											<ReferenceList>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC1FDB7B-AB4A-403B-9ED1-5C49551A2787}"/>
 												</Reference>
 												<Reference Name="TransitionRoot">
 													<Custom>
-														<MusicTransition Name="Root" ID="{FC661B10-7863-4909-BDF9-36962D33B655}">
+														<MusicTransition Name="Root" ID="{2F88C6E0-FC2E-44CA-9FE6-DD35D52B8F26}">
 															<PropertyList>
 																<Property Name="IsFolder" Type="bool" Value="True"/>
 															</PropertyList>
@@ -3398,11 +3173,11 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="MUS_BGM_C_DrumsLo" ID="{8CADC775-3C88-4150-9E47-32AFA360EAFC}">
+												<AudioFileSource Name="MUS_BGM_132bpm_Win_DrumsLo_01" ID="{DCFBAC14-66D1-4BCE-8907-A039C4BDB374}">
 													<Language>SFX</Language>
-													<AudioFile>MUS_BGM_C_DrumsLo.wav</AudioFile>
+													<AudioFile>MUS_BGM_132bpm_Win_DrumsLo_01.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="827291237"/>
+														<MediaID ID="299081843"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
@@ -3410,7 +3185,7 @@
 												<ObjectList Name="RTPC">
 													<Reference>
 														<Local>
-															<RTPC Name="" ID="{55388714-0217-498F-90E3-213F679E8F5E}" ShortID="735811511">
+															<RTPC Name="" ID="{20597D61-CCB0-459F-8175-FE523598F7C9}" ShortID="284277194">
 																<PropertyList>
 																	<Property Name="PropertyName" Type="string" Value="Volume"/>
 																</PropertyList>
@@ -3420,7 +3195,7 @@
 																	</Reference>
 																	<Reference Name="Curve">
 																		<Custom>
-																			<Curve Name="" ID="{3381C5D3-D5CE-4B66-BDB1-7D319D7417AC}">
+																			<Curve Name="" ID="{0A5BBAC3-F259-41A5-B9AF-CF4787FF1CBA}">
 																				<PropertyList>
 																					<Property Name="Flags" Type="int32" Value="3"/>
 																				</PropertyList>
@@ -3457,18 +3232,18 @@
 												<ObjectList Name="Sequences">
 													<Reference>
 														<Local>
-															<MusicTrackSequence Name="" ID="{44F2376D-1711-4C82-AD22-57E9C09F0612}">
+															<MusicTrackSequence Name="" ID="{45D5AC0D-1D87-44AE-B560-E6F70C3DDA36}">
 																<ObjectLists>
 																	<ObjectList Name="Clips">
 																		<Reference>
 																			<Local>
-																				<MusicClip Name="MUS_BGM_C_DrumsLo" ID="{DA2C3047-77E2-422C-9EA7-D917BAEAD670}">
+																				<MusicClip Name="MUS_BGM_132bpm_Win_DrumsLo_01" ID="{EA41FC0E-3266-495E-B7FF-B8508996883C}">
 																					<PropertyList>
-																						<Property Name="EndTrimOffset" Type="Real64" Value="20000"/>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="18181.8333333333"/>
 																						<Property Name="FadeInMode" Type="int16" Value="0"/>
 																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
 																					</PropertyList>
-																					<AudioSourceRef Name="MUS_BGM_C_DrumsLo" ID="{8CADC775-3C88-4150-9E47-32AFA360EAFC}"/>
+																					<AudioSourceRef Name="MUS_BGM_132bpm_Win_DrumsLo_01" ID="{DCFBAC14-66D1-4BCE-8907-A039C4BDB374}"/>
 																				</MusicClip>
 																			</Local>
 																		</Reference>
@@ -3480,14 +3255,14 @@
 												</ObjectList>
 											</ObjectLists>
 										</MusicTrack>
-										<MusicTrack Name="MUS_BGM_C_Synth" ID="{92A3ACA1-BF1C-4FDC-B6E4-DD653E4BAC40}" ShortID="444143224">
+										<MusicTrack Name="MUS_BGM_132bpm_Win_Synth_01" ID="{5CCE2165-DE6E-4B90-998C-A8EE49466919}" ShortID="687770097">
 											<ReferenceList>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC1FDB7B-AB4A-403B-9ED1-5C49551A2787}"/>
 												</Reference>
 												<Reference Name="TransitionRoot">
 													<Custom>
-														<MusicTransition Name="Root" ID="{2C034832-3F34-48DA-BF8F-BE2FFF990A58}">
+														<MusicTransition Name="Root" ID="{AD9B30A5-064F-4B5C-A257-C4C7B5C9D64A}">
 															<PropertyList>
 																<Property Name="IsFolder" Type="bool" Value="True"/>
 															</PropertyList>
@@ -3497,11 +3272,11 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="MUS_BGM_C_Synth" ID="{3B94384E-3A1B-46DE-8F9C-A210FB8A1234}">
+												<AudioFileSource Name="MUS_BGM_132bpm_Win_Synth_01" ID="{923AB044-620E-46A9-B8C0-93ACD2B64A56}">
 													<Language>SFX</Language>
-													<AudioFile>MUS_BGM_C_Synth.wav</AudioFile>
+													<AudioFile>MUS_BGM_132bpm_Win_Synth_01.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="1652184"/>
+														<MediaID ID="893716648"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
@@ -3509,18 +3284,18 @@
 												<ObjectList Name="Sequences">
 													<Reference>
 														<Local>
-															<MusicTrackSequence Name="" ID="{C7FC77B4-4861-43A6-8A23-C358873382DD}">
+															<MusicTrackSequence Name="" ID="{4C903C39-8ED3-4D13-AD0C-9ACE80075F54}">
 																<ObjectLists>
 																	<ObjectList Name="Clips">
 																		<Reference>
 																			<Local>
-																				<MusicClip Name="MUS_BGM_C_Synth" ID="{E293E088-F7E0-4593-B42C-69EF0CB00E01}">
+																				<MusicClip Name="MUS_BGM_132bpm_Win_Synth_01" ID="{2F0B9C5C-A05C-4DD3-AED6-9212652919DF}">
 																					<PropertyList>
-																						<Property Name="EndTrimOffset" Type="Real64" Value="20000"/>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="18181.8333333333"/>
 																						<Property Name="FadeInMode" Type="int16" Value="0"/>
 																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
 																					</PropertyList>
-																					<AudioSourceRef Name="MUS_BGM_C_Synth" ID="{3B94384E-3A1B-46DE-8F9C-A210FB8A1234}"/>
+																					<AudioSourceRef Name="MUS_BGM_132bpm_Win_Synth_01" ID="{923AB044-620E-46A9-B8C0-93ACD2B64A56}"/>
 																				</MusicClip>
 																			</Local>
 																		</Reference>
@@ -3539,7 +3314,7 @@
 												<Local>
 													<MusicCue Name="Entry Cue" ID="{B38748FA-6D68-4EAA-BD77-750B70DDDE13}">
 														<PropertyList>
-															<Property Name="TimeMs" Type="Real64" Value="2000"/>
+															<Property Name="TimeMs" Type="Real64" Value="1818.18181818182"/>
 														</PropertyList>
 													</MusicCue>
 												</Local>
@@ -3549,7 +3324,7 @@
 													<MusicCue Name="Exit Cue" ID="{F2DB7A00-7D46-4A9E-8271-CAB58B101872}">
 														<PropertyList>
 															<Property Name="CueType" Type="int16" Value="1"/>
-															<Property Name="TimeMs" Type="Real64" Value="18000"/>
+															<Property Name="TimeMs" Type="Real64" Value="16363.6363636364"/>
 														</PropertyList>
 													</MusicCue>
 												</Local>
@@ -3563,22 +3338,22 @@
 					<ObjectLists>
 						<ObjectList Name="Arguments">
 							<Reference>
-								<ObjectRef Name="STA_MusicSection" ID="{6FFF2221-E67E-412C-9D81-4FFB7F0F9D24}" WorkUnitID="{BCAF97F5-3258-4E68-B8DC-C0AC5D1AAF07}"/>
+								<ObjectRef Name="STA_GameState" ID="{276158F0-E59D-4F0D-AADD-D42EE346114A}" WorkUnitID="{BCAF97F5-3258-4E68-B8DC-C0AC5D1AAF07}"/>
 							</Reference>
 						</ObjectList>
 						<ObjectList Name="Entries">
 							<Reference>
 								<Local>
-									<MultiSwitchEntry Name="" ID="{EA29B94A-C6CE-4D2F-A1DD-7074E3E5505A}">
+									<MultiSwitchEntry Name="" ID="{E573981F-C5F0-48FF-9E02-54CCB941A006}">
 										<ReferenceList>
 											<Reference Name="AudioNode">
-												<ObjectRef Name="MUS_BGM_A" ID="{C7FBFA7E-501A-4F91-92B6-D3C67F212DDE}" WorkUnitID="{749D61E4-F82D-4EEF-B729-5F9971B28A87}"/>
+												<ObjectRef Name="MUS_BGM_Idle" ID="{C7FBFA7E-501A-4F91-92B6-D3C67F212DDE}" WorkUnitID="{749D61E4-F82D-4EEF-B729-5F9971B28A87}"/>
 											</Reference>
 										</ReferenceList>
 										<ObjectLists>
 											<ObjectList Name="EntryPath">
 												<Reference>
-													<ObjectRef Name="A" ID="{08F611C8-6BFE-4232-99E5-115773117B30}" WorkUnitID="{BCAF97F5-3258-4E68-B8DC-C0AC5D1AAF07}"/>
+													<ObjectRef Name="STA_GameState_Idle" ID="{6E7B69D1-F76B-40E8-B5F2-07EB6076BB84}" WorkUnitID="{BCAF97F5-3258-4E68-B8DC-C0AC5D1AAF07}"/>
 												</Reference>
 											</ObjectList>
 										</ObjectLists>
@@ -3587,16 +3362,16 @@
 							</Reference>
 							<Reference>
 								<Local>
-									<MultiSwitchEntry Name="" ID="{DD166FE4-9706-485F-A415-A394ECA416BE}">
+									<MultiSwitchEntry Name="" ID="{37B8E267-3F88-49E0-A764-24042EB01023}">
 										<ReferenceList>
 											<Reference Name="AudioNode">
-												<ObjectRef Name="MUS_BGM_B" ID="{2249646F-9D1C-4ED9-A6DF-5FB601AE67D7}" WorkUnitID="{749D61E4-F82D-4EEF-B729-5F9971B28A87}"/>
+												<ObjectRef Name="MUS_BGM_PickedUp" ID="{2249646F-9D1C-4ED9-A6DF-5FB601AE67D7}" WorkUnitID="{749D61E4-F82D-4EEF-B729-5F9971B28A87}"/>
 											</Reference>
 										</ReferenceList>
 										<ObjectLists>
 											<ObjectList Name="EntryPath">
 												<Reference>
-													<ObjectRef Name="B" ID="{AC1199D8-7670-460A-B767-2856ACDB5B40}" WorkUnitID="{BCAF97F5-3258-4E68-B8DC-C0AC5D1AAF07}"/>
+													<ObjectRef Name="STA_GameState_PickedUp" ID="{FDE2AA2C-ED74-44EE-BD61-6F6D18950C85}" WorkUnitID="{BCAF97F5-3258-4E68-B8DC-C0AC5D1AAF07}"/>
 												</Reference>
 											</ObjectList>
 										</ObjectLists>
@@ -3605,16 +3380,34 @@
 							</Reference>
 							<Reference>
 								<Local>
-									<MultiSwitchEntry Name="" ID="{9748EE96-BDD0-449B-9FEE-F31BF7B7E051}">
+									<MultiSwitchEntry Name="" ID="{E874AA8E-FCF4-4215-A8CD-FD373C3150CE}">
 										<ReferenceList>
 											<Reference Name="AudioNode">
-												<ObjectRef Name="MUS_BGM_C" ID="{1BA8C50E-838E-4931-88F8-F0F248E03E3E}" WorkUnitID="{749D61E4-F82D-4EEF-B729-5F9971B28A87}"/>
+												<ObjectRef Name="MUS_BGM_Win" ID="{1BA8C50E-838E-4931-88F8-F0F248E03E3E}" WorkUnitID="{749D61E4-F82D-4EEF-B729-5F9971B28A87}"/>
 											</Reference>
 										</ReferenceList>
 										<ObjectLists>
 											<ObjectList Name="EntryPath">
 												<Reference>
-													<ObjectRef Name="C" ID="{D87A8215-7F56-4495-B605-03308F2719EC}" WorkUnitID="{BCAF97F5-3258-4E68-B8DC-C0AC5D1AAF07}"/>
+													<ObjectRef Name="STA_GameState_Win" ID="{5D135D14-E0D1-45ED-85F9-0FE18FC05B51}" WorkUnitID="{BCAF97F5-3258-4E68-B8DC-C0AC5D1AAF07}"/>
+												</Reference>
+											</ObjectList>
+										</ObjectLists>
+									</MultiSwitchEntry>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<MultiSwitchEntry Name="" ID="{98B8FCE3-0CDB-42D9-9001-523D478A96C5}">
+										<ReferenceList>
+											<Reference Name="AudioNode">
+												<ObjectRef Name="MUS_BGM_Idle" ID="{C7FBFA7E-501A-4F91-92B6-D3C67F212DDE}" WorkUnitID="{749D61E4-F82D-4EEF-B729-5F9971B28A87}"/>
+											</Reference>
+										</ReferenceList>
+										<ObjectLists>
+											<ObjectList Name="EntryPath">
+												<Reference>
+													<ObjectRef Name="None" ID="{23799A4F-D77B-4F6A-9FE4-FB2EF9252A10}" WorkUnitID="{BCAF97F5-3258-4E68-B8DC-C0AC5D1AAF07}"/>
 												</Reference>
 											</ObjectList>
 										</ObjectLists>
@@ -3631,7 +3424,7 @@
 										</PropertyList>
 										<ReferenceList>
 											<Reference Name="Segment">
-												<ObjectRef Name="MUS_Stinger_Pickup" ID="{4ADF82EF-D28A-4A35-9A80-89C1BDE3BC70}" WorkUnitID="{749D61E4-F82D-4EEF-B729-5F9971B28A87}"/>
+												<ObjectRef Name="MUS_Stinger_132bpm_Am_Pickup" ID="{4ADF82EF-D28A-4A35-9A80-89C1BDE3BC70}" WorkUnitID="{749D61E4-F82D-4EEF-B729-5F9971B28A87}"/>
 											</Reference>
 											<Reference Name="Trigger">
 												<ObjectRef Name="MUS_Pickup" ID="{F6D78C12-9787-4301-95BC-6AFEAC3BE285}" WorkUnitID="{B7DC32A8-D0D4-43BB-A45F-F0A97EED0EBD}"/>
@@ -3643,9 +3436,9 @@
 						</ObjectList>
 					</ObjectLists>
 				</MusicSwitchContainer>
-				<MusicSegment Name="MUS_Stinger_Pickup" ID="{4ADF82EF-D28A-4A35-9A80-89C1BDE3BC70}" ShortID="749416329">
+				<MusicSegment Name="MUS_Stinger_132bpm_Am_Pickup" ID="{4ADF82EF-D28A-4A35-9A80-89C1BDE3BC70}" ShortID="749416329">
 					<PropertyList>
-						<Property Name="EndPosition" Type="Real64" Value="10000"/>
+						<Property Name="EndPosition" Type="Real64" Value="29090.9166666667"/>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -3656,7 +3449,7 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<MusicTrack Name="MUS_Stinger_Pickup_Random" ID="{27F40B15-20FE-4B5C-9078-02E5781BE7C1}" ShortID="399942077">
+						<MusicTrack Name="MUS_Stinger_132bpm_Am_Pickup_Random" ID="{04D42A0D-4868-4211-9946-7BFCC44073DF}" ShortID="572187249">
 							<PropertyList>
 								<Property Name="MusicTrackType" Type="int16" Value="1"/>
 							</PropertyList>
@@ -3666,7 +3459,7 @@
 								</Reference>
 								<Reference Name="TransitionRoot">
 									<Custom>
-										<MusicTransition Name="Root" ID="{72960486-4D1C-4249-AF97-175BD157D62C}">
+										<MusicTransition Name="Root" ID="{E057D354-8A95-42AE-9730-77215735C5F8}">
 											<PropertyList>
 												<Property Name="IsFolder" Type="bool" Value="True"/>
 											</PropertyList>
@@ -3676,32 +3469,32 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="MUS_Stinger_Pickup_01" ID="{F43EBAC7-BAD5-4EE5-9821-814ED7CA57C1}">
+								<AudioFileSource Name="MUS_Stinger_132bpm_Am_Pickup_01" ID="{5970D5DF-4610-4098-9C43-B8CB939BB982}">
 									<Language>SFX</Language>
-									<AudioFile>MUS_Stinger_Pickup_01.wav</AudioFile>
+									<AudioFile>MUS_Stinger_132bpm_Am_Pickup_01.wav</AudioFile>
 									<MediaIDList>
-										<MediaID ID="501616457"/>
+										<MediaID ID="594625187"/>
 									</MediaIDList>
 								</AudioFileSource>
-								<AudioFileSource Name="MUS_Stinger_Pickup_02" ID="{EAA67B0A-EFE7-4EA9-9191-A512904ECF5A}">
+								<AudioFileSource Name="MUS_Stinger_132bpm_Am_Pickup_02" ID="{40C0AB40-4682-455D-A2A9-8E814FAB761F}">
 									<Language>SFX</Language>
-									<AudioFile>MUS_Stinger_Pickup_02.wav</AudioFile>
+									<AudioFile>MUS_Stinger_132bpm_Am_Pickup_02.wav</AudioFile>
 									<MediaIDList>
-										<MediaID ID="1064460418"/>
+										<MediaID ID="781766012"/>
 									</MediaIDList>
 								</AudioFileSource>
-								<AudioFileSource Name="MUS_Stinger_Pickup_03" ID="{ACC1BB68-5A18-4341-A0C6-0EA114D88CF1}">
+								<AudioFileSource Name="MUS_Stinger_132bpm_Am_Pickup_03" ID="{BE7B7E4B-1F29-4E51-A3B2-111A2D663A74}">
 									<Language>SFX</Language>
-									<AudioFile>MUS_Stinger_Pickup_03.wav</AudioFile>
+									<AudioFile>MUS_Stinger_132bpm_Am_Pickup_03.wav</AudioFile>
 									<MediaIDList>
-										<MediaID ID="1020803172"/>
+										<MediaID ID="554351904"/>
 									</MediaIDList>
 								</AudioFileSource>
-								<AudioFileSource Name="MUS_Stinger_Pickup_04" ID="{1422E312-E726-4A44-A037-4ABC88708F32}">
+								<AudioFileSource Name="MUS_Stinger_132bpm_Am_Pickup_04" ID="{9072696F-A00D-401D-A788-D2F5304ABAEA}">
 									<Language>SFX</Language>
-									<AudioFile>MUS_Stinger_Pickup_04.wav</AudioFile>
+									<AudioFile>MUS_Stinger_132bpm_Am_Pickup_04.wav</AudioFile>
 									<MediaIDList>
-										<MediaID ID="271616668"/>
+										<MediaID ID="317336896"/>
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
@@ -3709,18 +3502,18 @@
 								<ObjectList Name="Sequences">
 									<Reference>
 										<Local>
-											<MusicTrackSequence Name="" ID="{BF3D05E1-74D1-4184-B26E-B4B511A2401B}">
+											<MusicTrackSequence Name="" ID="{DEE3D963-647D-4464-B0B1-009C3BA9B785}">
 												<ObjectLists>
 													<ObjectList Name="Clips">
 														<Reference>
 															<Local>
-																<MusicClip Name="MUS_Stinger_Pickup_01" ID="{74372BE6-6ED8-4A34-A593-2F0D7DC35735}">
+																<MusicClip Name="MUS_Stinger_132bpm_Am_Pickup_01" ID="{EE1AB75C-9508-4392-83F3-55CA346692DB}">
 																	<PropertyList>
-																		<Property Name="EndTrimOffset" Type="Real64" Value="8000"/>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="7272.72916666667"/>
 																		<Property Name="FadeInMode" Type="int16" Value="0"/>
 																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
 																	</PropertyList>
-																	<AudioSourceRef Name="MUS_Stinger_Pickup_01" ID="{F43EBAC7-BAD5-4EE5-9821-814ED7CA57C1}"/>
+																	<AudioSourceRef Name="MUS_Stinger_132bpm_Am_Pickup_01" ID="{5970D5DF-4610-4098-9C43-B8CB939BB982}"/>
 																</MusicClip>
 															</Local>
 														</Reference>
@@ -3731,18 +3524,18 @@
 									</Reference>
 									<Reference>
 										<Local>
-											<MusicTrackSequence Name="" ID="{0906725C-4DA2-4552-90D7-0A725BE9F29A}">
+											<MusicTrackSequence Name="" ID="{9BECE830-B5FF-4778-B997-6FE81FCCA1F5}">
 												<ObjectLists>
 													<ObjectList Name="Clips">
 														<Reference>
 															<Local>
-																<MusicClip Name="MUS_Stinger_Pickup_02" ID="{474DF2D4-AC9F-42D4-8154-977A55970D9D}">
+																<MusicClip Name="MUS_Stinger_132bpm_Am_Pickup_02" ID="{E124795D-5704-4780-81BF-0980E2221C0B}">
 																	<PropertyList>
-																		<Property Name="EndTrimOffset" Type="Real64" Value="8000"/>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="7272.72916666667"/>
 																		<Property Name="FadeInMode" Type="int16" Value="0"/>
 																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
 																	</PropertyList>
-																	<AudioSourceRef Name="MUS_Stinger_Pickup_02" ID="{EAA67B0A-EFE7-4EA9-9191-A512904ECF5A}"/>
+																	<AudioSourceRef Name="MUS_Stinger_132bpm_Am_Pickup_02" ID="{40C0AB40-4682-455D-A2A9-8E814FAB761F}"/>
 																</MusicClip>
 															</Local>
 														</Reference>
@@ -3753,77 +3546,18 @@
 									</Reference>
 									<Reference>
 										<Local>
-											<MusicTrackSequence Name="" ID="{D4F04E65-8A49-4205-81E1-16F000A96895}">
+											<MusicTrackSequence Name="" ID="{401BABE6-1A03-4DD1-B376-613563B75E25}">
 												<ObjectLists>
 													<ObjectList Name="Clips">
 														<Reference>
 															<Local>
-																<MusicClip Name="MUS_Stinger_Pickup_03" ID="{6DF62065-F5D2-47C9-B56F-F4930C295B69}">
+																<MusicClip Name="MUS_Stinger_132bpm_Am_Pickup_03" ID="{914D3743-C92B-40A1-9EBD-81BC705968D2}">
 																	<PropertyList>
-																		<Property Name="EndTrimOffset" Type="Real64" Value="7500"/>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="7272.72916666667"/>
 																		<Property Name="FadeInMode" Type="int16" Value="0"/>
 																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
 																	</PropertyList>
-																	<AudioSourceRef Name="MUS_Stinger_Pickup_03" ID="{ACC1BB68-5A18-4341-A0C6-0EA114D88CF1}"/>
-																	<PropertyCurveList>
-																		<PropertyCurve PropertyName="Highpass">
-																			<Curve Name="" ID="{C0F41CC0-721D-4C47-A084-D5C86759D2E6}">
-																				<PropertyList>
-																					<Property Name="Flags" Type="int32" Value="1"/>
-																				</PropertyList>
-																				<PointList>
-																					<Point>
-																						<XPos>0</XPos>
-																						<YPos>0</YPos>
-																						<Flags>5</Flags>
-																					</Point>
-																					<Point>
-																						<XPos>7.5</XPos>
-																						<YPos>0</YPos>
-																						<Flags>37</Flags>
-																					</Point>
-																				</PointList>
-																			</Curve>
-																		</PropertyCurve>
-																		<PropertyCurve PropertyName="Lowpass">
-																			<Curve Name="" ID="{61CD00BC-82E8-44C6-9665-C91DCD103150}">
-																				<PropertyList>
-																					<Property Name="Flags" Type="int32" Value="1"/>
-																				</PropertyList>
-																				<PointList>
-																					<Point>
-																						<XPos>0</XPos>
-																						<YPos>0</YPos>
-																						<Flags>5</Flags>
-																					</Point>
-																					<Point>
-																						<XPos>7.5</XPos>
-																						<YPos>0</YPos>
-																						<Flags>37</Flags>
-																					</Point>
-																				</PointList>
-																			</Curve>
-																		</PropertyCurve>
-																		<PropertyCurve PropertyName="Volume">
-																			<Curve Name="" ID="{B09DBE00-C21A-42EE-8639-830E02072E27}">
-																				<PropertyList>
-																					<Property Name="Flags" Type="int32" Value="3"/>
-																				</PropertyList>
-																				<PointList>
-																					<Point>
-																						<XPos>0</XPos>
-																						<YPos>0</YPos>
-																						<Flags>5</Flags>
-																					</Point>
-																					<Point>
-																						<XPos>7.5</XPos>
-																						<YPos>0</YPos>
-																						<Flags>37</Flags>
-																					</Point>
-																				</PointList>
-																			</Curve>
-																		</PropertyCurve>
-																	</PropertyCurveList>
+																	<AudioSourceRef Name="MUS_Stinger_132bpm_Am_Pickup_03" ID="{BE7B7E4B-1F29-4E51-A3B2-111A2D663A74}"/>
 																</MusicClip>
 															</Local>
 														</Reference>
@@ -3834,18 +3568,18 @@
 									</Reference>
 									<Reference>
 										<Local>
-											<MusicTrackSequence Name="" ID="{C3D5A540-C4DE-4C0B-8AC6-9ACB8EDC3467}">
+											<MusicTrackSequence Name="" ID="{39B83BE5-835B-45E1-80DC-A40C65581406}">
 												<ObjectLists>
 													<ObjectList Name="Clips">
 														<Reference>
 															<Local>
-																<MusicClip Name="MUS_Stinger_Pickup_04" ID="{93B937F0-31AC-4CED-ABE3-2CA3545EB360}">
+																<MusicClip Name="MUS_Stinger_132bpm_Am_Pickup_04" ID="{78F9417A-8CF1-4260-8DA2-3CFD5D97A2E8}">
 																	<PropertyList>
-																		<Property Name="EndTrimOffset" Type="Real64" Value="8000"/>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="7272.72916666667"/>
 																		<Property Name="FadeInMode" Type="int16" Value="0"/>
 																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
 																	</PropertyList>
-																	<AudioSourceRef Name="MUS_Stinger_Pickup_04" ID="{1422E312-E726-4A44-A037-4ABC88708F32}"/>
+																	<AudioSourceRef Name="MUS_Stinger_132bpm_Am_Pickup_04" ID="{9072696F-A00D-401D-A788-D2F5304ABAEA}"/>
 																</MusicClip>
 															</Local>
 														</Reference>

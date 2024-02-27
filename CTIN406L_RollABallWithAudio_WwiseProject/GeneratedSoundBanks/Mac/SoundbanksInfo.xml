@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="534561221" Type="User" Language="SFX" Hash="{B97BC0F6-47B0-0DA2-DEC3-B0DE08DDEDEE}">
+		<SoundBank Id="534561221" Type="User" Language="SFX" Hash="{891E2BF6-3644-79DE-68ED-4E558233362D}">
 			<ShortName>MainSoundBank</ShortName>
 			<Path>MainSoundBank.bnk</Path>
 			<Media>
@@ -17,53 +17,45 @@
 					<ShortName>FLY_Footstep_Grass_04.wav</ShortName>
 					<CachePath>SFX/FLY_Footstep_Grass_04_818F3B66.wem</CachePath>
 				</File>
-				<File Id="1652184" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>MUS_BGM_C_Synth.wav</ShortName>
-					<CachePath>SFX/MUS_BGM_C_Synth_FBC78EF0.wem</CachePath>
+				<File Id="6629817" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MUS_BGM_132bpm_PickedUp_Piano_01.wav</ShortName>
+					<CachePath>SFX/MUS_BGM_132bpm_PickedUp_Piano_01_FBC78EF0.wem</CachePath>
 				</File>
 				<File Id="14961769" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>AMB_DogBark_03.wav</ShortName>
 					<CachePath>SFX/AMB_DogBark_03_818F3B66.wem</CachePath>
 				</File>
-				<File Id="15733850" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>MUS_BGM_B2_Synth.wav</ShortName>
-					<CachePath>SFX/MUS_BGM_B2_Synth_FBC78EF0.wem</CachePath>
+				<File Id="17273617" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MUS_BGM_132bpm_Idle_Synth_01.wav</ShortName>
+					<CachePath>SFX/MUS_BGM_132bpm_Idle_Synth_01_FBC78EF0.wem</CachePath>
 				</File>
-				<File Id="41425527" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>MUS_BGM_B2_DrumsHi.wav</ShortName>
-					<CachePath>SFX/MUS_BGM_B2_DrumsHi_FBC78EF0.wem</CachePath>
-				</File>
-				<File Id="44105883" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>MUS_BGM_C_DrumsHi.wav</ShortName>
-					<CachePath>SFX/MUS_BGM_C_DrumsHi_FBC78EF0.wem</CachePath>
+				<File Id="25460242" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MUS_BGM_132bpm_PickedUp_Piano_02.wav</ShortName>
+					<CachePath>SFX/MUS_BGM_132bpm_PickedUp_Piano_02_FBC78EF0.wem</CachePath>
 				</File>
 				<File Id="45852958" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>IMP_Pickup.wav</ShortName>
 					<CachePath>SFX/IMP_Pickup_818F3B66.wem</CachePath>
 				</File>
-				<File Id="50857137" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>MUS_BGM_A2_Piano.wav</ShortName>
-					<CachePath>SFX/MUS_BGM_A2_Piano_FBC78EF0.wem</CachePath>
-				</File>
-				<File Id="99241168" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>MUS_BGM_B1_Piano.wav</ShortName>
-					<CachePath>SFX/MUS_BGM_B1_Piano_FBC78EF0.wem</CachePath>
+				<File Id="47516979" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MUS_BGM_132bpm_Idle_DrumsHi_01.wav</ShortName>
+					<CachePath>SFX/MUS_BGM_132bpm_Idle_DrumsHi_01_FBC78EF0.wem</CachePath>
 				</File>
 				<File Id="103947080" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>AMB_Forest_LP.wav</ShortName>
 					<CachePath>SFX/AMB_Forest_LP_FBC78EF0.wem</CachePath>
 				</File>
+				<File Id="105298233" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MUS_BGM_132bpm_PickedUp_DrumsHi_03.wav</ShortName>
+					<CachePath>SFX/MUS_BGM_132bpm_PickedUp_DrumsHi_03_FBC78EF0.wem</CachePath>
+				</File>
 				<File Id="115148276" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>FLY_Footstep_Grass_03.wav</ShortName>
 					<CachePath>SFX/FLY_Footstep_Grass_03_818F3B66.wem</CachePath>
 				</File>
-				<File Id="124062832" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>MUS_BGM_A2_DrumsHi.wav</ShortName>
-					<CachePath>SFX/MUS_BGM_A2_DrumsHi_FBC78EF0.wem</CachePath>
-				</File>
-				<File Id="138574565" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>MUS_BGM_A1_Synth.wav</ShortName>
-					<CachePath>SFX/MUS_BGM_A1_Synth_FBC78EF0.wem</CachePath>
+				<File Id="123513959" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MUS_BGM_132bpm_Idle_DrumsLo_02.wav</ShortName>
+					<CachePath>SFX/MUS_BGM_132bpm_Idle_DrumsLo_02_FBC78EF0.wem</CachePath>
 				</File>
 				<File Id="173716311" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>AMB_City_LP.wav</ShortName>
@@ -77,13 +69,21 @@
 					<ShortName>IMP_Wall.wav</ShortName>
 					<CachePath>SFX/IMP_Wall_818F3B66.wem</CachePath>
 				</File>
-				<File Id="271616668" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>MUS_Stinger_Pickup_04.wav</ShortName>
-					<CachePath>SFX/MUS_Stinger_Pickup_04_FBC78EF0.wem</CachePath>
+				<File Id="299081843" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MUS_BGM_132bpm_Win_DrumsLo_01.wav</ShortName>
+					<CachePath>SFX/MUS_BGM_132bpm_Win_DrumsLo_01_FBC78EF0.wem</CachePath>
 				</File>
-				<File Id="284973796" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>MUS_BGM_B1_DrumsHi.wav</ShortName>
-					<CachePath>SFX/MUS_BGM_B1_DrumsHi_FBC78EF0.wem</CachePath>
+				<File Id="317336896" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MUS_Stinger_132bpm_Am_Pickup_04.wav</ShortName>
+					<CachePath>SFX/MUS_Stinger_132bpm_Am_Pickup_04_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="356762521" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MUS_BGM_132bpm_Idle_Synth_02.wav</ShortName>
+					<CachePath>SFX/MUS_BGM_132bpm_Idle_Synth_02_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="356880520" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MUS_BGM_132bpm_PickedUp_Synth_03.wav</ShortName>
+					<CachePath>SFX/MUS_BGM_132bpm_PickedUp_Synth_03_FBC78EF0.wem</CachePath>
 				</File>
 				<File Id="361768503" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>FLY_Footstep_Concrete_01.wav</ShortName>
@@ -93,13 +93,21 @@
 					<ShortName>FLY_Footstep_Concrete_04.wav</ShortName>
 					<CachePath>SFX/FLY_Footstep_Concrete_04_818F3B66.wem</CachePath>
 				</File>
-				<File Id="414495426" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>MUS_BGM_B1_Synth.wav</ShortName>
-					<CachePath>SFX/MUS_BGM_B1_Synth_FBC78EF0.wem</CachePath>
+				<File Id="376825196" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MUS_BGM_132bpm_PickedUp_DrumsLo_02.wav</ShortName>
+					<CachePath>SFX/MUS_BGM_132bpm_PickedUp_DrumsLo_02_FBC78EF0.wem</CachePath>
 				</File>
-				<File Id="449851253" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>MUS_BGM_A1_DrumsLo.wav</ShortName>
-					<CachePath>SFX/MUS_BGM_A1_DrumsLo_FBC78EF0.wem</CachePath>
+				<File Id="379781787" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MUS_BGM_132bpm_Idle_Piano_02.wav</ShortName>
+					<CachePath>SFX/MUS_BGM_132bpm_Idle_Piano_02_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="411483796" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MUS_BGM_132bpm_PickedUp_DrumsHi_02.wav</ShortName>
+					<CachePath>SFX/MUS_BGM_132bpm_PickedUp_DrumsHi_02_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="438989920" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MUS_BGM_132bpm_Idle_Piano_01.wav</ShortName>
+					<CachePath>SFX/MUS_BGM_132bpm_Idle_Piano_01_FBC78EF0.wem</CachePath>
 				</File>
 				<File Id="472038755" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MUS_Main_LP.wav</ShortName>
@@ -109,21 +117,29 @@
 					<ShortName>AMB_DogBark_02.wav</ShortName>
 					<CachePath>SFX/AMB_DogBark_02_818F3B66.wem</CachePath>
 				</File>
-				<File Id="497562931" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>MUS_BGM_B2_DrumsLo.wav</ShortName>
-					<CachePath>SFX/MUS_BGM_B2_DrumsLo_FBC78EF0.wem</CachePath>
+				<File Id="486742681" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MUS_BGM_132bpm_PickedUp_DrumsLo_03.wav</ShortName>
+					<CachePath>SFX/MUS_BGM_132bpm_PickedUp_DrumsLo_03_FBC78EF0.wem</CachePath>
 				</File>
-				<File Id="501616457" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>MUS_Stinger_Pickup_01.wav</ShortName>
-					<CachePath>SFX/MUS_Stinger_Pickup_01_FBC78EF0.wem</CachePath>
+				<File Id="498252147" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MUS_BGM_132bpm_PickedUp_Synth_01.wav</ShortName>
+					<CachePath>SFX/MUS_BGM_132bpm_PickedUp_Synth_01_FBC78EF0.wem</CachePath>
 				</File>
 				<File Id="505432651" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>FLY_Footstep_Grass_02.wav</ShortName>
 					<CachePath>SFX/FLY_Footstep_Grass_02_818F3B66.wem</CachePath>
 				</File>
+				<File Id="514786370" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MUS_BGM_132bpm_Win_DrumsHi_01.wav</ShortName>
+					<CachePath>SFX/MUS_BGM_132bpm_Win_DrumsHi_01_FBC78EF0.wem</CachePath>
+				</File>
 				<File Id="529320610" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>AMB_DogBark_04.wav</ShortName>
 					<CachePath>SFX/AMB_DogBark_04_818F3B66.wem</CachePath>
+				</File>
+				<File Id="554351904" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MUS_Stinger_132bpm_Am_Pickup_03.wav</ShortName>
+					<CachePath>SFX/MUS_Stinger_132bpm_Am_Pickup_03_FBC78EF0.wem</CachePath>
 				</File>
 				<File Id="557880412" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>FLY_Footstep_Grass_01.wav</ShortName>
@@ -133,61 +149,61 @@
 					<ShortName>AMB_Interior_LP.wav</ShortName>
 					<CachePath>SFX/AMB_Interior_LP_FBC78EF0.wem</CachePath>
 				</File>
-				<File Id="580980193" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>MUS_BGM_B2_Piano.wav</ShortName>
-					<CachePath>SFX/MUS_BGM_B2_Piano_FBC78EF0.wem</CachePath>
+				<File Id="594625187" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MUS_Stinger_132bpm_Am_Pickup_01.wav</ShortName>
+					<CachePath>SFX/MUS_Stinger_132bpm_Am_Pickup_01_FBC78EF0.wem</CachePath>
 				</File>
 				<File Id="599393677" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>UI_Win.wav</ShortName>
 					<CachePath>SFX/UI_Win_818F3B66.wem</CachePath>
 				</File>
-				<File Id="687574380" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>MUS_BGM_B1_DrumsLo.wav</ShortName>
-					<CachePath>SFX/MUS_BGM_B1_DrumsLo_FBC78EF0.wem</CachePath>
+				<File Id="721423106" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MUS_BGM_132bpm_PickedUp_DrumsLo_01.wav</ShortName>
+					<CachePath>SFX/MUS_BGM_132bpm_PickedUp_DrumsLo_01_FBC78EF0.wem</CachePath>
 				</File>
-				<File Id="695258061" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>MUS_BGM_A1_DrumsHi.wav</ShortName>
-					<CachePath>SFX/MUS_BGM_A1_DrumsHi_FBC78EF0.wem</CachePath>
+				<File Id="741593281" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MUS_BGM_132bpm_PickedUp_Synth_02.wav</ShortName>
+					<CachePath>SFX/MUS_BGM_132bpm_PickedUp_Synth_02_FBC78EF0.wem</CachePath>
 				</File>
 				<File Id="766349313" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>FLY_Footstep_Concrete_03.wav</ShortName>
 					<CachePath>SFX/FLY_Footstep_Concrete_03_818F3B66.wem</CachePath>
 				</File>
-				<File Id="784030583" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>MUS_BGM_A1_Piano.wav</ShortName>
-					<CachePath>SFX/MUS_BGM_A1_Piano_FBC78EF0.wem</CachePath>
+				<File Id="781766012" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MUS_Stinger_132bpm_Am_Pickup_02.wav</ShortName>
+					<CachePath>SFX/MUS_Stinger_132bpm_Am_Pickup_02_FBC78EF0.wem</CachePath>
 				</File>
-				<File Id="827291237" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>MUS_BGM_C_DrumsLo.wav</ShortName>
-					<CachePath>SFX/MUS_BGM_C_DrumsLo_FBC78EF0.wem</CachePath>
+				<File Id="797152947" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MUS_BGM_132bpm_PickedUp_Piano_03.wav</ShortName>
+					<CachePath>SFX/MUS_BGM_132bpm_PickedUp_Piano_03_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="797697480" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MUS_BGM_132bpm_PickedUp_DrumsHi_01.wav</ShortName>
+					<CachePath>SFX/MUS_BGM_132bpm_PickedUp_DrumsHi_01_FBC78EF0.wem</CachePath>
 				</File>
 				<File Id="852571445" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MVT_BallRolling_LP.wav</ShortName>
 					<CachePath>SFX/MVT_BallRolling_LP_FBC78EF0.wem</CachePath>
 				</File>
-				<File Id="864769827" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>MUS_BGM_A2_Synth.wav</ShortName>
-					<CachePath>SFX/MUS_BGM_A2_Synth_FBC78EF0.wem</CachePath>
+				<File Id="893716648" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MUS_BGM_132bpm_Win_Synth_01.wav</ShortName>
+					<CachePath>SFX/MUS_BGM_132bpm_Win_Synth_01_FBC78EF0.wem</CachePath>
 				</File>
 				<File Id="901060277" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>AMB_DogBark_01.wav</ShortName>
 					<CachePath>SFX/AMB_DogBark_01_818F3B66.wem</CachePath>
 				</File>
-				<File Id="1018659083" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>MUS_BGM_A2_DrumsLo.wav</ShortName>
-					<CachePath>SFX/MUS_BGM_A2_DrumsLo_FBC78EF0.wem</CachePath>
-				</File>
-				<File Id="1020803172" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>MUS_Stinger_Pickup_03.wav</ShortName>
-					<CachePath>SFX/MUS_Stinger_Pickup_03_FBC78EF0.wem</CachePath>
+				<File Id="1027642669" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MUS_BGM_132bpm_Idle_DrumsHi_02.wav</ShortName>
+					<CachePath>SFX/MUS_BGM_132bpm_Idle_DrumsHi_02_FBC78EF0.wem</CachePath>
 				</File>
 				<File Id="1039002410" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>FLY_Footstep_Concrete_05.wav</ShortName>
 					<CachePath>SFX/FLY_Footstep_Concrete_05_818F3B66.wem</CachePath>
 				</File>
-				<File Id="1064460418" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>MUS_Stinger_Pickup_02.wav</ShortName>
-					<CachePath>SFX/MUS_Stinger_Pickup_02_FBC78EF0.wem</CachePath>
+				<File Id="1070807779" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MUS_BGM_132bpm_Idle_DrumsLo_01.wav</ShortName>
+					<CachePath>SFX/MUS_BGM_132bpm_Idle_DrumsLo_01_FBC78EF0.wem</CachePath>
 				</File>
 			</Media>
 			<Plugins>
@@ -284,78 +300,112 @@
 				</Event>
 				<Event Id="96395413" Name="Play_MUS_BGM_Interactive" DurationType="Infinite">
 					<MediaRefs>
-						<MediaRef Id="271616668"/>
-						<MediaRef Id="501616457"/>
-						<MediaRef Id="1020803172"/>
-						<MediaRef Id="1064460418"/>
+						<MediaRef Id="317336896"/>
+						<MediaRef Id="554351904"/>
+						<MediaRef Id="594625187"/>
+						<MediaRef Id="781766012"/>
 					</MediaRefs>
 					<SwitchContainers>
 						<SwitchContainer>
-							<SwitchValue GroupType="State" GroupId="387365902" Id="84696446"/>
+							<SwitchValue GroupType="State" GroupId="530992273" Id="1829294538"/>
 							<MediaRefs>
-								<MediaRef Id="50857137"/>
-								<MediaRef Id="124062832"/>
-								<MediaRef Id="138574565"/>
-								<MediaRef Id="449851253"/>
-								<MediaRef Id="695258061"/>
-								<MediaRef Id="784030583"/>
-								<MediaRef Id="864769827"/>
-								<MediaRef Id="1018659083"/>
+								<MediaRef Id="17273617"/>
+								<MediaRef Id="47516979"/>
+								<MediaRef Id="123513959"/>
+								<MediaRef Id="356762521"/>
+								<MediaRef Id="379781787"/>
+								<MediaRef Id="438989920"/>
+								<MediaRef Id="1027642669"/>
+								<MediaRef Id="1070807779"/>
 							</MediaRefs>
 						</SwitchContainer>
 						<SwitchContainer>
-							<SwitchValue GroupType="State" GroupId="387365902" Id="84696445"/>
+							<SwitchValue GroupType="State" GroupId="530992273" Id="3716483651"/>
 							<MediaRefs>
-								<MediaRef Id="15733850"/>
-								<MediaRef Id="41425527"/>
-								<MediaRef Id="99241168"/>
-								<MediaRef Id="284973796"/>
-								<MediaRef Id="414495426"/>
-								<MediaRef Id="497562931"/>
-								<MediaRef Id="580980193"/>
-								<MediaRef Id="687574380"/>
+								<MediaRef Id="6629817"/>
+								<MediaRef Id="25460242"/>
+								<MediaRef Id="105298233"/>
+								<MediaRef Id="356880520"/>
+								<MediaRef Id="376825196"/>
+								<MediaRef Id="411483796"/>
+								<MediaRef Id="486742681"/>
+								<MediaRef Id="498252147"/>
+								<MediaRef Id="721423106"/>
+								<MediaRef Id="741593281"/>
+								<MediaRef Id="797152947"/>
+								<MediaRef Id="797697480"/>
 							</MediaRefs>
 						</SwitchContainer>
 						<SwitchContainer>
-							<SwitchValue GroupType="State" GroupId="387365902" Id="84696444"/>
+							<SwitchValue GroupType="State" GroupId="530992273" Id="2087516798"/>
 							<MediaRefs>
-								<MediaRef Id="1652184"/>
-								<MediaRef Id="44105883"/>
-								<MediaRef Id="827291237"/>
+								<MediaRef Id="299081843"/>
+								<MediaRef Id="514786370"/>
+								<MediaRef Id="893716648"/>
 							</MediaRefs>
 						</SwitchContainer>
 						<SwitchContainer>
-							<SwitchValue GroupType="State" GroupId="387365902" Id="84696446"/>
+							<SwitchValue GroupType="State" GroupId="530992273" Id="748895195"/>
 							<MediaRefs>
-								<MediaRef Id="50857137"/>
-								<MediaRef Id="124062832"/>
-								<MediaRef Id="138574565"/>
-								<MediaRef Id="449851253"/>
-								<MediaRef Id="695258061"/>
-								<MediaRef Id="784030583"/>
-								<MediaRef Id="864769827"/>
-								<MediaRef Id="1018659083"/>
+								<MediaRef Id="17273617"/>
+								<MediaRef Id="47516979"/>
+								<MediaRef Id="123513959"/>
+								<MediaRef Id="356762521"/>
+								<MediaRef Id="379781787"/>
+								<MediaRef Id="438989920"/>
+								<MediaRef Id="1027642669"/>
+								<MediaRef Id="1070807779"/>
 							</MediaRefs>
 						</SwitchContainer>
 						<SwitchContainer>
-							<SwitchValue GroupType="State" GroupId="387365902" Id="84696445"/>
+							<SwitchValue GroupType="State" GroupId="530992273" Id="1829294538"/>
 							<MediaRefs>
-								<MediaRef Id="15733850"/>
-								<MediaRef Id="41425527"/>
-								<MediaRef Id="99241168"/>
-								<MediaRef Id="284973796"/>
-								<MediaRef Id="414495426"/>
-								<MediaRef Id="497562931"/>
-								<MediaRef Id="580980193"/>
-								<MediaRef Id="687574380"/>
+								<MediaRef Id="17273617"/>
+								<MediaRef Id="47516979"/>
+								<MediaRef Id="123513959"/>
+								<MediaRef Id="356762521"/>
+								<MediaRef Id="379781787"/>
+								<MediaRef Id="438989920"/>
+								<MediaRef Id="1027642669"/>
+								<MediaRef Id="1070807779"/>
 							</MediaRefs>
 						</SwitchContainer>
 						<SwitchContainer>
-							<SwitchValue GroupType="State" GroupId="387365902" Id="84696444"/>
+							<SwitchValue GroupType="State" GroupId="530992273" Id="3716483651"/>
 							<MediaRefs>
-								<MediaRef Id="1652184"/>
-								<MediaRef Id="44105883"/>
-								<MediaRef Id="827291237"/>
+								<MediaRef Id="6629817"/>
+								<MediaRef Id="25460242"/>
+								<MediaRef Id="105298233"/>
+								<MediaRef Id="356880520"/>
+								<MediaRef Id="376825196"/>
+								<MediaRef Id="411483796"/>
+								<MediaRef Id="486742681"/>
+								<MediaRef Id="498252147"/>
+								<MediaRef Id="721423106"/>
+								<MediaRef Id="741593281"/>
+								<MediaRef Id="797152947"/>
+								<MediaRef Id="797697480"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="530992273" Id="2087516798"/>
+							<MediaRefs>
+								<MediaRef Id="299081843"/>
+								<MediaRef Id="514786370"/>
+								<MediaRef Id="893716648"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="530992273" Id="748895195"/>
+							<MediaRefs>
+								<MediaRef Id="17273617"/>
+								<MediaRef Id="47516979"/>
+								<MediaRef Id="123513959"/>
+								<MediaRef Id="356762521"/>
+								<MediaRef Id="379781787"/>
+								<MediaRef Id="438989920"/>
+								<MediaRef Id="1027642669"/>
+								<MediaRef Id="1070807779"/>
 							</MediaRefs>
 						</SwitchContainer>
 					</SwitchContainers>
@@ -420,6 +470,14 @@
 						<State Id="748895195" Name="None"/>
 					</States>
 				</StateGroup>
+				<StateGroup Id="530992273" Name="STA_GameState">
+					<States>
+						<State Id="748895195" Name="None"/>
+						<State Id="1829294538" Name="STA_GameState_Idle"/>
+						<State Id="2087516798" Name="STA_GameState_Win"/>
+						<State Id="3716483651" Name="STA_GameState_PickedUp"/>
+					</States>
+				</StateGroup>
 			</StateGroups>
 			<SwitchGroups>
 				<SwitchGroup Id="3045844422" Name="SWI_FootstepMaterial">
@@ -479,8 +537,9 @@
 				<StateGroup Id="530992273" Name="STA_GameState">
 					<States>
 						<State Id="748895195" Name="None"/>
-						<State Id="1888728998" Name="STA_GameState_Playing"/>
+						<State Id="1829294538" Name="STA_GameState_Idle"/>
 						<State Id="2087516798" Name="STA_GameState_Win"/>
+						<State Id="3716483651" Name="STA_GameState_PickedUp"/>
 					</States>
 				</StateGroup>
 			</StateGroups>
@@ -501,5 +560,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{D5B2D65E-B989-19DE-88D5-F8F465663325}</FileHash>
+	<FileHash>{956053EA-EEE8-CB90-C3DE-DC2DD7663E2E}</FileHash>
 </SoundBanksInfo>

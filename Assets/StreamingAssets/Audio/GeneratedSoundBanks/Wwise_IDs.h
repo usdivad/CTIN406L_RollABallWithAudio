@@ -39,7 +39,8 @@ namespace AK
             namespace STATE
             {
                 static const AkUniqueID NONE = 748895195U;
-                static const AkUniqueID STA_GAMESTATE_PLAYING = 1888728998U;
+                static const AkUniqueID STA_GAMESTATE_IDLE = 1829294538U;
+                static const AkUniqueID STA_GAMESTATE_PICKEDUP = 3716483651U;
                 static const AkUniqueID STA_GAMESTATE_WIN = 2087516798U;
             } // namespace STATE
         } // namespace STA_GAMESTATE
