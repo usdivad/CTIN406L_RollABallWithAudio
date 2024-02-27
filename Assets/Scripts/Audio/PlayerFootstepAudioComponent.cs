@@ -38,8 +38,6 @@ public class PlayerFootstepAudioComponent : MonoBehaviour
         }
 
         playerSpeedRtpc.SetGlobalValue(characterController.velocity.magnitude);
-
-        Debug.Log(characterController.velocity.magnitude);
     }
 
     // Play footstep audio from an animation event (used for third-person footsteps)

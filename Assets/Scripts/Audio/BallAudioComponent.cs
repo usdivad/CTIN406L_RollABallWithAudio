@@ -53,6 +53,7 @@ public class BallAudioComponent : MonoBehaviour
             {
                 musicIdleState.SetValue();
                 isInPickupState = false;
+                pickupTimeRemaining = 0f;
             }
             else
             {
