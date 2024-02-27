@@ -743,7 +743,7 @@
 											<PropertyList>
 												<Property Name="EnableDestinationFadeIn" Type="bool" Value="True"/>
 												<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
-												<Property Name="ExitSourceAt" Type="int16" Value="2"/>
+												<Property Name="ExitSourceAt" Type="int16" Value="3"/>
 											</PropertyList>
 											<TransitionInfo>
 												<SourceFadeOut>
@@ -1874,16 +1874,6 @@
 														</Reference>
 													</ReferenceList>
 												</MusicPlaylistItem>
-												<MusicPlaylistItem Name="" ID="{7B76A816-84DD-4BE4-92FF-246DDD07A03A}" ShortID="785152976">
-													<PropertyList>
-														<Property Name="PlaylistItemType" Type="int16" Value="1"/>
-													</PropertyList>
-													<ReferenceList>
-														<Reference Name="Segment">
-															<ObjectRef Name="MUS_BGM_B1_NoSynth" ID="{CA878A44-F017-4AE1-A69B-18CC231DDDC4}" WorkUnitID="{749D61E4-F82D-4EEF-B729-5F9971B28A87}"/>
-														</Reference>
-													</ReferenceList>
-												</MusicPlaylistItem>
 												<MusicPlaylistItem Name="" ID="{E8EEB08F-CA1F-4E8D-B6D0-435F499FE34E}" ShortID="35158550">
 													<PropertyList>
 														<Property Name="PlaylistItemType" Type="int16" Value="1"/>
@@ -1891,16 +1881,6 @@
 													<ReferenceList>
 														<Reference Name="Segment">
 															<ObjectRef Name="MUS_BGM_B2" ID="{0F1F9C9F-09F5-430C-A51F-AB996146FFDE}" WorkUnitID="{749D61E4-F82D-4EEF-B729-5F9971B28A87}"/>
-														</Reference>
-													</ReferenceList>
-												</MusicPlaylistItem>
-												<MusicPlaylistItem Name="" ID="{976EB868-61B1-49C2-A5DC-AA5833FFE60A}" ShortID="318259134">
-													<PropertyList>
-														<Property Name="PlaylistItemType" Type="int16" Value="1"/>
-													</PropertyList>
-													<ReferenceList>
-														<Reference Name="Segment">
-															<ObjectRef Name="MUS_BGM_B2_NoSynth" ID="{56338DD2-B03D-452F-B18A-C5476A7B7EFC}" WorkUnitID="{749D61E4-F82D-4EEF-B729-5F9971B28A87}"/>
 														</Reference>
 													</ReferenceList>
 												</MusicPlaylistItem>
