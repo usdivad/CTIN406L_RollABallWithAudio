@@ -45,19 +45,6 @@ namespace AK
             } // namespace STATE
         } // namespace STA_GAMESTATE
 
-        namespace STA_MUSICSECTION
-        {
-            static const AkUniqueID GROUP = 387365902U;
-
-            namespace STATE
-            {
-                static const AkUniqueID A = 84696446U;
-                static const AkUniqueID B = 84696445U;
-                static const AkUniqueID C = 84696444U;
-                static const AkUniqueID NONE = 748895195U;
-            } // namespace STATE
-        } // namespace STA_MUSICSECTION
-
     } // namespace STATES
 
     namespace SWITCHES

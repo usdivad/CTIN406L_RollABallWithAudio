@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="534561221" Type="User" Language="SFX" Hash="{891E2BF6-3644-79DE-68ED-4E558233362D}">
+		<SoundBank Id="534561221" Type="User" Language="SFX" Hash="{FD3C23D1-682A-1A8A-28CC-EB8A87FD69C2}">
 			<ShortName>MainSoundBank</ShortName>
 			<Path>MainSoundBank.bnk</Path>
 			<Media>
@@ -409,9 +409,6 @@
 							</MediaRefs>
 						</SwitchContainer>
 					</SwitchContainers>
-					<ActionSetState>
-						<ActionSetStateEntry GroupId="387365902" Id="84696446" Name="A"/>
-					</ActionSetState>
 				</Event>
 				<Event Id="4165304245" Name="Play_MUS_Main" DurationType="Infinite">
 					<MediaRefs>
@@ -462,14 +459,6 @@
 				<GameParameter Id="3709966389" Name="RTPC_BallSpeed"/>
 			</GameParameters>
 			<StateGroups>
-				<StateGroup Id="387365902" Name="STA_MusicSection">
-					<States>
-						<State Id="84696444" Name="C"/>
-						<State Id="84696445" Name="B"/>
-						<State Id="84696446" Name="A"/>
-						<State Id="748895195" Name="None"/>
-					</States>
-				</StateGroup>
 				<StateGroup Id="530992273" Name="STA_GameState">
 					<States>
 						<State Id="748895195" Name="None"/>
@@ -491,7 +480,7 @@
 				<Trigger Id="965785689" Name="MUS_Pickup"/>
 			</Triggers>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{98789173-5323-CB87-B9A7-1E7D90A483F3}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{61C6B304-2581-7D7D-0064-9141B14DD780}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -526,14 +515,6 @@
 				<GameParameter Id="3709966389" Name="RTPC_BallSpeed"/>
 			</GameParameters>
 			<StateGroups>
-				<StateGroup Id="387365902" Name="STA_MusicSection">
-					<States>
-						<State Id="84696444" Name="C"/>
-						<State Id="84696445" Name="B"/>
-						<State Id="84696446" Name="A"/>
-						<State Id="748895195" Name="None"/>
-					</States>
-				</StateGroup>
 				<StateGroup Id="530992273" Name="STA_GameState">
 					<States>
 						<State Id="748895195" Name="None"/>
@@ -560,5 +541,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{DC0AE7F9-534C-A69A-5380-E116DCE1BE9D}</FileHash>
+	<FileHash>{69FCC6CF-52F7-4D58-F948-CE7A63A224E4}</FileHash>
 </SoundBanksInfo>
