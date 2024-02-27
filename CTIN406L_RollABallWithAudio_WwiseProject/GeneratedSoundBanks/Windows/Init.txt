@@ -3,6 +3,7 @@ State Group	ID	Name			Wwise Object Path	Notes
 	530992273	STA_GameState			\Default Work Unit\STA_GameState	
 
 State	ID	Name	State Group			Notes
+	84696444	C	STA_MusicSection			
 	84696445	B	STA_MusicSection			
 	84696446	A	STA_MusicSection			
 	748895195	None	STA_MusicSection			
