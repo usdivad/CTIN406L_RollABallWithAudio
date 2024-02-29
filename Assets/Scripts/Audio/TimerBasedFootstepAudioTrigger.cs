@@ -4,7 +4,7 @@ using UnityEngine;
 
 /** Component that triggers footstep audio on a timer. **/
 
-[RequireComponent(typeof(PlayerFootstepAudioComponent))]
+[RequireComponent(typeof(PlayerMovementAudioComponent))]
 public class TimerBasedFootstepAudioTrigger : MonoBehaviour
 {
     [SerializeField]
@@ -19,7 +19,7 @@ public class TimerBasedFootstepAudioTrigger : MonoBehaviour
     // ----
 
     CharacterController characterController; // Cached reference to the character controller
-    PlayerFootstepAudioComponent footstepAudioComponent; // Cached reference to the footstep audio component
+    PlayerMovementAudioComponent movementAudioComponent; // Cached reference to the movement audio component
     float timerBasedFootstepsTimeElapsed = 0f; // How much time has elapsed since our last footstep
 
     // ----
@@ -28,14 +28,14 @@ public class TimerBasedFootstepAudioTrigger : MonoBehaviour
     void Start()
     {
         characterController = GetComponent<CharacterController>();
-        footstepAudioComponent = GetComponent<PlayerFootstepAudioComponent>();
+        movementAudioComponent = GetComponent<PlayerMovementAudioComponent>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        // Do nothing (early return) if we have no character controller or footstep audio component
-        if (characterController == null || footstepAudioComponent == null)
+        // Do nothing (early return) if we have no character controller or movement audio component
+        if (characterController == null || movementAudioComponent == null)
         {
             return;
         }
@@ -55,7 +55,7 @@ public class TimerBasedFootstepAudioTrigger : MonoBehaviour
         // Timer interval has been reached; trigger a footstep
         if (timerBasedFootstepsTimeElapsed >= timerBasedFootstepsInterval)
         {
-            footstepAudioComponent.PlayFootstepAudio();
+            movementAudioComponent.PlayFootstepAudio();
             timerBasedFootstepsTimeElapsed = 0f;
         }
         else

@@ -3,9 +3,8 @@ using System.Collections.Generic;
 
 using UnityEngine;
 
-/** Component that handles player footstep audio **/
-// TODO: Rename this player movement audio component
-public class PlayerFootstepAudioComponent : MonoBehaviour
+/** Component that handles player movement audio **/
+public class PlayerMovementAudioComponent : MonoBehaviour
 {
     [SerializeField]
     AK.Wwise.Event footstepAudioEvent; // Audio event for footsteps

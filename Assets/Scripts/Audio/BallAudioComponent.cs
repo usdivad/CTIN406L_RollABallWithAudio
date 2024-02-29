@@ -20,16 +20,16 @@ public class BallAudioComponent : MonoBehaviour
     AK.Wwise.RTPC ballSpeedRtpc; // RTPC for the ball speed
 
     [SerializeField]
-    AK.Wwise.State musicIdleState;
+    AK.Wwise.State musicIdleState; // Idle state for music
 
     [SerializeField]
-    AK.Wwise.State musicPickupState;
+    AK.Wwise.State musicPickupState; // Pickup state for music
 
     [SerializeField]
-    AK.Wwise.State musicWinState;
+    AK.Wwise.State musicWinState; // Win state for music
 
     [SerializeField]
-    AK.Wwise.Event musicPickupTrigger;
+    AK.Wwise.Event musicPickupTrigger; // Trigger for pickup stinger
 
     [SerializeField]
     float pickupTimeIncrementAmount = 6f;
