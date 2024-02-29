@@ -4,6 +4,17 @@ Roll-A-Ball, now with sound! For USC course CTIN 406L: Sound Design for Games.
 
 Based on Unity's [Roll-A-Ball tutorial](https://learn.unity.com/project/roll-a-ball), adapting the [completed project files](https://assetstore.unity.com/packages/essentials/tutorial-projects/unity-learn-roll-a-ball-completed-project-files-urp-77198) and adding newly implemented audio.
 
+## Week 8 Reference: Interactive Music Approaches
+1. [Download the `week8-interactive-music` version of the project](https://github.com/usdivad/CTIN406L_RollABallWithAudio/archive/refs/heads/week8-interactive-music.zip)
+2. You may want to look at the following files:
+	- Unity:
+		- Assets/Scenes/Week8_InteractiveMusic.unity
+		- Assets/Scripts/Audio/PlayerMovementAudioComponent.cs
+		- Assets/Scripts/Audio/BallAudioComponent.cs
+	- Wwise:
+		- CTIN406L_RollABallWithAudio_WwiseProject
+			- \Interactive Music Hierarchy\Default Work Unit\MUS_BGM_Interactive
+
 ## Week 7 Reference: Dynamically Driven Audio
 1. [Download the `week7-dynamically-driven-audio` version of the project](https://github.com/usdivad/CTIN406L_RollABallWithAudio/archive/refs/heads/week7-dynamically-driven-audio.zip)
 2. The following may be helpful for **Project 2 - Footsteps**:
