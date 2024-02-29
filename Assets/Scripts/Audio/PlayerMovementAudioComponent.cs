@@ -16,7 +16,7 @@ public class PlayerMovementAudioComponent : MonoBehaviour
     AK.Wwise.Switch footstepMaterialSwitch_Grass; // Switch for grass
 
     [SerializeField]
-    AK.Wwise.RTPC playerSpeedRtpc; // []
+    AK.Wwise.RTPC playerSpeedRtpc; // RTPC for player speed
 
     Vector3 footstepRaycastStartPositionOffset = Vector3.up * 0.05f; // Footstep ray position offset
     float footstepRaycastDistance = 100f; // How far to cast the footstep ray for
