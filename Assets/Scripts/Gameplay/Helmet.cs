@@ -25,14 +25,17 @@ public class Helmet : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // Toggle equip/unequip when key is pressed
-        if (Input.GetKeyDown(equipKey))
+        // Equip when key is held down, unequip when key is released
+        if (Input.GetKey(equipKey))
         {
             if (!isEquipped)
             {
                 Equip();
             }
-            else
+        }
+        else
+        {
+            if (isEquipped)
             {
                 Unequip();
             }
