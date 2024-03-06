@@ -19,7 +19,7 @@ public class PlayerMovementAudioComponent : MonoBehaviour
     AK.Wwise.RTPC playerSpeedRtpc; // RTPC for player speed
 
     Vector3 footstepRaycastStartPositionOffset = Vector3.up * 0.05f; // Footstep ray position offset
-    float footstepRaycastDistance = 100f; // How far to cast the footstep ray for
+    float footstepRaycastDistance = 0.1f; // How far to cast the footstep ray for
     float animationEventWeightThreshold = 0.5f; // Anim weight threshold below which we don't play footstep audio
 
     CharacterController characterController; // Cached reference to the character controller
