@@ -2,15 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/** Equippable helmet **/
 public class Helmet : MonoBehaviour
 {
     [SerializeField]
-    KeyCode equipKey = KeyCode.H;
+    KeyCode equipKey = KeyCode.H; // Key to toggle equip/unequip
 
-    bool isEquipped = false;
+    bool isEquipped = false; // Whether helmet is equipped
 
-    MeshRenderer meshRenderer;
-    HelmetAudioComponent audioComponent;
+    MeshRenderer meshRenderer; // Mesh renderer for the helmet
+    HelmetAudioComponent audioComponent; // Helmet audio component
 
     // Start is called before the first frame update
     void Start()
@@ -24,6 +25,7 @@ public class Helmet : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // Toggle equip/unequip when key is pressed
         if (Input.GetKeyDown(equipKey))
         {
             if (!isEquipped)
@@ -35,15 +37,9 @@ public class Helmet : MonoBehaviour
                 Unequip();
             }
         }
-        //else
-        //{
-        //    if (isEquipped)
-        //    {
-        //        Unequip();
-        //    }
-        //}
     }
 
+    // Equip the helmet
     void Equip()
     {
         meshRenderer.enabled = true;
@@ -52,6 +48,7 @@ public class Helmet : MonoBehaviour
         Debug.Log("Equipped helmet");
     }
 
+    // Unequip the helmet
     void Unequip()
     {
         meshRenderer.enabled = false;

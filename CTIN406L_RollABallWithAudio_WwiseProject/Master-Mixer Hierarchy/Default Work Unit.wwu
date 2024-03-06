@@ -70,17 +70,6 @@
 								<ObjectList Name="Effects">
 									<Reference>
 										<Local>
-											<EffectSlot Name="" ID="{83D02F57-8A42-4CAB-AA3B-89D54C368D65}" ShortID="731728513">
-												<ReferenceList>
-													<Reference Name="Effect" PluginName="Wwise Guitar Distortion" CompanyID="0" PluginID="126" PluginType="3">
-														<ObjectRef Name="FX_HelmetDistortion" ID="{1E91F57F-1057-4567-82EF-D46C6176E09E}" WorkUnitID="{7A3E194F-66EA-4481-92B9-3FAB4848320E}"/>
-													</Reference>
-												</ReferenceList>
-											</EffectSlot>
-										</Local>
-									</Reference>
-									<Reference>
-										<Local>
 											<EffectSlot Name="" ID="{D5484AE2-01C4-4BB8-8D65-A48643AEB08B}" ShortID="379043211">
 												<ReferenceList>
 													<Reference Name="Effect">
@@ -118,6 +107,45 @@
 																		</CustomState>
 																	</CustomStateList>
 																</StateInfo>
+																<ObjectLists>
+																	<ObjectList Name="RTPC">
+																		<Reference>
+																			<Local>
+																				<RTPC Name="" ID="{6FC93996-677C-4484-AAE9-E75F9A3442A4}" ShortID="471098117">
+																					<PropertyList>
+																						<Property Name="PropertyName" Type="string" Value="ModDepth"/>
+																					</PropertyList>
+																					<ReferenceList>
+																						<Reference Name="ControlInput">
+																							<ObjectRef Name="RTPC_BallSpeed" ID="{98D759C6-3845-4E92-8D73-E23F247A06E8}" WorkUnitID="{D6D3403D-3D26-45E3-8F8E-D39F34A69414}"/>
+																						</Reference>
+																						<Reference Name="Curve">
+																							<Custom>
+																								<Curve Name="" ID="{27AA1B00-32CF-4F55-AA39-9833209C737E}">
+																									<PropertyList>
+																										<Property Name="Flags" Type="int32" Value="1"/>
+																									</PropertyList>
+																									<PointList>
+																										<Point>
+																											<XPos>0</XPos>
+																											<YPos>-0</YPos>
+																											<Flags>5</Flags>
+																										</Point>
+																										<Point>
+																											<XPos>10</XPos>
+																											<YPos>65</YPos>
+																											<Flags>37</Flags>
+																										</Point>
+																									</PointList>
+																								</Curve>
+																							</Custom>
+																						</Reference>
+																					</ReferenceList>
+																				</RTPC>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
 															</Effect>
 														</Custom>
 													</Reference>
@@ -134,7 +162,7 @@
 															<Effect Name="Echoes_Linear (Custom)" ID="{5DA243A6-3341-484B-B62E-61B1640FE927}" ShortID="429887793" PluginName="Wwise Delay" CompanyID="0" PluginID="106" PluginType="3">
 																<PropertyList>
 																	<Property Name="DelayTime" Type="Real32" Value="0.455"/>
-																	<Property Name="Feedback" Type="Real32" Value="50"/>
+																	<Property Name="Feedback" Type="Real32" Value="30"/>
 																</PropertyList>
 																<StateInfo>
 																	<StatePropertyList>
@@ -167,6 +195,17 @@
 											</EffectSlot>
 										</Local>
 									</Reference>
+									<Reference>
+										<Local>
+											<EffectSlot Name="" ID="{83D02F57-8A42-4CAB-AA3B-89D54C368D65}" ShortID="731728513">
+												<ReferenceList>
+													<Reference Name="Effect" PluginName="Wwise Guitar Distortion" CompanyID="0" PluginID="126" PluginType="3">
+														<ObjectRef Name="FX_HelmetDistortion" ID="{1E91F57F-1057-4567-82EF-D46C6176E09E}" WorkUnitID="{7A3E194F-66EA-4481-92B9-3FAB4848320E}"/>
+													</Reference>
+												</ReferenceList>
+											</EffectSlot>
+										</Local>
+									</Reference>
 								</ObjectList>
 							</ObjectLists>
 						</Bus>
@@ -174,7 +213,7 @@
 							<PropertyList>
 								<Property Name="BusVolume" Type="Real64">
 									<ValueList>
-										<Value>-12</Value>
+										<Value>-3</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -237,7 +276,7 @@
 								<StateRef Name="Equipped" ID="{C3406E21-8EDA-42C4-B7E7-379164234064}"/>
 								<CustomState Name="" ID="{6484C84D-1DC4-4AEC-AD44-FA84A83E417B}" ShortID="1041160430">
 									<PropertyList>
-										<Property Name="BusVolume" Type="Real64" Value="-6"/>
+										<Property Name="BusVolume" Type="Real64" Value="-3"/>
 									</PropertyList>
 								</CustomState>
 							</CustomState>

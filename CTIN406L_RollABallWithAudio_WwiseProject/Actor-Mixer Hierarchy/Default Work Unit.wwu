@@ -1283,11 +1283,11 @@
 																	<Property Name="DistortionDrive" Type="Real32" Value="96"/>
 																	<Property Name="DistortionTone" Type="Real32" Value="78"/>
 																	<Property Name="DistortionType" Type="int32" Value="1"/>
-																	<Property Name="OutputLevel" Type="Real32" Value="-10"/>
 																	<Property Name="Rectification" Type="Real32" Value="87"/>
 																</PropertyList>
 																<StateInfo>
 																	<StatePropertyList>
+																		<Property Name="OutputLevel"/>
 																		<Property Name="WetDryMix"/>
 																	</StatePropertyList>
 																	<StateGroupList>
@@ -1306,7 +1306,11 @@
 																		</CustomState>
 																		<CustomState>
 																			<StateRef Name="Equipped" ID="{C3406E21-8EDA-42C4-B7E7-379164234064}"/>
-																			<CustomState Name="" ID="{499BEDA7-806F-49C2-AA52-C4E201B1E2AA}" ShortID="1064251055"/>
+																			<CustomState Name="" ID="{499BEDA7-806F-49C2-AA52-C4E201B1E2AA}" ShortID="1064251055">
+																				<PropertyList>
+																					<Property Name="OutputLevel" Type="Real32" Value="-6"/>
+																				</PropertyList>
+																			</CustomState>
 																		</CustomState>
 																	</CustomStateList>
 																</StateInfo>

@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="534561221" Type="User" Language="SFX" Hash="{1DDCBD10-0A6E-3D56-E845-C5EB6DD4FB03}">
+		<SoundBank Id="534561221" Type="User" Language="SFX" Hash="{8C55A256-8CF7-26D2-5461-4A105178D511}">
 			<ShortName>MainSoundBank</ShortName>
 			<Path>MainSoundBank.bnk</Path>
 			<Media>
@@ -533,7 +533,7 @@
 				<Trigger Id="965785689" Name="MUS_Pickup"/>
 			</Triggers>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{6327845C-8996-8001-5895-4D21FCCBD072}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{AAA840F9-C4DC-A583-C888-233C8F6B89C4}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -626,5 +626,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{DAD2A9C3-32E6-A3EC-A561-AB0AFFCB89D7}</FileHash>
+	<FileHash>{A090D286-3FAE-FCA6-0BD4-DA032CED47DC}</FileHash>
 </SoundBanksInfo>

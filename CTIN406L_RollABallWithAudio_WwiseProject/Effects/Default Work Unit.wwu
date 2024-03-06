@@ -8,9 +8,13 @@
 						<Property Name="DistortionDrive" Type="Real32" Value="48"/>
 						<Property Name="DistortionTone" Type="Real32" Value="48"/>
 						<Property Name="DistortionType" Type="int32" Value="1"/>
-						<Property Name="OutputLevel" Type="Real32" Value="-9"/>
-						<Property Name="PostEQBand3FilterType" Type="int32" Value="4"/>
-						<Property Name="PostEQBand3Frequency" Type="Real32" Value="650"/>
+						<Property Name="PostEQBand1FilterType" Type="int32" Value="4"/>
+						<Property Name="PostEQBand1Frequency" Type="Real32" Value="800"/>
+						<Property Name="PostEQBand2FilterType" Type="int32" Value="1"/>
+						<Property Name="PostEQBand2Frequency" Type="Real32" Value="300"/>
+						<Property Name="PostEQBand2Gain" Type="Real32" Value="18"/>
+						<Property Name="PostEQBand3FilterType" Type="int32" Value="3"/>
+						<Property Name="PostEQBand3Frequency" Type="Real32" Value="4660"/>
 						<Property Name="PreEQBand1Enable" Type="bool" Value="True"/>
 						<Property Name="PreEQBand1FilterType" Type="int32" Value="4"/>
 						<Property Name="PreEQBand1Frequency" Type="Real32" Value="800"/>
@@ -44,7 +48,11 @@
 							</CustomState>
 							<CustomState>
 								<StateRef Name="Equipped" ID="{C3406E21-8EDA-42C4-B7E7-379164234064}"/>
-								<CustomState Name="" ID="{A6B018AD-EDDE-48F8-8707-D008E1AFF011}" ShortID="632430931"/>
+								<CustomState Name="" ID="{A6B018AD-EDDE-48F8-8707-D008E1AFF011}" ShortID="632430931">
+									<PropertyList>
+										<Property Name="OutputLevel" Type="Real32" Value="-6"/>
+									</PropertyList>
+								</CustomState>
 							</CustomState>
 						</CustomStateList>
 					</StateInfo>

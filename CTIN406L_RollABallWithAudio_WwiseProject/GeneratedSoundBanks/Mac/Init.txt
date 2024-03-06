@@ -11,6 +11,9 @@ State	ID	Name	State Group			Notes
 	2087516798	STA_GameState_Win	STA_GameState			
 	3716483651	STA_GameState_PickedUp	STA_GameState			
 
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	3709966389	RTPC_BallSpeed			\Default Work Unit\RTPC_BallSpeed	
+
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	393239870	SFX			\Default Work Unit\Master Audio Bus\SFX	
 	695384145	RVB			\Default Work Unit\Master Audio Bus\RVB	
