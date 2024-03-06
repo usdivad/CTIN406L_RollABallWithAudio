@@ -11,6 +11,27 @@
 						<State Name="STA_GameState_PickedUp" ID="{FDE2AA2C-ED74-44EE-BD61-6F6D18950C85}"/>
 					</ChildrenList>
 				</StateGroup>
+				<StateGroup Name="STA_HelmetEquip" ID="{A2E4E8A5-D86B-481C-9E9C-0F184CF205B0}">
+					<ChildrenList>
+						<State Name="None" ID="{BF3B05E0-6C2D-4B74-9A8D-BDB639DF1AA4}"/>
+						<State Name="Equipped" ID="{C3406E21-8EDA-42C4-B7E7-379164234064}"/>
+						<State Name="Unequipped" ID="{8FBD56F1-3D11-40BA-88CC-A57FB6F3BA5E}"/>
+					</ChildrenList>
+					<TransitionList>
+						<Transition>
+							<StartState Name="None" ID="{BF3B05E0-6C2D-4B74-9A8D-BDB639DF1AA4}"/>
+							<EndState Name="Unequipped" ID="{8FBD56F1-3D11-40BA-88CC-A57FB6F3BA5E}"/>
+							<Time>0</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="None" ID="{BF3B05E0-6C2D-4B74-9A8D-BDB639DF1AA4}"/>
+							<EndState Name="Equipped" ID="{C3406E21-8EDA-42C4-B7E7-379164234064}"/>
+							<Time>0</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+					</TransitionList>
+				</StateGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</States>

@@ -45,6 +45,18 @@ namespace AK
             } // namespace STATE
         } // namespace STA_GAMESTATE
 
+        namespace STA_HELMETEQUIP
+        {
+            static const AkUniqueID GROUP = 104297693U;
+
+            namespace STATE
+            {
+                static const AkUniqueID EQUIPPED = 1780230126U;
+                static const AkUniqueID NONE = 748895195U;
+                static const AkUniqueID UNEQUIPPED = 2413814047U;
+            } // namespace STATE
+        } // namespace STA_HELMETEQUIP
+
     } // namespace STATES
 
     namespace SWITCHES

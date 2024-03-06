@@ -1,6 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{7A3E194F-66EA-4481-92B9-3FAB4848320E}" SchemaVersion="119">
 	<Effects>
-		<WorkUnit Name="Default Work Unit" ID="{7A3E194F-66EA-4481-92B9-3FAB4848320E}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{7A3E194F-66EA-4481-92B9-3FAB4848320E}" PersistMode="Standalone">
+			<ChildrenList>
+				<Effect Name="FX_HelmetDistortion" ID="{1E91F57F-1057-4567-82EF-D46C6176E09E}" PluginName="Wwise Guitar Distortion" CompanyID="0" PluginID="126" PluginType="3">
+					<PropertyList>
+						<Property Name="DistortionDrive" Type="Real32" Value="48"/>
+						<Property Name="DistortionTone" Type="Real32" Value="48"/>
+						<Property Name="DistortionType" Type="int32" Value="1"/>
+						<Property Name="OutputLevel" Type="Real32" Value="-9"/>
+						<Property Name="PostEQBand3FilterType" Type="int32" Value="4"/>
+						<Property Name="PostEQBand3Frequency" Type="Real32" Value="650"/>
+						<Property Name="PreEQBand1Enable" Type="bool" Value="True"/>
+						<Property Name="PreEQBand1FilterType" Type="int32" Value="4"/>
+						<Property Name="PreEQBand1Frequency" Type="Real32" Value="800"/>
+						<Property Name="PreEQBand2Enable" Type="bool" Value="True"/>
+						<Property Name="PreEQBand2FilterType" Type="int32" Value="1"/>
+						<Property Name="PreEQBand2Frequency" Type="Real32" Value="300"/>
+						<Property Name="PreEQBand2Gain" Type="Real32" Value="18"/>
+						<Property Name="PreEQBand3Enable" Type="bool" Value="True"/>
+						<Property Name="PreEQBand3FilterType" Type="int32" Value="3"/>
+						<Property Name="PreEQBand3Frequency" Type="Real32" Value="4660"/>
+						<Property Name="Rectification" Type="Real32" Value="66"/>
+					</PropertyList>
+					<StateInfo>
+						<StatePropertyList>
+							<Property Name="OutputLevel"/>
+							<Property Name="WetDryMix"/>
+						</StatePropertyList>
+						<StateGroupList>
+							<StateGroupInfo>
+								<StateGroupRef Name="STA_HelmetEquip" ID="{A2E4E8A5-D86B-481C-9E9C-0F184CF205B0}"/>
+							</StateGroupInfo>
+						</StateGroupList>
+						<CustomStateList>
+							<CustomState>
+								<StateRef Name="Unequipped" ID="{8FBD56F1-3D11-40BA-88CC-A57FB6F3BA5E}"/>
+								<CustomState Name="" ID="{8DC52FB1-5908-447D-9C8B-A0C09156B474}" ShortID="854762665">
+									<PropertyList>
+										<Property Name="WetDryMix" Type="Real32" Value="-100"/>
+									</PropertyList>
+								</CustomState>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Equipped" ID="{C3406E21-8EDA-42C4-B7E7-379164234064}"/>
+								<CustomState Name="" ID="{A6B018AD-EDDE-48F8-8707-D008E1AFF011}" ShortID="632430931"/>
+							</CustomState>
+						</CustomStateList>
+					</StateInfo>
+				</Effect>
+			</ChildrenList>
+		</WorkUnit>
 	</Effects>
 </WwiseDocument>

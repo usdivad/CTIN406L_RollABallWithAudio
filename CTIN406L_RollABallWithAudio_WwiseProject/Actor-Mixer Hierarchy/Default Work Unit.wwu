@@ -985,6 +985,7 @@
 					<ChildrenList>
 						<SwitchContainer Name="FLY_Footstep" ID="{A08655B3-ACE4-4FEA-81F5-DB7E0E715A31}" ShortID="433407895">
 							<PropertyList>
+								<Property Name="OverrideEffect" Type="bool" Value="True"/>
 								<Property Name="Pitch" Type="int32">
 									<ModifierList>
 										<ModifierInfo>
@@ -1269,6 +1270,55 @@
 									</ChildrenList>
 								</RandomSequenceContainer>
 							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Effects">
+									<Reference>
+										<Local>
+											<EffectSlot Name="" ID="{E7B027B5-E046-4027-BC47-042B9656E00F}" ShortID="923547714">
+												<ReferenceList>
+													<Reference Name="Effect">
+														<Custom>
+															<Effect Name="Guitar Distortion (Custom)" ID="{E8148E1B-FE8C-4B4E-8F98-C903E64FABC1}" ShortID="641728645" PluginName="Wwise Guitar Distortion" CompanyID="0" PluginID="126" PluginType="3">
+																<PropertyList>
+																	<Property Name="DistortionDrive" Type="Real32" Value="96"/>
+																	<Property Name="DistortionTone" Type="Real32" Value="78"/>
+																	<Property Name="DistortionType" Type="int32" Value="1"/>
+																	<Property Name="OutputLevel" Type="Real32" Value="-10"/>
+																	<Property Name="Rectification" Type="Real32" Value="87"/>
+																</PropertyList>
+																<StateInfo>
+																	<StatePropertyList>
+																		<Property Name="WetDryMix"/>
+																	</StatePropertyList>
+																	<StateGroupList>
+																		<StateGroupInfo>
+																			<StateGroupRef Name="STA_HelmetEquip" ID="{A2E4E8A5-D86B-481C-9E9C-0F184CF205B0}"/>
+																		</StateGroupInfo>
+																	</StateGroupList>
+																	<CustomStateList>
+																		<CustomState>
+																			<StateRef Name="Unequipped" ID="{8FBD56F1-3D11-40BA-88CC-A57FB6F3BA5E}"/>
+																			<CustomState Name="" ID="{DB29D5D7-A1F1-48F8-BDF0-F6C1383F2955}" ShortID="131298386">
+																				<PropertyList>
+																					<Property Name="WetDryMix" Type="Real32" Value="-100"/>
+																				</PropertyList>
+																			</CustomState>
+																		</CustomState>
+																		<CustomState>
+																			<StateRef Name="Equipped" ID="{C3406E21-8EDA-42C4-B7E7-379164234064}"/>
+																			<CustomState Name="" ID="{499BEDA7-806F-49C2-AA52-C4E201B1E2AA}" ShortID="1064251055"/>
+																		</CustomState>
+																	</CustomStateList>
+																</StateInfo>
+															</Effect>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</EffectSlot>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
 							<GroupingInfo>
 								<GroupingBehaviorList>
 									<GroupingBehavior>

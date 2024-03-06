@@ -1,7 +1,11 @@
 State Group	ID	Name			Wwise Object Path	Notes
+	104297693	STA_HelmetEquip			\Default Work Unit\STA_HelmetEquip	
 	530992273	STA_GameState			\Default Work Unit\STA_GameState	
 
 State	ID	Name	State Group			Notes
+	748895195	None	STA_HelmetEquip			
+	1780230126	Equipped	STA_HelmetEquip			
+	2413814047	Unequipped	STA_HelmetEquip			
 	748895195	None	STA_GameState			
 	1829294538	STA_GameState_Idle	STA_GameState			
 	2087516798	STA_GameState_Win	STA_GameState			
@@ -18,7 +22,11 @@ Auxiliary Bus	ID	Name			Wwise Object Path	Notes
 	1985046648	RVB_LargeHall			\Default Work Unit\Master Audio Bus\RVB\RVB_LargeHall	
 
 Effect plug-ins	ID	Name	Type				Notes
+	361491677	Standard (Custom)	Wwise Flanger			
+	429887793	Echoes_Linear (Custom)	Wwise Delay			
+	858114425	Pitch Shifter (Custom)	Wwise Pitch Shifter			
 	2513915904	Hall_Large	Wwise RoomVerb			
+	3153319960	FX_HelmetDistortion	Wwise Guitar Distortion			
 
 Audio Devices	ID	Name	Type				Notes
 	2317455096	No_Output	No Output			

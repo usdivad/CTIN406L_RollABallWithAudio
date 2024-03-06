@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="534561221" Type="User" Language="SFX" Hash="{FD3C23D1-682A-1A8A-28CC-EB8A87FD69C2}">
+		<SoundBank Id="534561221" Type="User" Language="SFX" Hash="{1DDCBD10-0A6E-3D56-E845-C5EB6DD4FB03}">
 			<ShortName>MainSoundBank</ShortName>
 			<Path>MainSoundBank.bnk</Path>
 			<Media>
@@ -207,8 +207,15 @@
 				</File>
 			</Media>
 			<Plugins>
+				<Custom>
+					<Plugin Id="361491677" Name="Standard (Custom)" LibName="Wwise Flanger" LibId="8192003"/>
+					<Plugin Id="429887793" Name="Echoes_Linear (Custom)" LibName="Wwise Delay" LibId="6946819"/>
+					<Plugin Id="641728645" Name="Guitar Distortion (Custom)" LibName="Wwise Guitar Distortion" LibId="8257539"/>
+					<Plugin Id="858114425" Name="Pitch Shifter (Custom)" LibName="Wwise Pitch Shifter" LibId="8912899"/>
+				</Custom>
 				<ShareSets>
 					<Plugin Id="2513915904" Name="Hall_Large" LibName="Wwise RoomVerb" LibId="7733251"/>
+					<Plugin Id="3153319960" Name="FX_HelmetDistortion" LibName="Wwise Guitar Distortion" LibId="8257539"/>
 				</ShareSets>
 			</Plugins>
 			<Events>
@@ -252,6 +259,11 @@
 								<MediaRef Id="766349313"/>
 								<MediaRef Id="1039002410"/>
 							</MediaRefs>
+							<PluginRefs>
+								<Custom>
+									<PluginRef Id="641728645"/>
+								</Custom>
+							</PluginRefs>
 						</SwitchContainer>
 						<SwitchContainer>
 							<SwitchValue GroupType="Switch" GroupId="3045844422" Id="4248645337"/>
@@ -261,6 +273,11 @@
 								<MediaRef Id="505432651"/>
 								<MediaRef Id="557880412"/>
 							</MediaRefs>
+							<PluginRefs>
+								<Custom>
+									<PluginRef Id="641728645"/>
+								</Custom>
+							</PluginRefs>
 						</SwitchContainer>
 						<SwitchContainer>
 							<SwitchValue GroupType="Switch" GroupId="3045844422" Id="841620460" Default="true"/>
@@ -271,6 +288,11 @@
 								<MediaRef Id="766349313"/>
 								<MediaRef Id="1039002410"/>
 							</MediaRefs>
+							<PluginRefs>
+								<Custom>
+									<PluginRef Id="641728645"/>
+								</Custom>
+							</PluginRefs>
 						</SwitchContainer>
 						<SwitchContainer>
 							<SwitchValue GroupType="Switch" GroupId="3045844422" Id="4248645337"/>
@@ -280,6 +302,11 @@
 								<MediaRef Id="505432651"/>
 								<MediaRef Id="557880412"/>
 							</MediaRefs>
+							<PluginRefs>
+								<Custom>
+									<PluginRef Id="641728645"/>
+								</Custom>
+							</PluginRefs>
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
@@ -437,10 +464,29 @@
 				</Event>
 			</Events>
 			<Busses>
-				<Bus Id="393239870" Name="SFX"/>
+				<Bus Id="393239870" Name="SFX">
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="361491677"/>
+							<PluginRef Id="429887793"/>
+						</Custom>
+						<ShareSets>
+							<PluginRef Id="3153319960"/>
+						</ShareSets>
+					</PluginRefs>
+				</Bus>
 				<Bus Id="695384145" Name="RVB"/>
 				<Bus Id="712897226" Name="MUS"/>
-				<Bus Id="1117531639" Name="AMB"/>
+				<Bus Id="1117531639" Name="AMB">
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="858114425"/>
+						</Custom>
+						<ShareSets>
+							<PluginRef Id="3153319960"/>
+						</ShareSets>
+					</PluginRefs>
+				</Bus>
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
 			<AuxBusses>
@@ -459,6 +505,13 @@
 				<GameParameter Id="3709966389" Name="RTPC_BallSpeed"/>
 			</GameParameters>
 			<StateGroups>
+				<StateGroup Id="104297693" Name="STA_HelmetEquip">
+					<States>
+						<State Id="748895195" Name="None"/>
+						<State Id="1780230126" Name="Equipped"/>
+						<State Id="2413814047" Name="Unequipped"/>
+					</States>
+				</StateGroup>
 				<StateGroup Id="530992273" Name="STA_GameState">
 					<States>
 						<State Id="748895195" Name="None"/>
@@ -480,12 +533,18 @@
 				<Trigger Id="965785689" Name="MUS_Pickup"/>
 			</Triggers>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{3412AF65-3793-98B8-DDA2-32764D72B792}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{D7DFE58D-1C6D-3900-61EE-9A8760588EB0}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
+				<Custom>
+					<Plugin Id="361491677" Name="Standard (Custom)" LibName="Wwise Flanger" LibId="8192003"/>
+					<Plugin Id="429887793" Name="Echoes_Linear (Custom)" LibName="Wwise Delay" LibId="6946819"/>
+					<Plugin Id="858114425" Name="Pitch Shifter (Custom)" LibName="Wwise Pitch Shifter" LibId="8912899"/>
+				</Custom>
 				<ShareSets>
 					<Plugin Id="2513915904" Name="Hall_Large" LibName="Wwise RoomVerb" LibId="7733251"/>
+					<Plugin Id="3153319960" Name="FX_HelmetDistortion" LibName="Wwise Guitar Distortion" LibId="8257539"/>
 				</ShareSets>
 				<AudioDevices>
 					<Plugin Id="2317455096" Name="No_Output" LibName="No Output" LibId="11862023"/>
@@ -493,10 +552,29 @@
 				</AudioDevices>
 			</Plugins>
 			<Busses>
-				<Bus Id="393239870" Name="SFX"/>
+				<Bus Id="393239870" Name="SFX">
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="361491677"/>
+							<PluginRef Id="429887793"/>
+						</Custom>
+						<ShareSets>
+							<PluginRef Id="3153319960"/>
+						</ShareSets>
+					</PluginRefs>
+				</Bus>
 				<Bus Id="695384145" Name="RVB"/>
 				<Bus Id="712897226" Name="MUS"/>
-				<Bus Id="1117531639" Name="AMB"/>
+				<Bus Id="1117531639" Name="AMB">
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="858114425"/>
+						</Custom>
+						<ShareSets>
+							<PluginRef Id="3153319960"/>
+						</ShareSets>
+					</PluginRefs>
+				</Bus>
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
 			<AuxBusses>
@@ -515,6 +593,13 @@
 				<GameParameter Id="3709966389" Name="RTPC_BallSpeed"/>
 			</GameParameters>
 			<StateGroups>
+				<StateGroup Id="104297693" Name="STA_HelmetEquip">
+					<States>
+						<State Id="748895195" Name="None"/>
+						<State Id="1780230126" Name="Equipped"/>
+						<State Id="2413814047" Name="Unequipped"/>
+					</States>
+				</StateGroup>
 				<StateGroup Id="530992273" Name="STA_GameState">
 					<States>
 						<State Id="748895195" Name="None"/>
@@ -541,5 +626,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{F824EC6D-7D43-FF7F-231B-71A17BD533F8}</FileHash>
+	<FileHash>{F3739A23-3293-BB68-B166-40D4DFF6FD4B}</FileHash>
 </SoundBanksInfo>
