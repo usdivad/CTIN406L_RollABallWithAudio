@@ -4,6 +4,18 @@ Roll-A-Ball, now with sound! For USC course CTIN 406L: Sound Design for Games.
 
 Based on Unity's [Roll-A-Ball tutorial](https://learn.unity.com/project/roll-a-ball), adapting the [completed project files](https://assetstore.unity.com/packages/essentials/tutorial-projects/unity-learn-roll-a-ball-completed-project-files-urp-77198) and adding newly implemented audio.
 
+## Week 9 Reference: Digital Signal Processing & Audio Effects
+1. [Download the `week9-effects` version of the project](https://github.com/usdivad/CTIN406L_RollABallWithAudio/archive/refs/heads/week9-effects.zip)
+2. You may want to look at the following files:
+	- Unity:
+		- Assets/Scenes/Week9_Effects.unity
+		- Assets/Scripts/Gameplay/Helmet.cs
+		- Assets/Scripts/Audio/HelmetAudioComponent.cs
+	- Wwise:
+		- CTIN406L_RollABallWithAudio_WwiseProject
+			- Effects on AMB, MUS, SFX buses in the Master-Mixer Hierarchy
+			- \Effects\Default Work Unit\FX_HelmetDistortion
+
 ## Week 8 Reference: Interactive Music Approaches
 1. [Download the `week8-interactive-music` version of the project](https://github.com/usdivad/CTIN406L_RollABallWithAudio/archive/refs/heads/week8-interactive-music.zip)
 2. You may want to look at the following files:
