@@ -178,7 +178,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="A" ID="{08F611C8-6BFE-4232-99E5-115773117B30}" WorkUnitID="{BCAF97F5-3258-4E68-B8DC-C0AC5D1AAF07}"/>
+									<ObjectRef Name="STA_GameState_Idle" ID="{6E7B69D1-F76B-40E8-B5F2-07EB6076BB84}" WorkUnitID="{BCAF97F5-3258-4E68-B8DC-C0AC5D1AAF07}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

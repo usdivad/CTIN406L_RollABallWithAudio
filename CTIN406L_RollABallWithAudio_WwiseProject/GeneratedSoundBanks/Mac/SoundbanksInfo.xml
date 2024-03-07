@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="534561221" Type="User" Language="SFX" Hash="{8C55A256-8CF7-26D2-5461-4A105178D511}">
+		<SoundBank Id="534561221" Type="User" Language="SFX" Hash="{85EB6AED-A945-3C1E-4F5B-68D2BA207B36}">
 			<ShortName>MainSoundBank</ShortName>
 			<Path>MainSoundBank.bnk</Path>
 			<Media>
@@ -436,6 +436,9 @@
 							</MediaRefs>
 						</SwitchContainer>
 					</SwitchContainers>
+					<ActionSetState>
+						<ActionSetStateEntry GroupId="530992273" Id="1829294538" Name="STA_GameState_Idle"/>
+					</ActionSetState>
 				</Event>
 				<Event Id="4165304245" Name="Play_MUS_Main" DurationType="Infinite">
 					<MediaRefs>
@@ -626,5 +629,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{1B81777D-48ED-E98B-225A-26256C544FE6}</FileHash>
+	<FileHash>{559D22E9-5ED1-3DAE-2EF0-9A6D0C09B2C8}</FileHash>
 </SoundBanksInfo>
