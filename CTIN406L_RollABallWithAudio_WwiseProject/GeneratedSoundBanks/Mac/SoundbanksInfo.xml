@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="534561221" Type="User" Language="SFX" Hash="{85EB6AED-A945-3C1E-4F5B-68D2BA207B36}">
+		<SoundBank Id="534561221" Type="User" Language="SFX" Hash="{280D3759-D4FD-88C5-C75D-80799A32DC40}">
 			<ShortName>MainSoundBank</ShortName>
 			<Path>MainSoundBank.bnk</Path>
 			<Media>
@@ -325,7 +325,7 @@
 						<MediaRef Id="223782888"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="96395413" Name="Play_MUS_BGM_Interactive" DurationType="Infinite">
+				<Event Id="96395413" Name="Play_MUS_BGM_Interactive" MaxAttenuation="100" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="317336896"/>
 						<MediaRef Id="554351904"/>
@@ -629,5 +629,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{559D22E9-5ED1-3DAE-2EF0-9A6D0C09B2C8}</FileHash>
+	<FileHash>{64246A4C-B97D-CAC5-ED13-E21A23F48D9B}</FileHash>
 </SoundBanksInfo>
