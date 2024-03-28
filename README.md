@@ -4,6 +4,18 @@ Roll-A-Ball, now with sound! For USC course CTIN 406L: Sound Design for Games.
 
 Based on Unity's [Roll-A-Ball tutorial](https://learn.unity.com/project/roll-a-ball), adapting the [completed project files](https://assetstore.unity.com/packages/essentials/tutorial-projects/unity-learn-roll-a-ball-completed-project-files-urp-77198) and adding newly implemented audio.
 
+## Week 10 Reference: Physics of Audio in Games
+1. [Download the `week10-physics` version of the project](https://github.com/usdivad/CTIN406L_RollABallWithAudio/archive/refs/heads/week10-physics.zip)
+2. You may want to look at the following files:
+	- Unity:
+		- Assets/Scenes/Week10_Physics.unity
+	- Wwise:
+		- CTIN406L_RollABallWithAudio_WwiseProject
+			- In \Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\RVB:
+				- RVB_EarlyReflections
+				- RVB_Room
+			- \Interactive Music Hierarchy\Default Work Unit\MUS_BGM_Interactive
+
 ## Week 9 Reference: Digital Signal Processing & Audio Effects
 1. [Download the `week9-effects` version of the project](https://github.com/usdivad/CTIN406L_RollABallWithAudio/archive/refs/heads/week9-effects.zip)
 2. You may want to look at the following files:
