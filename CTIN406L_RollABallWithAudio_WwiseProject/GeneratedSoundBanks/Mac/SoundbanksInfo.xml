@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="534561221" Type="User" Language="SFX" Hash="{280D3759-D4FD-88C5-C75D-80799A32DC40}">
+		<SoundBank Id="534561221" Type="User" Language="SFX" Hash="{AA141C9C-0DAA-4774-F248-7D5458E395BB}">
 			<ShortName>MainSoundBank</ShortName>
 			<Path>MainSoundBank.bnk</Path>
 			<Media>
@@ -211,9 +211,11 @@
 					<Plugin Id="361491677" Name="Standard (Custom)" LibName="Wwise Flanger" LibId="8192003"/>
 					<Plugin Id="429887793" Name="Echoes_Linear (Custom)" LibName="Wwise Delay" LibId="6946819"/>
 					<Plugin Id="641728645" Name="Guitar Distortion (Custom)" LibName="Wwise Guitar Distortion" LibId="8257539"/>
+					<Plugin Id="719030674" Name="Wwise_RoomVerb_(Custom)" LibName="Wwise RoomVerb" LibId="7733251"/>
 					<Plugin Id="858114425" Name="Pitch Shifter (Custom)" LibName="Wwise Pitch Shifter" LibId="8912899"/>
 				</Custom>
 				<ShareSets>
+					<Plugin Id="1842579981" Name="Reflect_Simplified" LibName="Wwise Reflect" LibId="11206659"/>
 					<Plugin Id="2513915904" Name="Hall_Large" LibName="Wwise RoomVerb" LibId="7733251"/>
 					<Plugin Id="3153319960" Name="FX_HelmetDistortion" LibName="Wwise Guitar Distortion" LibId="8257539"/>
 				</ShareSets>
@@ -249,6 +251,9 @@
 					</MediaRefs>
 				</Event>
 				<Event Id="958544762" Name="Play_FLY_Footstep" DurationType="OneShot" DurationMin="0.4380623" DurationMax="2.244924">
+					<AuxBusRefs>
+						<AuxBusRef Id="2045521581" Name="RVB_EarlyReflections"/>
+					</AuxBusRefs>
 					<SwitchContainers>
 						<SwitchContainer>
 							<SwitchValue GroupType="Switch" GroupId="3045844422" Id="841620460" Default="true"/>
@@ -314,16 +319,25 @@
 					<MediaRefs>
 						<MediaRef Id="45852958"/>
 					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="2045521581" Name="RVB_EarlyReflections"/>
+					</AuxBusRefs>
 				</Event>
 				<Event Id="1947854728" Name="Play_IMP_Wall_2D" DurationType="OneShot" DurationMin="1.8877485" DurationMax="2.1189263">
 					<MediaRefs>
 						<MediaRef Id="223782888"/>
 					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="2045521581" Name="RVB_EarlyReflections"/>
+					</AuxBusRefs>
 				</Event>
 				<Event Id="1964632347" Name="Play_IMP_Wall_3D" DurationType="OneShot" DurationMin="1.8877485" DurationMax="2.1189263">
 					<MediaRefs>
 						<MediaRef Id="223782888"/>
 					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="2045521581" Name="RVB_EarlyReflections"/>
+					</AuxBusRefs>
 				</Event>
 				<Event Id="96395413" Name="Play_MUS_BGM_Interactive" MaxAttenuation="100" DurationType="Infinite">
 					<MediaRefs>
@@ -332,6 +346,9 @@
 						<MediaRef Id="594625187"/>
 						<MediaRef Id="781766012"/>
 					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="2045521581" Name="RVB_EarlyReflections"/>
+					</AuxBusRefs>
 					<SwitchContainers>
 						<SwitchContainer>
 							<SwitchValue GroupType="State" GroupId="530992273" Id="1829294538"/>
@@ -449,6 +466,9 @@
 					<MediaRefs>
 						<MediaRef Id="852571445"/>
 					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="2045521581" Name="RVB_EarlyReflections"/>
+					</AuxBusRefs>
 				</Event>
 				<Event Id="2823495579" Name="Play_UI_Win" DurationType="OneShot" DurationMin="5" DurationMax="5">
 					<MediaRefs>
@@ -500,6 +520,20 @@
 						</ShareSets>
 					</PluginRefs>
 				</AuxBus>
+				<AuxBus Id="2045521581" Name="RVB_EarlyReflections">
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="1842579981"/>
+						</ShareSets>
+					</PluginRefs>
+				</AuxBus>
+				<AuxBus Id="2601656405" Name="RVB_Room">
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="719030674"/>
+						</Custom>
+					</PluginRefs>
+				</AuxBus>
 			</AuxBusses>
 			<GameParameters>
 				<GameParameter Id="1573010119" Name="RTPC_CollisionVelocityNormalized"/>
@@ -536,16 +570,18 @@
 				<Trigger Id="965785689" Name="MUS_Pickup"/>
 			</Triggers>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{3067AA81-F280-C752-2226-B42DAE297FB0}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{2911BB64-0FD0-9481-B4F7-BB6B3EE076D2}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
 				<Custom>
 					<Plugin Id="361491677" Name="Standard (Custom)" LibName="Wwise Flanger" LibId="8192003"/>
 					<Plugin Id="429887793" Name="Echoes_Linear (Custom)" LibName="Wwise Delay" LibId="6946819"/>
+					<Plugin Id="719030674" Name="Wwise_RoomVerb_(Custom)" LibName="Wwise RoomVerb" LibId="7733251"/>
 					<Plugin Id="858114425" Name="Pitch Shifter (Custom)" LibName="Wwise Pitch Shifter" LibId="8912899"/>
 				</Custom>
 				<ShareSets>
+					<Plugin Id="1842579981" Name="Reflect_Simplified" LibName="Wwise Reflect" LibId="11206659"/>
 					<Plugin Id="2513915904" Name="Hall_Large" LibName="Wwise RoomVerb" LibId="7733251"/>
 					<Plugin Id="3153319960" Name="FX_HelmetDistortion" LibName="Wwise Guitar Distortion" LibId="8257539"/>
 				</ShareSets>
@@ -586,6 +622,20 @@
 						<ShareSets>
 							<PluginRef Id="2513915904"/>
 						</ShareSets>
+					</PluginRefs>
+				</AuxBus>
+				<AuxBus Id="2045521581" Name="RVB_EarlyReflections">
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="1842579981"/>
+						</ShareSets>
+					</PluginRefs>
+				</AuxBus>
+				<AuxBus Id="2601656405" Name="RVB_Room">
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="719030674"/>
+						</Custom>
 					</PluginRefs>
 				</AuxBus>
 			</AuxBusses>
@@ -757,5 +807,5 @@
 			</AcousticTextures>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{087D13A1-0A03-A6FA-2084-D3F14D005DCE}</FileHash>
+	<FileHash>{647C04D1-21FB-CEB4-2B43-632A10098477}</FileHash>
 </SoundBanksInfo>

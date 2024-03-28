@@ -116,7 +116,9 @@ namespace AK
 
     namespace AUX_BUSSES
     {
+        static const AkUniqueID RVB_EARLYREFLECTIONS = 2045521581U;
         static const AkUniqueID RVB_LARGEHALL = 1985046648U;
+        static const AkUniqueID RVB_ROOM = 2601656405U;
     } // namespace AUX_BUSSES
 
     namespace AUDIO_DEVICES

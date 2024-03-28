@@ -149,6 +149,7 @@
 						<Property Name="3DSpatialization" Type="int16" Value="1"/>
 						<Property Name="GridFrequencyPreset" Type="int16" Value="57"/>
 						<Property Name="Tempo" Type="Real64" Value="132"/>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Attenuation">
@@ -239,6 +240,9 @@
 						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="MUS" ID="{437D3256-4AEC-47B0-91CA-64D0516E1916}" WorkUnitID="{DC1FDB7B-AB4A-403B-9ED1-5C49551A2787}"/>
+						</Reference>
+						<Reference Name="ReflectionsAuxSend">
+							<ObjectRef Name="RVB_EarlyReflections" ID="{D4B7B900-57FD-4BD9-9144-0CFEE9D4C8E5}" WorkUnitID="{DC1FDB7B-AB4A-403B-9ED1-5C49551A2787}"/>
 						</Reference>
 						<Reference Name="TransitionRoot">
 							<Custom>

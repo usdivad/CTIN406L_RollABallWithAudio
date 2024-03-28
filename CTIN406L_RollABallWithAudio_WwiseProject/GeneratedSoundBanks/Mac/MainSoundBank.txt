@@ -53,12 +53,16 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 
 Auxiliary Bus	ID	Name			Wwise Object Path	Notes
 	1985046648	RVB_LargeHall			\Default Work Unit\Master Audio Bus\RVB\RVB_LargeHall	
+	2045521581	RVB_EarlyReflections			\Default Work Unit\Master Audio Bus\RVB\RVB_EarlyReflections	
+	2601656405	RVB_Room			\Default Work Unit\Master Audio Bus\RVB\RVB_Room	
 
 Effect plug-ins	ID	Name	Type				Notes
 	361491677	Standard (Custom)	Wwise Flanger			
 	429887793	Echoes_Linear (Custom)	Wwise Delay			
 	641728645	Guitar Distortion (Custom)	Wwise Guitar Distortion			
+	719030674	Wwise_RoomVerb_(Custom)	Wwise RoomVerb			
 	858114425	Pitch Shifter (Custom)	Wwise Pitch Shifter			
+	1842579981	Reflect_Simplified	Wwise Reflect			
 	2513915904	Hall_Large	Wwise RoomVerb			
 	3153319960	FX_HelmetDistortion	Wwise Guitar Distortion			
 
