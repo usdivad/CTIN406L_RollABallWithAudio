@@ -258,6 +258,68 @@
 										</ObjectList>
 									</ObjectLists>
 								</AuxBus>
+								<AuxBus Name="RVB_EarlyReflections" ID="{D4B7B900-57FD-4BD9-9144-0CFEE9D4C8E5}">
+									<PropertyList>
+										<Property Name="BusChannelConfig" Type="int32">
+											<ValueList>
+												<Value>768</Value>
+											</ValueList>
+										</Property>
+										<Property Name="BusVolume" Type="Real64">
+											<ValueList>
+												<Value>-18</Value>
+											</ValueList>
+										</Property>
+										<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+										<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+									</PropertyList>
+									<ObjectLists>
+										<ObjectList Name="Effects">
+											<Reference>
+												<Local>
+													<EffectSlot Name="" ID="{9E49CD1C-EE1F-4811-839A-412AD349DCD1}" ShortID="686876466">
+														<ReferenceList>
+															<Reference Name="Effect" PluginName="Wwise Reflect" CompanyID="0" PluginID="171" PluginType="3">
+																<ObjectRef Name="Reflect_Simplified" ID="{26D1B778-1690-400C-9DBA-3B2CDEE9B3AE}" WorkUnitID="{923039AD-F8B4-46D4-BDA7-CB5A6EE595E0}"/>
+															</Reference>
+														</ReferenceList>
+													</EffectSlot>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</AuxBus>
+								<AuxBus Name="RVB_Room" ID="{A8312042-D251-4663-BB3F-4B148E73339C}">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="BusVolume" Type="Real64">
+											<ValueList>
+												<Value>-4</Value>
+											</ValueList>
+										</Property>
+										<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+										<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+									</PropertyList>
+									<ObjectLists>
+										<ObjectList Name="Effects">
+											<Reference>
+												<Local>
+													<EffectSlot Name="" ID="{E6D9BCD0-61D0-449B-B9CA-208BC23BB7DE}" ShortID="1030357308">
+														<ReferenceList>
+															<Reference Name="Effect">
+																<Custom>
+																	<Effect Name="Wwise_RoomVerb_(Custom)" ID="{C9A9D553-5CBE-4978-8DD4-E8C01411BA37}" ShortID="719030674" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3"/>
+																</Custom>
+															</Reference>
+														</ReferenceList>
+													</EffectSlot>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</AuxBus>
 							</ChildrenList>
 						</Bus>
 					</ChildrenList>

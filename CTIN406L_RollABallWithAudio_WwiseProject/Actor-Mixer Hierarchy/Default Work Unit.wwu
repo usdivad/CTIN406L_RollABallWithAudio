@@ -616,6 +616,9 @@
 						<Reference Name="OutputBus">
 							<ObjectRef Name="SFX" ID="{EA73DD58-4FDE-4F8B-9086-8FF6F2EBF89E}" WorkUnitID="{DC1FDB7B-AB4A-403B-9ED1-5C49551A2787}"/>
 						</Reference>
+						<Reference Name="ReflectionsAuxSend">
+							<ObjectRef Name="RVB_EarlyReflections" ID="{D4B7B900-57FD-4BD9-9144-0CFEE9D4C8E5}" WorkUnitID="{DC1FDB7B-AB4A-403B-9ED1-5C49551A2787}"/>
+						</Reference>
 					</ReferenceList>
 					<ChildrenList>
 						<Sound Name="IMP_Pickup" ID="{3DA5F12B-D63F-4296-AF08-C77FDC81D881}" ShortID="369318998">
@@ -974,12 +977,18 @@
 					</ChildrenList>
 				</ActorMixer>
 				<ActorMixer Name="FLY" ID="{76F43CB8-50AA-47DF-8007-5687A6932A95}" ShortID="625859647">
+					<PropertyList>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F31277D4-DD00-4059-A6A3-67EE41BC19BA}"/>
 						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DC1FDB7B-AB4A-403B-9ED1-5C49551A2787}"/>
+						</Reference>
+						<Reference Name="ReflectionsAuxSend">
+							<ObjectRef Name="RVB_EarlyReflections" ID="{D4B7B900-57FD-4BD9-9144-0CFEE9D4C8E5}" WorkUnitID="{DC1FDB7B-AB4A-403B-9ED1-5C49551A2787}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
