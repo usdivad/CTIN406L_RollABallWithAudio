@@ -18,12 +18,18 @@ public class Interactable : MonoBehaviour
     [SerializeField]
     float interactRadius = 3f;
 
+    // Angle (between player-forward and this object) within which interactions are enabled
+    [SerializeField]
+    float interactAngle = 30f;
+
     // Example event to post on interact
     [SerializeField]
     AK.Wwise.Event exampleInteractEvent;
 
-    bool isInteractionEnabled = false;
+    // Private properties for book-keeping
+    bool isPlayerWithinRadius = false;
     SphereCollider interactTrigger;
+    GameObject playerGameObject;
 
     GameObject canvasGameObject;
     Canvas canvas;
@@ -101,10 +107,29 @@ public class Interactable : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // Check angle between player-forward-direction and player-to-interactable direction;
+        // we only want to enable interaction if the angle is within our interactAngle threshold.
+        bool isPlayerWithinAngle = false;
+
+        if (isPlayerWithinRadius && playerGameObject != null)
+        {
+            Vector3 playerDir = transform.position - playerGameObject.transform.position;
+            playerDir.y = 0f;
+            Vector3 playerFwd = playerGameObject.transform.forward;
+            playerFwd.y = 0f;
+            float playerAngle = Vector3.Angle(playerFwd, playerDir);
+            isPlayerWithinAngle = playerAngle < interactAngle;
+        }
+
+        // Check all our interaction enablement conditions and adjust display text accordingly
+        bool isInteractionEnabled = isPlayerWithinRadius && isPlayerWithinAngle;
+
         if (isInteractionEnabled)
         {
+            // Display a text prompt for interaction
             text.text = string.Format("Press {0} to interact", interactKey.ToString());
 
+            // Call Interact() if the player presses the interact key
             if (Input.GetKeyDown(interactKey))
             {
                 Interact();
@@ -112,6 +137,7 @@ public class Interactable : MonoBehaviour
         }
         else
         {
+            // Clear any text display
             text.text = "";
         }
     }
@@ -120,7 +146,8 @@ public class Interactable : MonoBehaviour
     {
         if (other.CompareTag(playerTag))
         {
-            isInteractionEnabled = true;
+            isPlayerWithinRadius = true;
+            playerGameObject = other.gameObject;
         }
     }
 
@@ -128,7 +155,8 @@ public class Interactable : MonoBehaviour
     {
         if (other.CompareTag(playerTag))
         {
-            isInteractionEnabled = false;
+            isPlayerWithinRadius = false;
+            playerGameObject = null;
         }
     }
 }
