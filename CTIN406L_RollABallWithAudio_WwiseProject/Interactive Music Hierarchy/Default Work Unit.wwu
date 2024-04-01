@@ -154,11 +154,11 @@
 					<ReferenceList>
 						<Reference Name="Attenuation">
 							<Custom>
-								<Attenuation Name="Attenuation (Custom)" ID="{61D93E09-7B36-4395-8D41-FC2A729CD1AF}" ShortID="691438197">
+								<Attenuation Name="Attenuation (Custom)" ID="{7C692792-EEC9-4B6A-888F-A15EF672EF6C}" ShortID="107647793">
 									<CurveUsageInfoList>
 										<VolumeDryUsage>
 											<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
-												<Curve Name="VolumeDry" ID="{B032D7E2-53A5-4440-BCA7-B412B091EDEE}">
+												<Curve Name="VolumeDry" ID="{95432264-9741-43EB-AAC1-92948884F726}">
 													<PropertyList>
 														<Property Name="Flags" Type="int32" Value="3"/>
 													</PropertyList>
@@ -167,6 +167,11 @@
 															<XPos>0</XPos>
 															<YPos>0</YPos>
 															<Flags>5</Flags>
+														</Point>
+														<Point>
+															<XPos>34.8924228250702</XPos>
+															<YPos>-3.72736931196432</YPos>
+															<Flags>0</Flags>
 														</Point>
 														<Point>
 															<XPos>100</XPos>
