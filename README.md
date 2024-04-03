@@ -9,6 +9,7 @@ Based on Unity's [Roll-A-Ball tutorial](https://learn.unity.com/project/roll-a-b
 2. You may want to look at the following files:
 	- Unity:
 		- Assets/Scenes/Week10_Physics.unity
+		- Assets/Scripts/Gameplay/Interactable.cs
 	- Wwise:
 		- CTIN406L_RollABallWithAudio_WwiseProject
 			- In \Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\RVB:
