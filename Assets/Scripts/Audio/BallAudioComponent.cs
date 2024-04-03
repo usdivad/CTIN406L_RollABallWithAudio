@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 
 using UnityEngine;
+using UnityEngine.Events;
 
 /** Component that handles non-player ball audio **/
 
@@ -20,6 +21,9 @@ public class BallAudioComponent : MonoBehaviour
     AK.Wwise.RTPC ballSpeedRtpc; // RTPC for the ball speed
 
     [SerializeField]
+    AK.Wwise.Event musicEvent; // Event for music playback
+
+    [SerializeField]
     AK.Wwise.State musicIdleState; // Idle state for music
 
     [SerializeField]
@@ -30,6 +34,15 @@ public class BallAudioComponent : MonoBehaviour
 
     [SerializeField]
     AK.Wwise.Event musicPickupTrigger; // Trigger for pickup stinger
+
+    [SerializeField]
+    AK.Wwise.CallbackFlags musicCallbackFlags; // Callback flags for music
+
+    [SerializeField]
+    UnityEvent musicBarCallbackEvent; // Event that gets invoked when a bar is reached
+
+    [SerializeField]
+    UnityEvent musicBeatCallbackEvent; // Event that gets invoked when a beat is reached
 
     [SerializeField]
     float pickupTimeIncrementAmount = 6f;
@@ -43,6 +56,9 @@ public class BallAudioComponent : MonoBehaviour
     {
         // Begin playing rolling audio loop
         rollingAudioEvent.Post(this.gameObject);
+
+        // Begin playing music
+        musicEvent.Post(this.gameObject, musicCallbackFlags, MusicSyncCallback);
     }
 
     private void Update()
@@ -93,5 +109,35 @@ public class BallAudioComponent : MonoBehaviour
 
         didWin = true;
         isInPickupState = false;
+    }
+
+    // Music callback handler
+    public void MusicSyncCallback(object inCookie, AkCallbackType inType, object inInfo)
+    {
+        // Get the callback type
+        AkMusicSyncCallbackInfo callbackInfo = (AkMusicSyncCallbackInfo)inInfo;
+        AkCallbackType callbackType = callbackInfo.musicSyncType;
+
+        // Invoke events based on callback type -- only bar and beat are handled
+        switch (callbackType)
+        {
+            case AkCallbackType.AK_MusicSyncBar:
+                {
+                    Debug.Log("Music callback: Bar reached");
+                    musicBarCallbackEvent.Invoke();
+                }
+                break;
+
+            case AkCallbackType.AK_MusicSyncBeat:
+                {
+                    Debug.Log("Music callback: Beat reached");
+                    musicBeatCallbackEvent.Invoke();
+                }
+                break;
+
+            default:
+                { }
+                break;
+        }
     }
 }
